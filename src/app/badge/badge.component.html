@@ -1,0 +1,42 @@
+<h1>Mat-badge Customize</h1>
+
+<!------- small badge background & color change -------->
+<div matBadge="4" matBadgeOverlap="false" matBadgeSize="small" class="demo-section">small badge</div>
+
+
+<div matBadge="4" matBadgeOverlap="false" matBadgeSize="medium" class="demo-section">medium badge</div>
+
+
+<div matBadge="1" matBadgeOverlap="false" matBadgeSize="large" class="demo-section">large badge</div>
+
+
+
+<!------- Button Badge Position ------->
+<div class="demo-section">
+  Badge Before Position
+  <button mat-raised-button matBadge="7" color="primary" matBadgePosition="before" matBadgeColor="accent">
+    before
+  </button>
+</div>
+
+<div class="demo-section">
+  Badge After Position
+  <button mat-raised-button matBadge="7" color="accent" matBadgePosition="after" matBadgeColor="primary">
+    After
+  </button>
+</div>
+
+<div class="demo-section">
+  Badge Below Position
+  <button mat-raised-button matBadge="7" color="warn" matBadgePosition="below" matBadgeColor="warn">
+    Below
+  </button>
+</div>
+
+
+<!----------- Toggle Badge ----------->
+<div class="demo-section">
+  <button mat-raised-button matBadge="7" [matBadgeHidden]="hidden" (click)="toggleBadgeVisibility()">
+    Hide
+  </button>
+</div>

@@ -1,0 +1,128 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.demo-section+.demo-section {
+  margin-top: 16px;
+}
+
+
+// change badge background color
+.mat-badge-content {
+  background-color: pink;
+  color: #000;
+  border-radius: 5px;
+  // transform: scale(0.7);
+  animation: leaves 0.5s ease-in-out infinite alternate;
+}
+
+// blinking badge using @keyframe animation
+// @keyframes leaves {
+//   0% {
+//     transform: scale(1.0);
+//   }
+
+//   100% {
+//     transform: scale(1.5);
+//   }
+
+//   0% {
+//     transform: scale(1.0);
+//   }
+// }
+
+
+// small badge font size
+::ng-deep .mat-badge-small .mat-badge-content {
+  font-size: 13px;
+  padding: 3px;
+}
+
+// medium badge font size
+::ng-deep .mat-badge-medium .mat-badge-content {
+  font-size: 19px;
+  padding: 3px;
+}
+
+// large badge font size
+::ng-deep .mat-badge-large .mat-badge-content {
+  font-size: 25px;
+  padding: 3px;
+}
+
+
+// accent badge change background
+::ng-deep .mat-badge-accent .mat-badge-content {
+  background: #fffb00;
+  color: #000;
+  border-radius: 5px;
+}
+
+// primary badge change background
+::ng-deep .mat-badge-primary .mat-badge-content {
+  background: #3180ff;
+  color: #000;
+  border-radius: 5px;
+}
+
+// warn badge change background
+::ng-deep .mat-badge-warn .mat-badge-content {
+  background: #ff6fa6;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+
+// badge animate disable
+::ng-deep .ng-animate-disabled .mat-badge-content,
+::ng-deep .mat-badge-content ._mat-animation-noopable {
+  transition: none;
+}
+
+
+// mat-badge active transform
+::ng-deep .mat-badge-content.mat-badge-active {
+  transform: none;
+}
+
+
+/*-------------------- change badge overlaping position --------------------*/
+// ::ng-deep .mat-badge-small.mat-badge-overlap.mat-badge-before .mat-badge-content {
+//   left: -8px !important;
+// }
+
+// ::ng-deep .mat-badge-medium.mat-badge-overlap.mat-badge-before .mat-badge-content {
+//   left: -18px;
+// }
+
+// ::ng-deep .mat-badge-large.mat-badge-overlap.mat-badge-before .mat-badge-content {
+//   left: -58px;
+// }
+
+
+// ::ng-deep .mat-badge-small.mat-badge-overlap.mat-badge-after .mat-badge-content {
+//   left: -28px;
+// }
+
+// ::ng-deep .mat-badge-medium.mat-badge-overlap.mat-badge-after .mat-badge-content {
+//   left: -38px;
+// }
+
+// ::ng-deep .mat-badge-large.mat-badge-overlap.mat-badge-after .mat-badge-content {
+//   left: -48px;
+// }
+
+
+// ::ng-deep .mat-badge-small.mat-badge-overlap.mat-badge-below .mat-badge-content {
+//   left: -28px;
+// }
+
+// ::ng-deep .mat-badge-medium.mat-badge-overlap.mat-badge-below .mat-badge-content {
+//   left: -38px;
+// }
+
+// ::ng-deep .mat-badge-large.mat-badge-overlap.mat-badge-below .mat-badge-content {
+//   left: -48px;
+// }
