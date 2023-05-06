@@ -13,6 +13,8 @@ import { ButtonComponent } from './button/button.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { CardsComponent } from './cards/cards.component';
+import { CheckboxComponent } from './checkbox/checkbox.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 
 @NgModule({
@@ -20,7 +22,8 @@ import { CardsComponent } from './cards/cards.component';
     AppComponent,
     BadgeComponent,
     ButtonComponent,
-    CardsComponent
+    CardsComponent,
+    CheckboxComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,8 @@ import { CardsComponent } from './cards/cards.component';
     MatBadgeModule,
     MatButtonModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

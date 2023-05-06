@@ -1,0 +1,158 @@
+.example-section {
+    margin: 20px 0;
+}
+
+// Add Margin Between Two CheckBox
+.mat-mdc-checkbox {
+    margin: 15px 20px!important;
+}
+
+
+// Change Ripple Circle Effect Back of Checkbox for accent color
+::ng-deep .mat-mdc-checkbox.mat-accent .mdc-checkbox--selected ~ .mdc-checkbox__ripple {
+    background: #12ffff!important;
+}
+// Change Ripple Circle Effect Back of Checkbox for primary color
+::ng-deep .mat-mdc-checkbox.mat-primary .mdc-checkbox--selected ~ .mdc-checkbox__ripple {
+    background: #ffa600!important;
+}
+// Change Ripple Circle Effect Back of Checkbox for warn color
+::ng-deep .mat-mdc-checkbox.mat-warn .mdc-checkbox--selected ~ .mdc-checkbox__ripple {
+    background: #5de042!important;
+}
+// Change Ripple Circle Effect Back of Checkbox for danger color
+::ng-deep .mat-mdc-checkbox.mat-danger .mdc-checkbox--selected ~ .mdc-checkbox__ripple {
+    background: #ff0000!important;
+}
+
+
+// change checkbox inner icon width, height, color & position change for accent color
+::ng-deep .mat-mdc-checkbox.mat-accent .mdc-checkbox .mdc-checkbox__native-control:enabled~.mdc-checkbox__background .mdc-checkbox__checkmark {
+    color: #fffd8c !important;
+    width: 15px;
+    height: 15px;
+    margin: auto auto;
+}
+// change checkbox inner icon width, height, color & position change for primary color
+::ng-deep .mat-mdc-checkbox.mat-primary .mdc-checkbox .mdc-checkbox__native-control:enabled~.mdc-checkbox__background .mdc-checkbox__checkmark {
+    color: #ff9100 !important;
+    width: 15px;
+    height: 15px;
+    margin: auto auto;
+}
+// change checkbox inner icon width, height, color & position change for warn color
+::ng-deep .mat-mdc-checkbox.mat-warn .mdc-checkbox .mdc-checkbox__native-control:enabled~.mdc-checkbox__background .mdc-checkbox__checkmark {
+    color: #fffb05 !important;
+    width: 15px;
+    height: 15px;
+    margin: auto auto;
+}
+// change checkbox inner icon width, height, color & position change for danger color
+::ng-deep .mat-mdc-checkbox.mat-danger .mdc-checkbox .mdc-checkbox__native-control:enabled~.mdc-checkbox__background .mdc-checkbox__checkmark {
+    color: #ffffff !important;
+    width: 15px;
+    height: 15px;
+    margin: auto auto;
+}
+
+
+// Change Checkbox Background & Border Color for accent color
+// ::ng-deep .mat-mdc-checkbox.mat-accent .mdc-checkbox .mdc-checkbox__native-control:enabled:checked ~ .mdc-checkbox__background,
+// .mat-mdc-checkbox.mat-accent .mdc-checkbox .mdc-checkbox__native-control:enabled:indeterminate ~ .mdc-checkbox__background,
+// .mat-mdc-checkbox.mat-accent .mdc-checkbox .mdc-checkbox__native-control[data-indeterminate=true]:enabled ~ .mdc-checkbox__background {
+//     border-color: transparent!important;
+//     background-color: #c900f1;
+// }
+// Change Checkbox Background & Border Color for primary color
+// ::ng-deep .mat-mdc-checkbox.mat-primary .mdc-checkbox .mdc-checkbox__native-control:enabled:checked ~ .mdc-checkbox__background,
+// .mat-mdc-checkbox.mat-primary .mdc-checkbox .mdc-checkbox__native-control:enabled:indeterminate ~ .mdc-checkbox__background,
+// .mat-mdc-checkbox.mat-primary .mdc-checkbox .mdc-checkbox__native-control[data-indeterminate=true]:enabled ~ .mdc-checkbox__background {
+//     border-color: transparent!important;
+//     background-color: #1ab6ff;
+// }
+// Change Checkbox Background & Border Color for warn color
+// ::ng-deep .mat-mdc-checkbox.mat-warn .mdc-checkbox .mdc-checkbox__native-control:enabled:checked ~ .mdc-checkbox__background,
+// .mat-mdc-checkbox.mat-warn .mdc-checkbox .mdc-checkbox__native-control:enabled:indeterminate ~ .mdc-checkbox__background,
+// .mat-mdc-checkbox.mat-warn .mdc-checkbox .mdc-checkbox__native-control[data-indeterminate=true]:enabled ~ .mdc-checkbox__background {
+//     border-color: transparent!important;
+//     background-color: #b30909;
+// }
+// Change Checkbox Background & Border Color for warn color
+// ::ng-deep .mat-mdc-checkbox.mat-danger .mdc-checkbox .mdc-checkbox__native-control:enabled:checked ~ .mdc-checkbox__background,
+// .mat-mdc-checkbox.mat-danger .mdc-checkbox .mdc-checkbox__native-control:enabled:indeterminate ~ .mdc-checkbox__background,
+// .mat-mdc-checkbox.mat-danger .mdc-checkbox .mdc-checkbox__native-control[data-indeterminate=true]:enabled ~ .mdc-checkbox__background {
+//     border-color: transparent!important;
+//     background-color: #b30909;
+// }
+
+
+
+::ng-deep .mat-mdc-checkbox.mat-accent {
+    --mdc-checkbox-selected-checkmark-color: #fff;
+    --mdc-checkbox-selected-focus-icon-color: #c900f1;
+    --mdc-checkbox-selected-hover-icon-color: #c900f1;
+    --mdc-checkbox-selected-icon-color: #c900f1;
+    --mdc-checkbox-selected-pressed-icon-color: #c900f1;
+    --mdc-checkbox-unselected-focus-icon-color: #ff8800;
+    --mdc-checkbox-unselected-hover-icon-color: #ff8800;
+    --mdc-checkbox-disabled-selected-icon-color: rgba(255, 72, 72, 0.38);
+    --mdc-checkbox-disabled-unselected-icon-color: rgba(255, 82, 82, 0.38);
+    --mdc-checkbox-unselected-icon-color: #c900f1;
+    --mdc-checkbox-unselected-pressed-icon-color: #ff8800;
+}
+
+::ng-deep .mat-mdc-checkbox.mat-primary {
+    --mdc-checkbox-selected-checkmark-color: #fff;
+    --mdc-checkbox-selected-focus-icon-color: #1ab6ff;
+    --mdc-checkbox-selected-hover-icon-color: #1ab6ff;
+    --mdc-checkbox-selected-icon-color: #1ab6ff;
+    --mdc-checkbox-selected-pressed-icon-color: #1ab6ff;
+    --mdc-checkbox-unselected-focus-icon-color: #ff2525;
+    --mdc-checkbox-unselected-hover-icon-color: #ff2525;
+    --mdc-checkbox-disabled-selected-icon-color: rgba(255, 72, 72, 0.38);
+    --mdc-checkbox-disabled-unselected-icon-color: rgba(255, 82, 82, 0.38);
+    --mdc-checkbox-unselected-icon-color: #1ab6ff;
+    --mdc-checkbox-unselected-pressed-icon-color: #ff2525;
+}
+
+::ng-deep .mat-mdc-checkbox.mat-warn {
+    --mdc-checkbox-selected-checkmark-color: #fff;
+    --mdc-checkbox-selected-focus-icon-color: #b30909;
+    --mdc-checkbox-selected-hover-icon-color: #b30909;
+    --mdc-checkbox-selected-icon-color: #b30909;
+    --mdc-checkbox-selected-pressed-icon-color: #b30909;
+    --mdc-checkbox-unselected-focus-icon-color: #fae902;
+    --mdc-checkbox-unselected-hover-icon-color: #fae902;
+    --mdc-checkbox-disabled-selected-icon-color: rgba(255, 72, 72, 0.38);
+    --mdc-checkbox-disabled-unselected-icon-color: rgba(255, 82, 82, 0.38);
+    --mdc-checkbox-unselected-icon-color: #b30909;
+    --mdc-checkbox-unselected-pressed-icon-color: #fae902;
+}
+
+::ng-deep .mat-mdc-checkbox.mat-danger {
+    --mdc-checkbox-selected-checkmark-color: #fff;
+    --mdc-checkbox-selected-focus-icon-color: #009c5b;
+    --mdc-checkbox-selected-hover-icon-color: #009c5b;
+    --mdc-checkbox-selected-icon-color: #009c5b;
+    --mdc-checkbox-selected-pressed-icon-color: #009c5b;
+    --mdc-checkbox-unselected-focus-icon-color: #fff89d;
+    --mdc-checkbox-unselected-hover-icon-color: #ff8800;
+    --mdc-checkbox-disabled-selected-icon-color: rgba(255, 72, 72, 0.38);
+    --mdc-checkbox-disabled-unselected-icon-color: rgba(255, 82, 82, 0.38);
+    --mdc-checkbox-unselected-icon-color: #009c5b;
+    --mdc-checkbox-unselected-pressed-icon-color: #fff89d;
+}
+
+
+
+// Change CheckBox Width & Height
+::ng-deep .mdc-checkbox__background {
+    width: 25px!important;
+    height: 25px!important;
+}
+
+// Make Checkbox Ripple Circle in Center
+::ng-deep .mat-mdc-checkbox .mdc-checkbox .mdc-checkbox__background {
+    top: calc((var(--mdc-checkbox-state-layer-size, 44px) - 28px) / 2) !important;
+    left: calc((var(--mdc-checkbox-state-layer-size, 44px) - 28px) / 2) !important;
+}
