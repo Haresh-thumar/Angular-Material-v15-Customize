@@ -11,12 +11,16 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { MatButtonModule } from '@angular/material/button';
 import { ButtonComponent } from './button/button.component';
 import { MatIconModule } from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
+import { CardsComponent } from './cards/cards.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     BadgeComponent,
-    ButtonComponent
+    ButtonComponent,
+    CardsComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +29,8 @@ import { MatIconModule } from '@angular/material/icon';
     RouterModule,
     MatBadgeModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
