@@ -4,12 +4,14 @@ import { BadgeComponent } from './badge/badge.component';
 import { ButtonComponent } from './button/button.component';
 import { CardsComponent } from './cards/cards.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
+import { RadioComponent } from './radio/radio.component';
 
 const routes: Routes = [
   { path: 'badge', component: BadgeComponent },
   { path: 'button', component: ButtonComponent },
   { path: 'cards', component: CardsComponent },
   { path: 'checkbox', component: CheckboxComponent },
+  { path: 'radio', component: RadioComponent },
 ];
 
 @NgModule({

@@ -1,0 +1,95 @@
+/*---------------------------- Round Radio Button ---------------------------*/
+// for accent color theme
+::ng-deep.mat-mdc-radio-button.mat-accent {
+    --mdc-radio-unselected-focus-icon-color: rgb(255, 0, 234); // change color when click radio button
+    --mdc-radio-unselected-hover-icon-color: rgb(255, 0, 234); // hover to change radio button border color
+    --mdc-radio-unselected-icon-color: rgba(255, 22, 236, 0.897); // change radio button border color
+    --mdc-radio-unselected-pressed-icon-color: rgb(255, 0, 234); // fill color after unchecked radio buton
+    --mdc-radio-selected-focus-icon-color: rgb(255, 0, 234); // focus to change selected icon radio button color
+    --mdc-radio-selected-hover-icon-color: rgb(255, 0, 234); // focus after fill radio button color on hover
+    --mdc-radio-selected-icon-color: rgb(255, 0, 234); // radio button active to color change 
+    --mdc-radio-selected-pressed-icon-color: rgb(255, 0, 234); //active radio when click to fill radio color 
+    --mat-mdc-radio-ripple-color: rgb(255, 0, 234); // hover to fill background ripple background color
+    --mat-mdc-radio-checked-ripple-color: rgb(255, 0, 234); // fill ripple color when radio button active to press
+}
+
+// for primary color theme
+::ng-deep.mat-mdc-radio-button.mat-primary {
+    --mdc-radio-unselected-focus-icon-color: #00a79e; // change color when click radio button
+    --mdc-radio-unselected-hover-icon-color: #00a79e; // hover to change radio button border color
+    --mdc-radio-unselected-icon-color: #00a79e; // change radio button border color
+    --mdc-radio-unselected-pressed-icon-color: #00a79e; // fill color after unchecked radio buton
+    --mdc-radio-selected-focus-icon-color: #00a79e; // focus to change selected icon radio button color
+    --mdc-radio-selected-hover-icon-color: #00a79e; // focus after fill radio button color on hover
+    --mdc-radio-selected-icon-color: #00a79e; // radio button active to color change 
+    --mdc-radio-selected-pressed-icon-color: #00a79e; //active radio when click to fill radio color 
+    --mat-mdc-radio-ripple-color: #00a79e; // hover to fill background ripple background color
+    --mat-mdc-radio-checked-ripple-color: #00a79e; // fill ripple color when radio button active to press
+}
+
+// for warn color theme
+::ng-deep.mat-mdc-radio-button.mat-warn {
+    --mdc-radio-unselected-focus-icon-color: #ff0037; // change color when click radio button
+    --mdc-radio-unselected-hover-icon-color: #ff0037; // hover to change radio button border color
+    --mdc-radio-unselected-icon-color: #ff0037; // change radio button border color
+    --mdc-radio-unselected-pressed-icon-color: #ff0037; // fill color after unchecked radio buton
+    --mdc-radio-selected-focus-icon-color: #ff0037; // focus to change selected icon radio button color
+    --mdc-radio-selected-hover-icon-color: #ff0037; // focus after fill radio button color on hover
+    --mdc-radio-selected-icon-color: #ff0037; // radio button active to color change 
+    --mdc-radio-selected-pressed-icon-color: #ff0037; //active radio when click to fill radio color 
+    --mat-mdc-radio-ripple-color: #ff0037; // hover to fill background ripple background color
+    --mat-mdc-radio-checked-ripple-color: #ff0037; // fill ripple color when radio button active to press
+}
+
+
+
+/*---------------------------- Square Radio Button ---------------------------*/
+// add margin between two radio button
+::ng-deep .mat-mdc-radio-button {
+    margin: 0 20px;
+}
+
+// change radio button size
+::ng-deep .mdc-radio__background {
+    width: 30px !important;
+    height: 30px !important;
+    left: 5px !important;
+    top: 5px;
+    border-radius: 10% !important;
+    position: absolute !important;
+}
+
+// change radio button native control size
+::ng-deep .mat-mdc-radio-button .mdc-radio .mdc-radio__native-control {
+    top: 10px !important;
+    right: 18px !important;
+    left: 11px !important;
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 10% !important;
+}
+
+// change inner circle position
+::ng-deep .mdc-radio__inner-circle {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    border-width: 15px !important;
+    border-style: solid;
+    border-radius: 10% !important;
+}
+
+// change outer circle position
+::ng-deep .mdc-radio__outer-circle {
+    border-radius: 10% !important;
+}
+
+// change background before ripple background 
+::ng-deep .mat-mdc-radio-button .mdc-radio .mdc-radio__background::before {
+    top: calc(-1 * (var(--mdc-radio-state-layer-size, 28px) - 6px) / 3) !important;
+    left: calc(-1 * (var(--mdc-radio-state-layer-size, 35px) - 20px) / 2) !important;
+    width: var(--mdc-radio-state-layer-size, 45px) !important;
+    height: var(--mdc-radio-state-layer-size, 45px) !important;
+    border-radius: 10% !important;
+}
+

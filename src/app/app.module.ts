@@ -15,6 +15,8 @@ import { MatCardModule } from '@angular/material/card';
 import { CardsComponent } from './cards/cards.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { RadioComponent } from './radio/radio.component';
+import { MatRadioModule } from '@angular/material/radio';
 
 
 @NgModule({
@@ -23,7 +25,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     BadgeComponent,
     ButtonComponent,
     CardsComponent,
-    CheckboxComponent
+    CheckboxComponent,
+    RadioComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     MatButtonModule,
     MatIconModule,
     MatCardModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]
