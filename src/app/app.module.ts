@@ -17,9 +17,9 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { RadioComponent } from './radio/radio.component';
 import { MatRadioModule } from '@angular/material/radio';
-import { InputComponent } from './input/input.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { InputComponent } from './input/input.component';
 
 
 @NgModule({
@@ -30,7 +30,7 @@ import { MatInputModule } from '@angular/material/input';
     CardsComponent,
     CheckboxComponent,
     RadioComponent,
-    InputComponent
+    InputComponent,
   ],
   imports: [
     BrowserModule,
