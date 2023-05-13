@@ -27,6 +27,7 @@ import { MatTooltipComponent } from './mat-tooltip/mat-tooltip.component';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { IconComponent } from './icon/icon.component';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     ChipsComponent,
     MatTooltipComponent,
     ToolbarComponent,
+    IconComponent,
   ],
   imports: [
     BrowserModule,
