@@ -7,6 +7,8 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
 import { RadioComponent } from './radio/radio.component';
 import { InputComponent } from './input/input.component';
 import { ChipsComponent } from './chips/chips.component';
+import { MatTooltipComponent } from './mat-tooltip/mat-tooltip.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 const routes: Routes = [
   { path: 'badge', component: BadgeComponent },
@@ -16,6 +18,8 @@ const routes: Routes = [
   { path: 'radio', component: RadioComponent },
   { path: 'input', component: InputComponent },
   { path: 'chips', component: ChipsComponent },
+  { path: 'tooltip', component: MatTooltipComponent },
+  { path: 'toolbar', component: ToolbarComponent },
 ];
 
 @NgModule({

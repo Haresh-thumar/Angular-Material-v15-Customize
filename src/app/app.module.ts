@@ -23,6 +23,10 @@ import { InputComponent } from './input/input.component';
 import { ChipsComponent } from './chips/chips.component';
 import { MatChipsModule } from '@angular/material/chips';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatTooltipComponent } from './mat-tooltip/mat-tooltip.component';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { ToolbarComponent } from './toolbar/toolbar.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 
 @NgModule({
@@ -35,6 +39,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     RadioComponent,
     InputComponent,
     ChipsComponent,
+    MatTooltipComponent,
+    ToolbarComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,7 +56,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatRadioModule,
     MatFormFieldModule,
     MatInputModule,
-    MatChipsModule
+    MatChipsModule,
+    MatTooltipModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

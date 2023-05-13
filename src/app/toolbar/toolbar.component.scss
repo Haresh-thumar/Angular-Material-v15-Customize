@@ -1,0 +1,70 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+
+/*------------------------------ ByDefault Theme Color Change ------------------------------*/
+.mat-toolbar.mat-primary {
+    background: #007adc;
+    color: rgb(255, 255, 255);
+    height: 60px;
+}
+
+.mat-toolbar.mat-accent {
+    background: #ff00dd;
+    color: rgb(255, 255, 255);
+    height: 70px;
+}
+
+.mat-toolbar.mat-warn {
+    background: #ff1100;
+    color: rgb(255, 255, 255);
+    height: 80px;
+}
+
+
+
+/*------------------------------ Custom Theme Color ------------------------------*/
+.mat-toolbar.mat-success {
+    background: #00bd1c;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.mat-toolbar.mat-warning {
+    background: #ffc400;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+.mat-toolbar.mat-danger {
+    background: #ff1751;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.mat-toolbar.mat-teal {
+    background: rgb(0, 177, 177);
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+}
+
+.mat-toolbar.mat-primary-info {
+    background: rgb(0, 144, 221);
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+}
+
+
+
+/*------------------------------ Multi-Row Toolbar ------------------------------*/
+.mat-toolbar.mat-purple {
+    background: #8900cd;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    // height: 250px;
+}
+
+.example-icon {
+    padding: 14px 12px;
+}
