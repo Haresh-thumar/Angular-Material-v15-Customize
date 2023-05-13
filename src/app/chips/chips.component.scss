@@ -195,3 +195,191 @@
 //     margin-left: 30px;
 //     margin-right: 0;
 // }
+
+
+
+
+
+/*************************************************************************************************************************
+                                                    Basic Chips
+**************************************************************************************************************************/
+// .example-form-field {
+//     width: 100%;
+// }
+
+// // change mat-chip icon-color, Background color & disable state color
+// .mat-mdc-standard-chip {
+//     --mdc-chip-elevated-container-color: #e9e9e9;  // change mat-chip background color
+//     --mdc-chip-label-text-color: #009218;  // change mat-label color
+//     --mdc-chip-with-icon-selected-icon-color: #da0000;  // change done icon color when focused
+//     // disabled state css
+//     --mdc-chip-with-icon-disabled-icon-color: #c40000; // change mat-chip disable icon color
+//     --mdc-chip-elevated-disabled-container-color: #ffa0a0 !important;  // change mat-chip disable background color
+//     --mdc-chip-disabled-label-text-color: #212121 !important;  // change mat-chip disable text color
+//     --mdc-chip-with-trailing-icon-disabled-trailing-icon-color: #d30000!important;  // change disable close icon color
+// }
+
+// // change mat-chip font-size, font-weight, font-family, width & height 
+// .mat-mdc-standard-chip {
+//     font-family: var(--mdc-typography-body2-font-family, var(--mdc-typography-font-family, Roboto, sans-serif));  //  change font-style
+//     font-size: var(--mdc-typography-body2-font-size, 16px);  // change font-size
+//     line-height: var(--mdc-typography-body2-line-height, 20px);  // change font line-height
+//     font-weight: var(--mdc-typography-body2-font-weight, 300); // change font-weight
+//     letter-spacing: var(--mdc-typography-body2-letter-spacing, 0.05em); // change font letter-spacing
+//     height: 60px; // change mat-chips height
+//     width: 300px; // change mat-chips width
+//     padding: 0 10px; // change mat-chip inside padding
+//     border-radius: 15px; // change mat-chip border radius
+//     -webkit-tap-highlight-color: rgba(255, 0, 0, 0.9) !important; // change mat-chip highlight background color
+// }
+
+//  // Change Mat-chips color on theme wise (for accent color)
+// .mat-mdc-standard-chip.mat-accent.mat-mdc-chip-selected,
+// .mat-mdc-standard-chip.mat-accent.mat-mdc-chip-highlighted {
+//     --mdc-chip-elevated-container-color: #b742ff;  // change mat-chip background color
+//     --mdc-chip-label-text-color: #cfffd7;  // change mat-label color
+//     --mdc-chip-with-icon-selected-icon-color: #cfffd7;  // change done icon color when focused
+//     // disable state css
+//     --mdc-chip-with-icon-disabled-icon-color: #c40000; // change mat-chip disable icon color
+//     --mdc-chip-elevated-disabled-container-color: #ffa0a0 !important;  // change mat-chip disable background color
+//     --mdc-chip-disabled-label-text-color: #212121 !important;  // change mat-chip disable text color
+//     --mdc-chip-with-trailing-icon-disabled-trailing-icon-color: #d30000!important;  // change disable close icon color
+// }
+
+//  // Change Mat-chips color on theme wise (for primary color)
+//  .mat-mdc-standard-chip.mat-primary.mat-mdc-chip-selected,
+//  .mat-mdc-standard-chip.mat-primary.mat-mdc-chip-highlighted {
+//      --mdc-chip-elevated-container-color: #5292ff;  // change mat-chip background color
+//      --mdc-chip-label-text-color: #ff8bee;  // change mat-label color
+//      --mdc-chip-with-icon-selected-icon-color: #ff8bee;  // change done icon color when focused
+//      // disable state css
+//      --mdc-chip-with-icon-disabled-icon-color: #ff7979; // change mat-chip disable icon color
+//      --mdc-chip-elevated-disabled-container-color: #ff4c4c !important;  // change mat-chip disable background color
+//      --mdc-chip-disabled-label-text-color: #ffcc00 !important;  // change mat-chip disable text color
+//      --mdc-chip-with-trailing-icon-disabled-trailing-icon-color: #77fff1!important;  // change disable close icon color
+//  }
+
+//  // Change Mat-chips color on theme wise (for warn color)
+//  .mat-mdc-standard-chip.mat-warn.mat-mdc-chip-selected,
+//  .mat-mdc-standard-chip.mat-warn.mat-mdc-chip-highlighted {
+//      --mdc-chip-elevated-container-color: #ff006a;  // change mat-chip background color
+//      --mdc-chip-label-text-color: #ffafd0;  // change mat-label color
+//      --mdc-chip-with-icon-selected-icon-color: #ffafd0;  // change done icon color when focused
+//      // disable state css
+//      --mdc-chip-with-icon-disabled-icon-color: #ff7979; // change mat-chip disable icon color
+//      --mdc-chip-elevated-disabled-container-color: #ff4c4c !important;  // change mat-chip disable background color
+//      --mdc-chip-disabled-label-text-color: #ffcc00 !important;  // change mat-chip disable text color
+//      --mdc-chip-with-trailing-icon-disabled-trailing-icon-color: #77fff1!important;  // change disable close icon color
+//  }
+
+
+//  // Add Margin Between Two Mat-chips
+//  .mdc-evolution-chip-set .mdc-evolution-chip {
+//     margin-left: 35px;
+//     margin-right: 0;
+//  }
+
+
+
+
+
+
+/*************************************************************************************************************************
+                                                    Stacked chips
+**************************************************************************************************************************/
+// change mat-chips color, background & disable state css
+.mat-mdc-standard-chip {
+    --mdc-chip-elevated-container-color: #ffd1e6; // change mat-chip background color
+    --mdc-chip-label-text-color: #ff0073; // change mat-label color
+    --mdc-chip-with-icon-selected-icon-color: #da0000; // change done icon color when focused
+    // disabled state css
+    --mdc-chip-with-icon-disabled-icon-color: #c40000; // change mat-chip disable icon color
+    --mdc-chip-elevated-disabled-container-color: #ffa0a0 !important; // change mat-chip disable background color
+    --mdc-chip-disabled-label-text-color: #212121 !important; // change mat-chip disable text color
+    --mdc-chip-with-trailing-icon-disabled-trailing-icon-color: #d30000 !important; // change disable close icon color
+}
+
+// change mat-chip font-size, font-weight, font-family, width & height 
+.mat-mdc-standard-chip {
+    font-family: var(--mdc-typography-body2-font-family, var(--mdc-typography-font-family, Roboto, sans-serif)); //  change font-style
+    font-size: var(--mdc-typography-body2-font-size, 16px); // change font-size
+    line-height: var(--mdc-typography-body2-line-height, 20px); // change font line-height
+    font-weight: var(--mdc-typography-body2-font-weight, 300); // change font-weight
+    letter-spacing: var(--mdc-typography-body2-letter-spacing, 0.05em); // change font letter-spacing
+    height: 60px; // change mat-chips height
+    width: 300px; // change mat-chips width
+    padding: 0 10px; // change mat-chip inside padding
+    border-radius: 15px; // change mat-chip border radius
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0.9) !important; // change mat-chip highlight background color
+}
+
+// // change mat-chips accent color 
+// .mat-accent.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) {
+//     width: 250px;
+//     background-color: #ea00ff;
+//     --mdc-chip-label-text-color: #fef4ff;
+// }
+
+// // // change mat-chips primary color 
+// .mat-primary.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) {
+//     width: 250px;
+//     background-color: #a2b3ff;
+//     --mdc-chip-label-text-color: #2241cf;
+// }
+
+// // change mat-chips warn color 
+// .mat-warn.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) {
+//     width: 250px;
+//     background-color: #ffa4a4;
+//     --mdc-chip-label-text-color: #de1f1f;
+// }
+
+
+// Change Mat-chips color on theme wise (for accent color)
+.mat-mdc-standard-chip.mat-accent.mat-mdc-chip-selected,
+.mat-mdc-standard-chip.mat-accent.mat-mdc-chip-highlighted {
+    --mdc-chip-elevated-container-color: #d300fd; // change mat-chip background color
+    --mdc-chip-label-text-color: #ffcff8; // change mat-label color
+    --mdc-chip-with-icon-selected-icon-color: #ffcff8; // change done icon color when focused
+    // disable state css
+    --mdc-chip-with-icon-disabled-icon-color: #c40000; // change mat-chip disable icon color
+    --mdc-chip-elevated-disabled-container-color: #ffa0a0 !important; // change mat-chip disable background color
+    --mdc-chip-disabled-label-text-color: #212121 !important; // change mat-chip disable text color
+    --mdc-chip-with-trailing-icon-disabled-trailing-icon-color: #d30000 !important; // change disable close icon color
+}
+
+// Change Mat-chips color on theme wise (for primary color)
+.mat-mdc-standard-chip.mat-primary.mat-mdc-chip-selected,
+.mat-mdc-standard-chip.mat-primary.mat-mdc-chip-highlighted {
+    --mdc-chip-elevated-container-color: #2575ff; // change mat-chip background color
+    --mdc-chip-label-text-color: #9ec2ff; // change mat-label color
+    --mdc-chip-with-icon-selected-icon-color: #9ec2ff; // change done icon color when focused
+    // disable state css
+    --mdc-chip-with-icon-disabled-icon-color: #ff7979; // change mat-chip disable icon color
+    --mdc-chip-elevated-disabled-container-color: #ff4c4c !important; // change mat-chip disable background color
+    --mdc-chip-disabled-label-text-color: #ffcc00 !important; // change mat-chip disable text color
+    --mdc-chip-with-trailing-icon-disabled-trailing-icon-color: #77fff1 !important; // change disable close icon color
+}
+
+// Change Mat-chips color on theme wise (for warn color)
+.mat-mdc-standard-chip.mat-warn.mat-mdc-chip-selected,
+.mat-mdc-standard-chip.mat-warn.mat-mdc-chip-highlighted {
+    --mdc-chip-elevated-container-color: #ff006a; // change mat-chip background color
+    --mdc-chip-label-text-color: #ffafd0; // change mat-label color
+    --mdc-chip-with-icon-selected-icon-color: #ffafd0; // change done icon color when focused
+    // disable state css
+    --mdc-chip-with-icon-disabled-icon-color: #ff7979; // change mat-chip disable icon color
+    --mdc-chip-elevated-disabled-container-color: #ff4c4c !important; // change mat-chip disable background color
+    --mdc-chip-disabled-label-text-color: #ffcc00 !important; // change mat-chip disable text color
+    --mdc-chip-with-trailing-icon-disabled-trailing-icon-color: #77fff1 !important; // change disable close icon color
+}
+
+ // Add Margin Between Two Mat-chips
+ .mdc-evolution-chip-set .mdc-evolution-chip {
+    margin: 5px 0;
+ }
+
+  // Change Mat-chip width
+  .mdc-evolution-chip-set {
+    max-width: 390px;
+ }

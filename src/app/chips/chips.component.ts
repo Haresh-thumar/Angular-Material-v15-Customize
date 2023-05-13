@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {COMMA, ENTER} from '@angular/cdk/keycodes';
 import { MatChipEditedEvent, MatChipInputEvent } from '@angular/material/chips';
 import { FormControl } from '@angular/forms';
+import { ThemePalette } from '@angular/material/core';
 
 @Component({
   selector: 'app-chips',
@@ -71,9 +72,25 @@ export class ChipsComponent {
 
 
 
+  /*------------------- Stacked Chips --------------------------*/
+  availableColors: ChipColor[] = [
+    {name: 'Accent', color: 'accent'},
+    {name: 'Primary', color: 'primary'},
+    {name: 'Warn', color: 'warn'},
+  ];
+
+
+
+
+
 }
 
 
 // export interface Fruit {
 //   name: string;
 // }
+
+export interface ChipColor {
+  name: string;
+  color: ThemePalette;
+}
