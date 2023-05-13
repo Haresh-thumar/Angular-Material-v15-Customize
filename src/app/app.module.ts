@@ -20,6 +20,9 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { InputComponent } from './input/input.component';
+import { ChipsComponent } from './chips/chips.component';
+import { MatChipsModule } from '@angular/material/chips';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -31,10 +34,12 @@ import { InputComponent } from './input/input.component';
     CheckboxComponent,
     RadioComponent,
     InputComponent,
+    ChipsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     RouterModule,
     MatBadgeModule,
@@ -44,7 +49,8 @@ import { InputComponent } from './input/input.component';
     MatCheckboxModule,
     MatRadioModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatChipsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

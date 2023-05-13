@@ -1,0 +1,197 @@
+/*************************************************************************************************************************
+                                                    Mat-Avatar Chips
+**************************************************************************************************************************/
+// // change mat-chips label
+// .mat-mdc-standard-chip {
+//     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+//     font-size: 22px;
+//     line-height: 30px;
+//     font-weight: 600;
+//     letter-spacing: 1px;
+//     padding: 0 10px;
+// }
+
+// // change bydefault background color
+// .mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) {
+//     background-color: #f8f8f8;
+// }
+
+// // change mat-chips accent color
+// .mat-accent.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) {
+//     width: 250px;
+//     height: 50px;
+//     border-radius: 50px;
+//     background-color: #f79aff;
+//     --mdc-chip-label-text-color: #d01ee1;
+// }
+
+// // change mat-chips primary color
+// .mat-primary.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) {
+//     width: 250px;
+//     height: 50px;
+//     border-radius: 50px;
+//     background-color: #a2b3ff;
+//     --mdc-chip-label-text-color: #2241cf;
+// }
+
+// // change mat-chips warn color
+// .mat-warn.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) {
+//     width: 250px;
+//     height: 50px;
+//     border-radius: 50px;
+//     background-color: #ffa4a4;
+//     --mdc-chip-label-text-color: #de1f1f;
+// }
+
+// // hover to change mat-chips background color
+// ::ng-deep .mat-mdc-chip-focus-overlay {
+//     background-color: #de1f1f;
+// }
+
+// // Add Margin Between Two Mat-Chips
+// .mdc-evolution-chip-set .mdc-evolution-chip {
+//     margin-left: 30px;
+//     margin-right: 0;
+// }
+
+// // change Avatar Image Padding
+// ::ng-deep .mdc-evolution-chip--with-avatar.mdc-evolution-chip--with-primary-graphic .mdc-evolution-chip__graphic {
+//     padding-left: 20px !important;
+//     padding-right: 20px !important;
+// }
+
+// // Change Avatar Img Outer Width & Height
+// ::ng-deep .mat-mdc-standard-chip .mdc-evolution-chip__icon--primary {
+//     height: var(--mdc-chip-with-icon-icon-size, 40px)!important;
+//     width: var(--mdc-chip-with-icon-icon-size, 40px)!important;
+//     font-size: var(--mdc-chip-with-icon-icon-size, 30px)!important;
+//     border-radius: var(--mdc-chip-with-avatar-avatar-shape-radius, 40px)!important;
+// }
+
+// // change Avatar Img Inner Width & Height
+// ::ng-deep .mat-mdc-standard-chip .mdc-evolution-chip__graphic {
+//     height: var(--mdc-chip-with-icon-icon-size, 40px)!important;
+//     width: var(--mdc-chip-with-icon-icon-size, 40px)!important;
+//     font-size: var(--mdc-chip-with-icon-icon-size, 28px)!important;
+// }
+
+
+
+
+
+
+
+/*************************************************************************************************************************
+                                                    Chips with input
+**************************************************************************************************************************/
+// .example-form-field {
+//     width: 100%;
+// }
+
+// .example-button-container>button {
+//     margin: 0 12px;
+// }
+
+// change mat-chips accent color 
+// .mat-accent.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) {
+//     width: 250px;
+//     background-color: #f79aff;
+//     --mdc-chip-label-text-color: #d01ee1
+// }
+
+// // change mat-chips primary color 
+// .mat-primary.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) {
+//     width: 250px;
+//     background-color: #a2b3ff;
+//     --mdc-chip-label-text-color: #2241cf;
+// }
+
+// // change mat-chips warn color 
+// .mat-warn.mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) {
+//     width: 250px;
+//     background-color: #ffa4a4;
+//     --mdc-chip-label-text-color: #de1f1f;
+// }
+
+// // change Mat-chip Font-Size, Font-Weight, Font-Family & Width-Height
+// .mat-mdc-standard-chip {
+//     font-family: 'Times New Roman', Times, serif;
+//     font-size: var(--mdc-typography-body2-font-size, 22px);
+//     line-height: var(--mdc-typography-body2-line-height, 30px) !important;
+//     font-weight: var(--mdc-typography-body2-font-weight, 600);
+//     letter-spacing: var(--mdc-typography-body2-letter-spacing, 1px) !important;
+//     height: 80px;
+//     width: 250px;
+//     padding: 0 10px;
+//     border-radius: 5px;
+//     -webkit-tap-highlight-color: rgb(255, 0, 0) !important;
+// }
+
+// // Change Mat-chips Container color, Label-color & Icon Color for accent color
+// .mat-mdc-standard-chip.mat-accent {
+//     --mdc-chip-elevated-container-color: #f6c4ff; // change mat-chip background color
+//     --mdc-chip-label-text-color: #e44aff; // change mat-chips label color
+//     --mdc-chip-with-trailing-icon-trailing-icon-color: #e44aff; // change close icon color
+//     // disable state css
+//     --mdc-chip-disabled-label-text-color: #ec0000;  // change mat-chip disable text color
+//     --mdc-ship-with-icon-disabled-icon-color: #fff;  // change mat-chip disable icon color
+//     --mdc-chip-elevated-disabled-container-color: #b2ffc8!important; // Change Mat-Chip Disable Background Color  
+//     --mdc-chip-with-trailing-icon-disabled-trailing-icon-color: #d39700; // change disable close icon color
+// }
+
+// // Change Mat-chips Container color, Label-color & Icon Color for primary color
+// .mat-mdc-standard-chip.mat-primary {
+//     --mdc-chip-elevated-container-color: #c5fcff; // change mat-chip background color
+//     --mdc-chip-label-text-color: #00c0ca; // change mat-chips label color
+//     --mdc-chip-with-trailing-icon-trailing-icon-color: #00c0ca; // change close icon color
+//     // disable state css
+//     --mdc-chip-disabled-label-text-color: #ec0000;  // change mat-chip disable text color
+//     --mdc-ship-with-icon-disabled-icon-color: #fff;  // change mat-chip disable icon color
+//     --mdc-chip-elevated-disabled-container-color: #b2ffc8!important; // Change Mat-Chip Disable Background Color  
+//     --mdc-chip-with-trailing-icon-disabled-trailing-icon-color: #d39700; // change disable close icon color
+// }
+
+// // Change Mat-chips Container color, Label-color & Icon Color for warn color
+// .mat-mdc-standard-chip.mat-warn {
+//     --mdc-chip-elevated-container-color: #ffdeb8; // change mat-chip background color
+//     --mdc-chip-label-text-color: #e77b00; // change mat-chips label color
+//     --mdc-chip-with-trailing-icon-trailing-icon-color: #e77b00; // change close icon color
+//     // disable state css
+//     --mdc-chip-disabled-label-text-color: #ec0000;  // change mat-chip disable text color
+//     --mdc-ship-with-icon-disabled-icon-color: #fff;  // change mat-chip disable icon color
+//     --mdc-chip-elevated-disabled-container-color: #b2ffc8!important; // Change Mat-Chip Disable Background Color  
+//     --mdc-chip-with-trailing-icon-disabled-trailing-icon-color: #d39700; // change disable close icon color
+// }
+
+
+// // Change Mat-chips Container color, Label-color & Icon Color for Custom Color Name
+// .mat-mdc-standard-chip.mat-success {
+//     --mdc-chip-elevated-container-color: #d5ffbe; // change mat-chip background color
+//     --mdc-chip-label-text-color: #3cab00; // change mat-chips label color
+//     --mdc-chip-with-trailing-icon-trailing-icon-color: #3cab00; // change close icon color
+// }
+
+// // Add Padding in left and right side
+// .mat-mdc-standard-chip.mdc-evolution-chip--with-trailing-action .mdc-evolution-chip__action--trailing {
+//     padding-left: 20px !important;
+//     padding-right: 20px !important;
+// }
+
+// // Change Icon Background Size
+// .mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled) .mdc-evolution-chip__action--trailing {
+//     width: 50px;
+//     font-size: 30px;
+// }
+
+// // Change Mat-Chips Icon Size
+// .mat-mdc-chip-remove .mat-icon {
+//     width: 30px !important;
+//     height: 30px !important;
+//     font-size: 30px;
+// }
+
+// // Add Margin Between Two Mat-Chips
+// .mdc-evolution-chip-set .mdc-evolution-chip {
+//     margin-left: 30px;
+//     margin-right: 0;
+// }

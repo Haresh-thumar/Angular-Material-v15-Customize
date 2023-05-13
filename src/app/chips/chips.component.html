@@ -1,0 +1,69 @@
+<h1>Customize Mat-Chips</h1>
+
+<br><br><br>
+
+<!-------------------------------------------------------------------------------------------
+                                        Mat-Avatar Chips
+--------------------------------------------------------------------------------------------->
+<!-- <h3>Mat-Avatar Chips</h3>
+<mat-chip-listbox aria-label="Dog selection">
+    <mat-chip color="accent">
+        <img matChipAvatar src="https://material.angular.io/assets/img/examples/shiba1.jpg"
+            alt="Photo of a Shiba Inu" />
+        Dog one
+    </mat-chip>
+    <mat-chip color="primary">
+        <img matChipAvatar src="https://material.angular.io/assets/img/examples/shiba1.jpg"
+            alt="Photo of a Shiba Inu" />
+        Dog two
+    </mat-chip>
+    <mat-chip color="warn">
+        <img matChipAvatar src="https://material.angular.io/assets/img/examples/shiba1.jpg"
+            alt="Photo of a Shiba Inu" />
+        Dog three
+    </mat-chip>
+</mat-chip-listbox> -->
+
+
+
+
+
+
+<!-------------------------------------------------------------------------------------------
+                                        Chips with input
+--------------------------------------------------------------------------------------------->
+<!-- <mat-form-field class="example-chip-list" appearance="outline">
+    <mat-label>Favorite Fruits</mat-label>
+    <mat-chip-grid #chipGrid aria-label="Enter fruits">
+        <mat-chip-row *ngFor="let fruit of fruits" (removed)="remove(fruit)" [editable]="true"
+            (edited)="edit(fruit, $event)" color="success" [aria-description]="'press enter to edit ' + fruit.name">
+            {{fruit.name}}
+            <button matChipRemove [attr.aria-label]="'remove ' + fruit.name">
+                <mat-icon>cancel</mat-icon>
+            </button>
+        </mat-chip-row>
+        <input placeholder="New fruit..." [matChipInputFor]="chipGrid"
+            [matChipInputSeparatorKeyCodes]="separatorKeysCodes" [matChipInputAddOnBlur]="addOnBlur"
+            (matChipInputTokenEnd)="add($event)" />
+    </mat-chip-grid>
+</mat-form-field> -->
+
+
+<!-- <div class="example-button-container">
+    <button mat-raised-button (click)="formControl.disable()">Disable form control</button>
+    <button mat-raised-button (click)="formControl.enable()">Enable form control</button>
+</div>
+<p>
+</p>
+<mat-form-field appearance="outline" class="example-form-field">
+    <mat-label>Video keywords</mat-label>
+    <mat-chip-grid #chipGrid aria-label="Enter keywords" [formControl]="formControl" color="accent">
+        <mat-chip-row *ngFor="let keyword of keywords" [editable]="true" (removed)="removeKeyword(keyword)">
+            {{keyword}}
+            <button matChipRemove aria-label="'remove ' + keyword">
+                <mat-icon>cancel</mat-icon>
+            </button>
+        </mat-chip-row>
+    </mat-chip-grid>
+    <input placeholder="New keyword..." [matChipInputFor]="chipGrid" (matChipInputTokenEnd)="add($event)" />
+</mat-form-field> -->

@@ -6,6 +6,7 @@ import { CardsComponent } from './cards/cards.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { RadioComponent } from './radio/radio.component';
 import { InputComponent } from './input/input.component';
+import { ChipsComponent } from './chips/chips.component';
 
 const routes: Routes = [
   { path: 'badge', component: BadgeComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'checkbox', component: CheckboxComponent },
   { path: 'radio', component: RadioComponent },
   { path: 'input', component: InputComponent },
+  { path: 'chips', component: ChipsComponent },
 ];
 
 @NgModule({
