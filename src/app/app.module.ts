@@ -26,8 +26,10 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatTooltipComponent } from './mat-tooltip/mat-tooltip.component';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { ToolbarComponent } from './toolbar/toolbar.component';
-import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { IconComponent } from './icon/icon.component';
+import { ProgressSpinnerComponent } from './progress-spinner/progress-spinner.component';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 
 @NgModule({
@@ -43,6 +45,7 @@ import { IconComponent } from './icon/icon.component';
     MatTooltipComponent,
     ToolbarComponent,
     IconComponent,
+    ProgressSpinnerComponent,
   ],
   imports: [
     BrowserModule,
@@ -60,7 +63,8 @@ import { IconComponent } from './icon/icon.component';
     MatInputModule,
     MatChipsModule,
     MatTooltipModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,6 +10,7 @@ import { ChipsComponent } from './chips/chips.component';
 import { MatTooltipComponent } from './mat-tooltip/mat-tooltip.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { IconComponent } from './icon/icon.component';
+import { ProgressSpinnerComponent } from './progress-spinner/progress-spinner.component';
 
 const routes: Routes = [
   { path: 'badge', component: BadgeComponent },
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'tooltip', component: MatTooltipComponent },
   { path: 'toolbar', component: ToolbarComponent },
   { path: 'icon', component: IconComponent },
+  { path: 'progress-spinner', component: ProgressSpinnerComponent },
 ];
 
 @NgModule({

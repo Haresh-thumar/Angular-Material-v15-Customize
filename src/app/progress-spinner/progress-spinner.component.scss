@@ -1,0 +1,52 @@
+.example-button-row {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  text-align: center;
+}
+
+
+
+/*-------------------------- Bydefault Progress Spinner --------------------------------*/
+
+// change progress spinner stroke-linecap
+::ng-deep .mat-mdc-progress-spinner .mdc-circular-progress__indeterminate-circle-graphic {
+  stroke-linecap: round;
+}
+
+::ng-deep .mat-mdc-progress-spinner .mdc-circular-progress__determinate-circle-graphic {
+  stroke-linecap: butt;
+}
+
+
+// change progress-spinner indicator color for primary color
+.mat-mdc-progress-spinner.mat-primary {
+  --mdc-circular-progress-active-indicator-color: #259dff;
+}
+
+// change progress-spinner indicator color for accent color
+.mat-mdc-progress-spinner.mat-accent {
+  --mdc-circular-progress-active-indicator-color: #e600f3;
+}
+
+// change progress-spinner indicator color for warn color
+.mat-mdc-progress-spinner.mat-warn {
+  --mdc-circular-progress-active-indicator-color: #eb005a;
+}
+
+
+/*--------------------------- Custom Progress Spinner Color ----------------------------*/
+// change progress-spinner indicator color for success color
+.mat-mdc-progress-spinner.mat-success {
+  --mdc-circular-progress-active-indicator-color: #0ac000;
+}
+
+// change progress-spinner indicator color for warning color
+.mat-mdc-progress-spinner.mat-warning {
+  --mdc-circular-progress-active-indicator-color: #ffdd00;
+}
+
+// change progress-spinner indicator color for danger color
+.mat-mdc-progress-spinner.mat-danger {
+  --mdc-circular-progress-active-indicator-color: #ff0000;
+}
