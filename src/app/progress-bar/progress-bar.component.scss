@@ -1,0 +1,100 @@
+/*---------------------------------------------------------------------------------------------------------
+                      ByDefault Progress-Bar Change Background & Foreground Color
+---------------------------------------------------------------------------------------------------------*/
+
+// change progress-bar background color, border-radius & track height fot accent color
+.mat-mdc-progress-bar.mat-accent {
+  --mdc-linear-progress-active-indicator-color: #fa00e5;
+  --mdc-linear-progress-track-height: 7px !important;
+  border-radius: 5px !important;
+}
+
+// change progress buffer bar color
+::ng-deep .mat-mdc-progress-bar.mat-accent .mdc-linear-progress__buffer-bar {
+  background: #ffa3f7;
+}
+
+// change progress-bar background color, border-radius & track height fot primary color
+.mat-mdc-progress-bar.mat-primary {
+  --mdc-linear-progress-active-indicator-color: #0089fa;
+  --mdc-linear-progress-track-height: 7px !important;
+  border-radius: 5px !important;
+}
+
+// change progress buffer bar color
+::ng-deep .mat-mdc-progress-bar.mat-primary .mdc-linear-progress__buffer-bar {
+  background: #93cfff;
+}
+
+// change progress-bar background color, border-radius & track height fot warn color
+.mat-mdc-progress-bar.mat-warn {
+  --mdc-linear-progress-active-indicator-color: #ed005f;
+  --mdc-linear-progress-track-height: 7px !important;
+  border-radius: 5px !important;
+}
+
+// change progress buffer bar color
+::ng-deep .mat-mdc-progress-bar.mat-warn .mdc-linear-progress__buffer-bar {
+  background: #ff97c1;
+}
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------
+                      Custom Progress-Bar Change Background & Foreground Color
+---------------------------------------------------------------------------------------------------------*/
+// change progress-bar background color, border-radius & track height fot success color
+.mat-mdc-progress-bar.mat-success {
+  --mdc-linear-progress-active-indicator-color: #00b70f;
+  --mdc-linear-progress-track-height: 7px !important;
+  border-radius: 5px !important;
+}
+
+// change progress buffer bar color
+::ng-deep .mat-mdc-progress-bar.mat-success .mdc-linear-progress__buffer-bar {
+  background: #9cffa4;
+}
+
+// change progress-bar background color, border-radius & track height fot warning color
+.mat-mdc-progress-bar.mat-warning {
+  --mdc-linear-progress-active-indicator-color: #ffcc00;
+  --mdc-linear-progress-track-height: 7px !important;
+  border-radius: 5px !important;
+}
+
+// change progress buffer bar color
+::ng-deep .mat-mdc-progress-bar.mat-warning .mdc-linear-progress__buffer-bar {
+  background: #ffeb9b;
+}
+
+// change progress-bar background color, border-radius & track height fot danger color
+.mat-mdc-progress-bar.mat-danger {
+  --mdc-linear-progress-active-indicator-color: #ff0000;
+  --mdc-linear-progress-track-height: 7px !important;
+  border-radius: 5px !important;
+}
+
+// change progress buffer bar color
+::ng-deep .mat-mdc-progress-bar.mat-danger .mdc-linear-progress__buffer-bar {
+  background: #ff9292;
+}
+
+// change progress-bar background color, border-radius & track height fot info color
+.mat-mdc-progress-bar.mat-info {
+  --mdc-linear-progress-active-indicator-color: #ae00ff;
+  --mdc-linear-progress-track-height: 15px !important;
+  border-radius: 5px !important;
+}
+
+// change progress buffer bar color
+::ng-deep .mat-mdc-progress-bar.mat-info .mdc-linear-progress__buffer-bar {
+  background: #de96ff;
+}
+
+
+// change image in buffer-bar
+::ng-deep .mat-mdc-progress-bar.mat-info .mdc-linear-progress__buffer-dots {
+  background-image: url("https://assets.allpngfree.com/storage/thumbnails/red-round-shape-png-images-thumbnail-1639243591.jpg");
+}
