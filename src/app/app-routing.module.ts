@@ -12,6 +12,7 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { IconComponent } from './icon/icon.component';
 import { ProgressSpinnerComponent } from './progress-spinner/progress-spinner.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { SnackbarComponent } from './snackbar/snackbar.component';
 
 const routes: Routes = [
   { path: 'badge', component: BadgeComponent },
@@ -26,6 +27,7 @@ const routes: Routes = [
   { path: 'icon', component: IconComponent },
   { path: 'progress-spinner', component: ProgressSpinnerComponent },
   { path: 'progress-bar', component: ProgressBarComponent },
+  { path: 'snackbar', component: SnackbarComponent },
 ];
 
 @NgModule({

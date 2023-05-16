@@ -32,6 +32,8 @@ import { ProgressSpinnerComponent } from './progress-spinner/progress-spinner.co
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { SnackbarComponent } from './snackbar/snackbar.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 
 @NgModule({
@@ -49,6 +51,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     IconComponent,
     ProgressSpinnerComponent,
     ProgressBarComponent,
+    SnackbarComponent,
   ],
   imports: [
     BrowserModule,
@@ -68,7 +71,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     MatTooltipModule,
     MatToolbarModule,
     MatProgressSpinnerModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
