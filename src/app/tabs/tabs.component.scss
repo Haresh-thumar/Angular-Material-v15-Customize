@@ -1,0 +1,251 @@
+.h2-section {
+    background: #09a35b;
+    padding: 15px;
+    color: #fff;
+}
+
+
+// change label icon css
+.example-tab-icon {
+    margin-right: 8px;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------------
+                                            ByDefault Theme Color
+-----------------------------------------------------------------------------------------------------------*/
+// change Tab Header Height
+::ng-deep .mat-mdc-tab-header .mdc-tab {
+    height: 58px !important;
+}
+
+// Change Tab Header Text Color
+::ng-deep .mat-mdc-tab .mdc-tab__text-label,
+::ng-deep .mat-mdc-tab-link .mdc-tab__text-label {
+    color: rgb(219, 219, 219) !important;
+}
+
+// Change Next Arrow (< | >) Button in Multiple Tab
+::ng-deep .mat-mdc-tab-header-pagination-chevron {
+    border-color: var(--mdc-theme-on-surface, #ff0000) !important;
+}
+
+// Change Global Tab CSS
+::ng-deep .mdc-tab {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--mdc-typography-button-font-family, var(--mdc-typography-button-font-family, Roboto, sans-serif));
+    font-size: var(--mdc-typography-button-font-size, 15px) !important;
+    line-height: var(--mdc-typography-button-line-height, 36px);
+    font-weight: var(--mdc-typography-button-font-weight, 500) !important;
+    letter-spacing: var(--mdc-typography-button-letter-spacing, 2px) !important;
+    text-decoration: var(--mdc-typography-button-text-decoration, none);
+    text-transform: var(--mdc-typography-button-text-transform, lowercase);
+}
+
+
+
+/*--------------------------- For Accent Theme Color -------------------------------*/
+
+// change Active Tab Header Label Color (Accent Color)
+::ng-deep .mat-mdc-tab-group.mat-accent .mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label,
+::ng-deep .mat-mdc-tab-group.mat-accent .mat-mdc-tab-link:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label,
+::ng-deep .mat-mdc-tab-nav-bar.mat-accent .mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label,
+::ng-deep .mat-mdc-tab-nav-bar.mat-accent .mat-mdc-tab-link:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label {
+    color: #cc00ff !important;
+}
+
+// Change Active Tab Bottom Border Color (Accent Color)
+::ng-deep .mat-mdc-tab-group.mat-accent .mat-mdc-tab:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline,
+::ng-deep .mat-mdc-tab-group.mat-accent .mat-mdc-tab-link:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline,
+::ng-deep .mat-mdc-tab-nav-bar.mat-accent .mat-mdc-tab:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline,
+::ng-deep .mat-mdc-tab-nav-bar.mat-accent .mat-mdc-tab-link:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline {
+    border-color: var(--mdc-tab-indicator-active-indicator-color, #cc00ff) !important;
+}
+
+// Change Background Ripple Color On Click (Accent Color)
+::ng-deep .mat-mdc-tab-group.mat-accent .mdc-tab__ripple::before,
+::ng-deep .mat-mdc-tab-group.mat-accent .mat-mdc-tab .mat-ripple-element,
+::ng-deep .mat-mdc-tab-nav-bar.mat-accent .mat-mdc-tab-header-pagination .mat-ripple-element,
+::ng-deep .mat-mdc-tab-nav-bar.mat-accent .mat-mdc-tab-link .mat-ripple-element {
+    background-color: #cc00ff;
+}
+
+
+
+
+/*--------------------------- For Accent Theme Color -------------------------------*/
+
+// change Active Tab Header Label Color (Primary Color)
+::ng-deep .mat-mdc-tab-group.mat-primary .mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label,
+::ng-deep .mat-mdc-tab-group.mat-primary .mat-mdc-tab-link:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label,
+::ng-deep .mat-mdc-tab-nav-bar.mat-primary .mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label,
+::ng-deep .mat-mdc-tab-nav-bar.mat-primary .mat-mdc-tab-link:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label {
+    color: #00bfff !important;
+}
+
+// Change Active Tab Bottom Border Color (Primary Color)
+::ng-deep .mat-mdc-tab-group.mat-primary .mat-mdc-tab:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline,
+::ng-deep .mat-mdc-tab-group.mat-primary .mat-mdc-tab-link:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline,
+::ng-deep .mat-mdc-tab-nav-bar.mat-primary .mat-mdc-tab:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline,
+::ng-deep .mat-mdc-tab-nav-bar.mat-primary .mat-mdc-tab-link:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline {
+    border-color: var(--mdc-tab-indicator-active-indicator-color, #00bfff) !important;
+}
+
+// Change Background Ripple Color On Click (Primary Color)
+::ng-deep .mat-mdc-tab-group.mat-primary .mdc-tab__ripple::before,
+::ng-deep .mat-mdc-tab-group.mat-primary .mat-mdc-tab .mat-ripple-element,
+::ng-deep .mat-mdc-tab-nav-bar.mat-primary .mat-mdc-tab-header-pagination .mat-ripple-element,
+::ng-deep .mat-mdc-tab-nav-bar.mat-primary .mat-mdc-tab-link .mat-ripple-element {
+    background-color: #00bfff;
+}
+
+
+
+
+/*--------------------------- For Accent Theme Color -------------------------------*/
+
+// change Active Tab Header Label Color (Warn Color)
+::ng-deep .mat-mdc-tab-group.mat-warn .mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label,
+::ng-deep .mat-mdc-tab-group.mat-warn .mat-mdc-tab-link:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label,
+::ng-deep .mat-mdc-tab-nav-bar.mat-warn .mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label,
+::ng-deep .mat-mdc-tab-nav-bar.mat-warn .mat-mdc-tab-link:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label {
+    color: #ff005d !important;
+}
+
+// Change Active Tab Bottom Border Color (Warn Color)
+::ng-deep .mat-mdc-tab-group.mat-warn .mat-mdc-tab:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline,
+::ng-deep .mat-mdc-tab-group.mat-warn .mat-mdc-tab-link:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline,
+::ng-deep .mat-mdc-tab-nav-bar.mat-warn .mat-mdc-tab:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline,
+::ng-deep .mat-mdc-tab-nav-bar.mat-warn .mat-mdc-tab-link:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline {
+    border-color: var(--mdc-tab-indicator-active-indicator-color, #ff005d) !important;
+}
+
+// Change Background Ripple Color On Click (Warn Color)
+::ng-deep .mat-mdc-tab-group.mat-warn .mdc-tab__ripple::before,
+::ng-deep .mat-mdc-tab-group.mat-warn .mat-mdc-tab .mat-ripple-element,
+::ng-deep .mat-mdc-tab-nav-bar.mat-warn .mat-mdc-tab-header-pagination .mat-ripple-element,
+::ng-deep .mat-mdc-tab-nav-bar.mat-warn .mat-mdc-tab-link .mat-ripple-element {
+    background-color: #ff005d;
+}
+
+
+
+
+
+
+
+/*------------------- Filled Background color ----------------------*/
+
+.example-button-toggle-label {
+    display: inline-block;
+    margin: 16px;
+}
+
+/*--------------------- Accent Color Theme ----------------------*/
+// change Mat-Tab background Color (for Accent-Color)
+::ng-deep .mat-mdc-tab-group.mat-background-accent,
+::ng-deep .mat-mdc-tab-nav-bar.mat-background-accent {
+    --mat-mdc-tab-header-with-background-background-color: #cc00ff !important;
+    --mat-mdc-tab-header-with-background-foreground-color: #fff !important;
+}
+
+// change Active Tab Header Label Color (Accent Color)
+::ng-deep .mat-mdc-tab-group.mat-white-1 .mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label,
+::ng-deep .mat-mdc-tab-group.mat-white-1 .mat-mdc-tab-link:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label,
+::ng-deep .mat-mdc-tab-nav-bar.mat-white-1 .mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label,
+::ng-deep .mat-mdc-tab-nav-bar.mat-white-1 .mat-mdc-tab-link:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label {
+    color: #ffd500 !important;
+}
+
+// Change Active Tab Bottom Border Color (Accent Color)
+::ng-deep .mat-mdc-tab-group.mat-white-1 .mat-mdc-tab:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline,
+::ng-deep .mat-mdc-tab-group.mat-white-1 .mat-mdc-tab-link:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline,
+::ng-deep .mat-mdc-tab-nav-bar.mat-white-1 .mat-mdc-tab:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline,
+::ng-deep .mat-mdc-tab-nav-bar.mat-white-1 .mat-mdc-tab-link:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline {
+    border-color: var(--mdc-tab-indicator-active-indicator-color, #ffd500) !important;
+    border-width: 5px;
+}
+
+// Change Background Ripple Color On Click (Accent Color)
+::ng-deep .mat-mdc-tab-group.mat-white-1 .mdc-tab__ripple::before,
+::ng-deep .mat-mdc-tab-group.mat-white-1 .mat-mdc-tab .mat-ripple-element,
+::ng-deep .mat-mdc-tab-nav-bar.mat-white-1 .mat-mdc-tab-header-pagination .mat-ripple-element,
+::ng-deep .mat-mdc-tab-nav-bar.mat-white-1 .mat-mdc-tab-link .mat-ripple-element {
+    background-color: #ec9eff;
+}
+
+
+
+
+/*--------------------- Primary Color Theme ----------------------*/
+// change Mat-Tab background Color (for Primary-Color)
+::ng-deep .mat-mdc-tab-group.mat-background-primary,
+::ng-deep .mat-mdc-tab-nav-bar.mat-background-primary {
+    --mat-mdc-tab-header-with-background-background-color: #00bfff !important;
+    --mat-mdc-tab-header-with-background-foreground-color: #fff !important;
+}
+
+// change Active Tab Header Label Color (Primary Color)
+::ng-deep .mat-mdc-tab-group.mat-white-2 .mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label,
+::ng-deep .mat-mdc-tab-group.mat-white-2 .mat-mdc-tab-link:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label,
+::ng-deep .mat-mdc-tab-nav-bar.mat-white-2 .mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label,
+::ng-deep .mat-mdc-tab-nav-bar.mat-white-2 .mat-mdc-tab-link:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label {
+    color: #ff005d !important;
+}
+
+// Change Active Tab Bottom Border Color (Primary Color)
+::ng-deep .mat-mdc-tab-group.mat-white-2 .mat-mdc-tab:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline,
+::ng-deep .mat-mdc-tab-group.mat-white-2 .mat-mdc-tab-link:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline,
+::ng-deep .mat-mdc-tab-nav-bar.mat-white-2 .mat-mdc-tab:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline,
+::ng-deep .mat-mdc-tab-nav-bar.mat-white-2 .mat-mdc-tab-link:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline {
+    border-color: var(--mdc-tab-indicator-active-indicator-color, #ff005d) !important;
+    border-width: 5px;
+}
+
+// Change Background Ripple Color On Click (Primary Color)
+::ng-deep .mat-mdc-tab-group.mat-white-2 .mdc-tab__ripple::before,
+::ng-deep .mat-mdc-tab-group.mat-white-2 .mat-mdc-tab .mat-ripple-element,
+::ng-deep .mat-mdc-tab-nav-bar.mat-white-2 .mat-mdc-tab-header-pagination .mat-ripple-element,
+::ng-deep .mat-mdc-tab-nav-bar.mat-white-2 .mat-mdc-tab-link .mat-ripple-element {
+    background-color: #6adaff;
+}
+
+
+
+
+/*--------------------- Warn Color Theme ----------------------*/
+// change Mat-Tab background Color (for Warn-Color)
+::ng-deep .mat-mdc-tab-group.mat-background-warn,
+::ng-deep .mat-mdc-tab-nav-bar.mat-background-warn {
+    --mat-mdc-tab-header-with-background-background-color: #ff0080 !important;
+    --mat-mdc-tab-header-with-background-foreground-color: #fff !important;
+}
+
+// change Active Tab Header Label Color (Warn Color)
+::ng-deep .mat-mdc-tab-group.mat-white-3 .mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label,
+::ng-deep .mat-mdc-tab-group.mat-white-3 .mat-mdc-tab-link:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label,
+::ng-deep .mat-mdc-tab-nav-bar.mat-white-3 .mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label,
+::ng-deep .mat-mdc-tab-nav-bar.mat-white-3 .mat-mdc-tab-link:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label {
+    color: #00bfff !important;
+}
+
+// Change Active Tab Bottom Border Color (Warn Color)
+::ng-deep .mat-mdc-tab-group.mat-white-3 .mat-mdc-tab:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline,
+::ng-deep .mat-mdc-tab-group.mat-white-3 .mat-mdc-tab-link:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline,
+::ng-deep .mat-mdc-tab-nav-bar.mat-white-3 .mat-mdc-tab:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline,
+::ng-deep .mat-mdc-tab-nav-bar.mat-white-3 .mat-mdc-tab-link:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline {
+    border-color: var(--mdc-tab-indicator-active-indicator-color, #00bfff) !important;
+    border-width: 5px;
+}
+
+// Change Background Ripple Color On Click (Warn Color)
+::ng-deep .mat-mdc-tab-group.mat-white-3 .mdc-tab__ripple::before,
+::ng-deep .mat-mdc-tab-group.mat-white-3 .mat-mdc-tab .mat-ripple-element,
+::ng-deep .mat-mdc-tab-nav-bar.mat-white-3 .mat-mdc-tab-header-pagination .mat-ripple-element,
+::ng-deep .mat-mdc-tab-nav-bar.mat-white-3 .mat-mdc-tab-link .mat-ripple-element {
+    background-color: #6adaff;
+}
+
+

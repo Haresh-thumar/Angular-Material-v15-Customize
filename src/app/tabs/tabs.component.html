@@ -1,0 +1,184 @@
+<h1>Customize Mat-Tabs</h1>
+
+<br><br>
+
+<!-------------------------------------------------------------------------------------------------------------------------------------------
+                                                            ByDefault Theme Color Change
+-------------------------------------------------------------------------------------------------------------------------------------------->
+<h2 class="h2-section">Tab group with aligned labels</h2>
+<mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" color="accent">
+    <mat-tab label="First">Content 1</mat-tab>
+    <mat-tab label="Second">Content 2</mat-tab>
+    <mat-tab label="Third">Content 3</mat-tab>
+</mat-tab-group>
+<br><br>
+
+<mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center" color="primary">
+    <mat-tab label="First">Content 1</mat-tab>
+    <mat-tab label="Second">Content 2</mat-tab>
+    <mat-tab label="Third">Content 3</mat-tab>
+</mat-tab-group>
+<br><br>
+
+<mat-tab-group mat-stretch-tabs="false" mat-align-tabs="end" color="warn">
+    <mat-tab label="First">Content 1</mat-tab>
+    <mat-tab label="Second">Content 2</mat-tab>
+    <mat-tab label="Third">Content 3</mat-tab>
+</mat-tab-group>
+<br><br><br>
+
+
+
+<h2 class="h2-section">Tab group animations</h2>
+<mat-tab-group animationDuration="0ms" color="accent">
+    <mat-tab label="First">Content 1</mat-tab>
+    <mat-tab label="Second">Content 2</mat-tab>
+    <mat-tab label="Third">Content 3</mat-tab>
+</mat-tab-group>
+<br><br>
+
+<mat-tab-group animationDuration="1500ms" color="primary">
+    <mat-tab label="First">Content 1</mat-tab>
+    <mat-tab label="Second">Content 2</mat-tab>
+    <mat-tab label="Third">Content 3</mat-tab>
+</mat-tab-group>
+<br><br>
+
+<mat-tab-group animationDuration="3000ms" color="warn">
+    <mat-tab label="First">Content 1</mat-tab>
+    <mat-tab label="Second">Content 2</mat-tab>
+    <mat-tab label="Third">Content 3</mat-tab>
+</mat-tab-group>
+<br><br><br>
+
+
+
+
+<h2 class="h2-section">Using tabs with a custom label template</h2>
+<mat-tab-group color="accent">
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon class="example-tab-icon">thumb_up</mat-icon>
+            First
+        </ng-template>
+        Content 1
+    </mat-tab>
+
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon class="example-tab-icon">thumb_up</mat-icon>
+            Second
+        </ng-template>
+        Content 2
+    </mat-tab>
+
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon class="example-tab-icon">thumb_up</mat-icon>
+            Third
+        </ng-template>
+
+        Content 3
+    </mat-tab>
+</mat-tab-group>
+<br><br><br>
+
+<mat-tab-group color="primary">
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon class="example-tab-icon">thumb_up</mat-icon>
+            First
+        </ng-template>
+        Content 1
+    </mat-tab>
+
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon class="example-tab-icon">thumb_up</mat-icon>
+            Second
+        </ng-template>
+        Content 2
+    </mat-tab>
+
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon class="example-tab-icon">thumb_up</mat-icon>
+            Third
+        </ng-template>
+
+        Content 3
+    </mat-tab>
+</mat-tab-group>
+<br><br><br>
+
+<mat-tab-group color="warn">
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon class="example-tab-icon">thumb_up</mat-icon>
+            First
+        </ng-template>
+        Content 1
+    </mat-tab>
+
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon class="example-tab-icon">thumb_up</mat-icon>
+            Second
+        </ng-template>
+        Content 2
+    </mat-tab>
+
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon class="example-tab-icon">thumb_up</mat-icon>
+            Third
+        </ng-template>
+
+        Content 3
+    </mat-tab>
+</mat-tab-group>
+<br><br><br>
+
+
+
+<h2 class="h2-section">Tab group with paginated tabs</h2>
+<mat-tab-group color="accent">
+    <mat-tab [label]="tab" *ngFor="let tab of lotsOfTabs">Content</mat-tab>
+</mat-tab-group>
+<br><br><br>
+
+<mat-tab-group color="primary">
+    <mat-tab [label]="tab" *ngFor="let tab of lotsOfTabs">Content</mat-tab>
+</mat-tab-group>
+<br><br><br>
+
+<mat-tab-group color="warn">
+    <mat-tab [label]="tab" *ngFor="let tab of lotsOfTabs">Content</mat-tab>
+</mat-tab-group>
+<br><br><br>
+
+
+
+
+<h2 class="h2-section">Customizing the theme options on the tab group</h2>
+<h2></h2>
+<mat-tab-group color="white-1" backgroundColor="accent">
+    <mat-tab label="First">Content 1</mat-tab>
+    <mat-tab label="Second">Content 2</mat-tab>
+    <mat-tab label="Third">Content 3</mat-tab>
+</mat-tab-group>
+<br><br>
+
+<mat-tab-group color="white-2" backgroundColor="primary">
+    <mat-tab label="First">Content 1</mat-tab>
+    <mat-tab label="Second">Content 2</mat-tab>
+    <mat-tab label="Third">Content 3</mat-tab>
+</mat-tab-group>
+<br><br>
+
+<mat-tab-group color="white-3" backgroundColor="warn">
+    <mat-tab label="First">Content 1</mat-tab>
+    <mat-tab label="Second">Content 2</mat-tab>
+    <mat-tab label="Third">Content 3</mat-tab>
+</mat-tab-group>
+<br><br>

@@ -14,6 +14,7 @@ import { ProgressSpinnerComponent } from './progress-spinner/progress-spinner.co
 import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { SnackbarComponent } from './snackbar/snackbar.component';
+import { TabsComponent } from './tabs/tabs.component';
 
 const routes: Routes = [
   { path: 'badge', component: BadgeComponent },
@@ -30,6 +31,7 @@ const routes: Routes = [
   { path: 'slide-toggle', component: SlideToggleComponent },
   { path: 'progress-bar', component: ProgressBarComponent },
   { path: 'snackbar', component: SnackbarComponent },
+  { path: 'tabs', component: TabsComponent },
 ];
 
 @NgModule({
