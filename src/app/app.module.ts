@@ -30,8 +30,21 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { IconComponent } from './icon/icon.component';
 import { ProgressSpinnerComponent } from './progress-spinner/progress-spinner.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+<<<<<<< HEAD
 import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> Stashed changes
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { SnackbarComponent } from './snackbar/snackbar.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+<<<<<<< Updated upstream
+>>>>>>> 393122a8e5c76179858ef38a74f4a3698a18194f
+=======
+>>>>>>> Stashed changes
 
 
 @NgModule({
@@ -48,7 +61,17 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     ToolbarComponent,
     IconComponent,
     ProgressSpinnerComponent,
+<<<<<<< HEAD
     SlideToggleComponent,
+<<<<<<< Updated upstream
+=======
+    ProgressBarComponent,
+    SnackbarComponent,
+>>>>>>> 393122a8e5c76179858ef38a74f4a3698a18194f
+=======
+    ProgressBarComponent,
+    SnackbarComponent,
+>>>>>>> Stashed changes
   ],
   imports: [
     BrowserModule,
@@ -68,7 +91,17 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     MatTooltipModule,
     MatToolbarModule,
     MatProgressSpinnerModule,
+<<<<<<< HEAD
     MatSlideToggleModule
+<<<<<<< Updated upstream
+=======
+    MatProgressBarModule,
+    MatSnackBarModule
+>>>>>>> 393122a8e5c76179858ef38a74f4a3698a18194f
+=======
+    MatProgressBarModule,
+    MatSnackBarModule
+>>>>>>> Stashed changes
   ],
   providers: [],
   bootstrap: [AppComponent]
