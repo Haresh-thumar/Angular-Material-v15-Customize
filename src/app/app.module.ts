@@ -38,6 +38,8 @@ import { SnackbarComponent } from './snackbar/snackbar.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTabsModule } from '@angular/material/tabs';
 import { TabsComponent } from './tabs/tabs.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 
 @NgModule({
@@ -60,6 +62,7 @@ import { TabsComponent } from './tabs/tabs.component';
     ProgressBarComponent,
     SnackbarComponent,
     TabsComponent,
+    SidenavComponent,
   ],
   imports: [
     BrowserModule,
@@ -82,7 +85,8 @@ import { TabsComponent } from './tabs/tabs.component';
     MatSlideToggleModule,
     MatProgressBarModule,
     MatSnackBarModule,
-    MatTabsModule
+    MatTabsModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -15,6 +15,7 @@ import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { SnackbarComponent } from './snackbar/snackbar.component';
 import { TabsComponent } from './tabs/tabs.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
 
 const routes: Routes = [
   { path: 'badge', component: BadgeComponent },
@@ -32,6 +33,7 @@ const routes: Routes = [
   { path: 'progress-bar', component: ProgressBarComponent },
   { path: 'snackbar', component: SnackbarComponent },
   { path: 'tabs', component: TabsComponent },
+  { path: 'sidenav', component: SidenavComponent },
 ];
 
 @NgModule({
