@@ -40,6 +40,8 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { TabsComponent } from './tabs/tabs.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { SliderComponent } from './slider/slider.component';
+import { MatSliderModule } from '@angular/material/slider';
 
 
 @NgModule({
@@ -63,6 +65,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     SnackbarComponent,
     TabsComponent,
     SidenavComponent,
+    SliderComponent,
   ],
   imports: [
     BrowserModule,
@@ -86,7 +89,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     MatProgressBarModule,
     MatSnackBarModule,
     MatTabsModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,70 @@
+<h1>Customize Mat-Slider</h1>
+
+<br><br>
+
+<!---------------------------------------------------------------------------------------------------
+                                        ByDefault Theme Color
+---------------------------------------------------------------------------------------------------->
+<p class="heading">Basic Slider</p>
+
+<div class="grid-box">
+    <div class="column-2">
+        <mat-slider color="primary">
+            <input matSliderThumb>
+        </mat-slider>
+    </div>
+    <div class="column-2">
+        <mat-slider color="accent">
+            <input matSliderThumb>
+        </mat-slider>
+    </div>
+    <div class="column-2">
+        <mat-slider color="warn">
+            <input matSliderThumb>
+        </mat-slider>
+    </div>
+</div>
+
+
+<p class="heading">Slider with custom thumb label formatting.</p>
+<div class="grid-box">
+    <div class="column-2">
+        <mat-slider color="primary" min="0" max="100000" step="1000" showTickMarks discrete [displayWith]="formatLabel">
+            <input matSliderThumb>
+        </mat-slider>
+    </div>
+    <div class="column-2">
+        <mat-slider color="accent" min="0" max="100000" step="1000" showTickMarks discrete [displayWith]="formatLabel">
+            <input matSliderThumb>
+        </mat-slider>
+    </div>
+    <div class="column-2">
+        <mat-slider color="warn" min="0" max="100000" step="1000" showTickMarks discrete [displayWith]="formatLabel">
+            <input matSliderThumb>
+        </mat-slider>
+    </div>
+</div>
+
+
+
+<p class="heading">Range slider</p>
+<div class="grid-box">
+    <div class="column-2">
+        <mat-slider min="200" max="500" color="primary">
+            <input value="300" matSliderStartThumb>
+            <input value="400" matSliderEndThumb>
+        </mat-slider>
+    </div>
+    <div class="column-2">
+        <mat-slider min="200" max="500" color="accent">
+            <input value="300" matSliderStartThumb>
+            <input value="400" matSliderEndThumb>
+        </mat-slider>
+    </div>
+    <div class="column-2">
+        <mat-slider min="200" max="500" color="warn">
+            <input value="300" matSliderStartThumb>
+            <input value="400" matSliderEndThumb>
+        </mat-slider>
+    </div>
+</div>
