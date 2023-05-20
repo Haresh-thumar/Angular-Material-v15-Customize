@@ -46,6 +46,8 @@ import { DialogComponent, DialogComponentContent } from './dialog/dialog.compone
 import { MatDialogModule } from '@angular/material/dialog';
 import { ExpensionPanelComponent } from './expension-panel/expension-panel.component';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { DividerComponent } from './divider/divider.component';
+import { MatDividerModule } from '@angular/material/divider';
 
 
 @NgModule({
@@ -72,7 +74,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
     SliderComponent,
     DialogComponent,
     DialogComponentContent,
-    ExpensionPanelComponent
+    ExpensionPanelComponent,
+    DividerComponent
   ],
   imports: [
     BrowserModule,
@@ -98,8 +101,9 @@ import { MatExpansionModule } from '@angular/material/expansion';
     MatTabsModule,
     MatSidenavModule,
     MatSliderModule,
-    MatDialogModule, 
+    MatDialogModule,
     MatExpansionModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

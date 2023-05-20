@@ -19,6 +19,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { SliderComponent } from './slider/slider.component';
 import { DialogComponent } from './dialog/dialog.component';
 import { ExpensionPanelComponent } from './expension-panel/expension-panel.component';
+import { DividerComponent } from './divider/divider.component';
 
 const routes: Routes = [
   { path: 'badge', component: BadgeComponent },
@@ -40,6 +41,7 @@ const routes: Routes = [
   { path: 'slider', component: SliderComponent },
   { path: 'dialog', component: DialogComponent },
   { path: 'expension-panel', component: ExpensionPanelComponent },
+  { path: 'divider', component: DividerComponent },
 ];
 
 @NgModule({
