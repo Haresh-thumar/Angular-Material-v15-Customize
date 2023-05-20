@@ -44,6 +44,8 @@ import { SliderComponent } from './slider/slider.component';
 import { MatSliderModule } from '@angular/material/slider';
 import { DialogComponent, DialogComponentContent } from './dialog/dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { ExpensionPanelComponent } from './expension-panel/expension-panel.component';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 
 @NgModule({
@@ -69,7 +71,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     SidenavComponent,
     SliderComponent,
     DialogComponent,
-    DialogComponentContent
+    DialogComponentContent,
+    ExpensionPanelComponent
   ],
   imports: [
     BrowserModule,
@@ -95,7 +98,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatTabsModule,
     MatSidenavModule,
     MatSliderModule,
-    MatDialogModule,
+    MatDialogModule, 
+    MatExpansionModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
