@@ -17,6 +17,7 @@ import { SnackbarComponent } from './snackbar/snackbar.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { SliderComponent } from './slider/slider.component';
+import { DialogComponent } from './dialog/dialog.component';
 
 const routes: Routes = [
   { path: 'badge', component: BadgeComponent },
@@ -36,6 +37,7 @@ const routes: Routes = [
   { path: 'tabs', component: TabsComponent },
   { path: 'sidenav', component: SidenavComponent },
   { path: 'slider', component: SliderComponent },
+  { path: 'dialog', component: DialogComponent },
 ];
 
 @NgModule({

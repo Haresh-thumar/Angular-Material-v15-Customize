@@ -42,6 +42,8 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { SliderComponent } from './slider/slider.component';
 import { MatSliderModule } from '@angular/material/slider';
+import { DialogComponent, DialogComponentContent } from './dialog/dialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 @NgModule({
@@ -66,6 +68,8 @@ import { MatSliderModule } from '@angular/material/slider';
     TabsComponent,
     SidenavComponent,
     SliderComponent,
+    DialogComponent,
+    DialogComponentContent
   ],
   imports: [
     BrowserModule,
@@ -90,7 +94,8 @@ import { MatSliderModule } from '@angular/material/slider';
     MatSnackBarModule,
     MatTabsModule,
     MatSidenavModule,
-    MatSliderModule
+    MatSliderModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

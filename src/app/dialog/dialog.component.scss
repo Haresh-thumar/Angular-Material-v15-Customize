@@ -1,0 +1,84 @@
+.flex-box {
+    display: grid;
+    margin: 20px 10px;
+    grid-template-columns: repeat(3, 33.33%);
+}
+
+.flex-box>p {
+    grid-column: span 3;
+    font-size: 17px;
+    color: rgb(150, 150, 150);
+    margin: 10px 0 20px 0;
+}
+
+.flex-box>.column {
+    border: 1px solid rgb(224, 224, 224);
+    padding: 15px;
+    margin: 0 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+
+// // change Mat-Dialog Container CSS
+// ::ng-deep .mat-mdc-dialog-container {
+//     --mdc-dialog-container-color: #b4ebff; // change Dialog Box Background Container Color
+//     --mdc-dialog-with-divider-divider-color: rgba(0, 0, 0, 0.12);  // change dialog divider color
+//     --mdc-dialog-subhead-color: red; // change dialog title color
+//     --mdc-dialog-supporting-text-color: rgb(29, 44, 255); // change dialog content color
+// }
+
+// // change mat-dialog font styling
+// ::ng-deep .mat-mdc-dialog-container {
+//     // for title only
+//     --mdc-dialog-subhead-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  // change content font-family
+//     --mdc-dialog-subhead-line-height: 25px;  // change dialog title line height
+//     --mdc-dialog-subhead-size: 25px;  // change dialog title font size
+//     --mdc-dialog-subhead-weight: 600;  // change dialog font title weight
+//     --mdc-dialog-subhead-tracking: 3px; // change title font letter-spacing
+
+//     // for content text only
+//     --mdc-dialog-supporting-text-font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  // change content font-family
+//     --mdc-dialog-supporting-text-line-height: 25px; // change container font line height
+//     --mdc-dialog-supporting-text-size: 10px; // change contaner font-size
+//     --mdc-dialog-supporting-text-weight: 500; // change container font weight
+//     --mdc-dialog-supporting-text-tracking: 3px;  // change container font letter-spacing
+// }
+
+
+
+
+/*******************************************************************************************************************
+                                        Try Another Way to Use Css
+*******************************************************************************************************************/
+
+// change dialog box container width
+::ng-deep .mat-mdc-dialog-container {
+    width: 600px !important;
+}
+
+// change Dialog Title
+::ng-deep .mat-mdc-dialog-container .mdc-dialog__title {
+    background-color: #5162c76c;
+    border-bottom: 2px solid rgb(206, 0, 0);
+    color: #122ece!important;
+    margin-bottom: 0!important;
+    padding: 0 25px 16px!important;
+}
+
+// change dialog content style
+::ng-deep.mat-mdc-dialog-container .mdc-dialog__content {
+    background-color: #ff5f956c;
+    color: #ff0055!important;
+    font-weight: 600!important;
+    padding: 20px 20px 15px 20px!important;
+    border-bottom: 2px solid rgb(255, 136, 0);
+}
+
+// Change Footer Style
+::ng-deep .mdc-dialog__actions {
+    background-color: #17b94079!important;
+    padding: 20px!important;
+    justify-content: center!important;
+}
