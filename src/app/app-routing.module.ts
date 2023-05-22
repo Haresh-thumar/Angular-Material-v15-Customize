@@ -20,6 +20,7 @@ import { SliderComponent } from './slider/slider.component';
 import { DialogComponent } from './dialog/dialog.component';
 import { ExpensionPanelComponent } from './expension-panel/expension-panel.component';
 import { DividerComponent } from './divider/divider.component';
+import { TableComponent } from './table/table.component';
 
 const routes: Routes = [
   { path: 'badge', component: BadgeComponent },
@@ -42,6 +43,7 @@ const routes: Routes = [
   { path: 'dialog', component: DialogComponent },
   { path: 'expension-panel', component: ExpensionPanelComponent },
   { path: 'divider', component: DividerComponent },
+  { path: 'table', component: TableComponent },
 ];
 
 @NgModule({
