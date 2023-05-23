@@ -53,6 +53,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { HorizontalStapperComponent } from './horizontal-stapper/horizontal-stapper.component';
 import {MatStepperModule} from '@angular/material/stepper';
+import { VerticalStepperComponent } from './vertical-stepper/vertical-stepper.component';
 
 
 
@@ -83,7 +84,8 @@ import {MatStepperModule} from '@angular/material/stepper';
     ExpensionPanelComponent,
     DividerComponent,
     TableComponent,
-    HorizontalStapperComponent
+    HorizontalStapperComponent,
+    VerticalStepperComponent
   ],
   imports: [
     BrowserModule,

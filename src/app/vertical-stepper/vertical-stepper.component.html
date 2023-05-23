@@ -1,0 +1,48 @@
+<h1>Customize Vertical-stepper</h1>
+
+<br><br>
+
+<!------------------------------------------------------------------------------------------------------------------
+                                            Example-1 (Primary-Theme)
+------------------------------------------------------------------------------------------------------------------->
+<section>
+    <div class="stepper-title">
+        <h2>Example-1 (Primary-Theme)</h2>
+    </div>
+
+    <mat-stepper orientation="vertical" linear="true" #stepper color="primary">
+        <mat-step [stepControl]="firstFormGroup" errorMessage="Address is required.">
+            <form [formGroup]="firstFormGroup">
+                <ng-template matStepLabel>Fill out your name</ng-template>
+                <mat-form-field appearance="fill">
+                    <mat-label>Name</mat-label>
+                    <input matInput placeholder="Last name, First name" formControlName="field1" required>
+                </mat-form-field>
+                <div>
+                    <button mat-button matStepperNext>Next</button>
+                </div>
+            </form>
+        </mat-step>
+        <mat-step [stepControl]="secondFormGroup">
+            <form [formGroup]="secondFormGroup">
+                <ng-template matStepLabel>Fill out your address</ng-template>
+                <mat-form-field appearance="fill">
+                    <mat-label>Address</mat-label>
+                    <input matInput placeholder="Ex. 1 Main St, New York, NY" formControlName="field2" required>
+                </mat-form-field>
+                <div>
+                    <button mat-button matStepperPrevious>Back</button>
+                    <button mat-button matStepperNext>Next</button>
+                </div>
+            </form>
+        </mat-step>
+        <mat-step>
+            <ng-template matStepLabel>Done</ng-template>
+            <p>You are now done.</p>
+            <div>
+                <button mat-button matStepperPrevious>Back</button>
+                <button mat-button (click)="stepper.reset()">Reset</button>
+            </div>
+        </mat-step>
+    </mat-stepper>
+</section>
