@@ -23,13 +23,6 @@ export class HorizontalStapperComponent {
       field1: ['', Validators.required]
     });
   }
-
-
-  formEdit:boolean = true;
-
-  editableForm(){
-    this.formEdit = !this.formEdit;
-  }
   
 
 }

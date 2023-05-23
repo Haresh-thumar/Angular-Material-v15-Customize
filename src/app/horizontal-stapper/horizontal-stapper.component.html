@@ -10,7 +10,7 @@
         <h2>Example-1 (Primary-Theme)</h2>
     </div>
     <mat-stepper linear="true" #stepper color="primary">
-        <mat-step [editable]="formEdit" [stepControl]="firstFormGroup" errorMessage="Name is required.">
+        <mat-step [stepControl]="firstFormGroup" errorMessage="Name is required.">
             <form [formGroup]="firstFormGroup">
                 <ng-template matStepLabel>Fill out your name</ng-template>
                 <mat-form-field appearance="fill">
@@ -22,7 +22,7 @@
                 </div>
             </form>
         </mat-step>
-        <mat-step [editable]="formEdit" [stepControl]="secondFormGroup">
+        <mat-step [stepControl]="secondFormGroup">
             <form [formGroup]="secondFormGroup">
                 <ng-template matStepLabel>Fill out your name</ng-template>
                 <mat-form-field appearance="fill">
