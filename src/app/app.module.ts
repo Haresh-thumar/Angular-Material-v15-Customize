@@ -52,7 +52,8 @@ import { TableComponent } from './table/table.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { HorizontalStapperComponent } from './horizontal-stapper/horizontal-stapper.component';
-import { MatStepperModule } from '@angular/material/stepper';
+import {MatStepperModule} from '@angular/material/stepper';
+
 
 
 @NgModule({

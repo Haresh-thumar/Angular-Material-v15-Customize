@@ -1,19 +1,19 @@
-<h1>Customize Horizontal-Stapper</h1>
-
+<h1>Mat-Horizontal-Stapper Customize</h1>
 <br><br>
 
-<!---------------------------------------------------------------------------------------------------
-                                    Horizontal-Stapper (Style-1)
----------------------------------------------------------------------------------------------------->
+
+<!------------------------------------------------------------------------------------------------------------------------------------------
+                                                                    Example-1
+------------------------------------------------------------------------------------------------------------------------------------------->
 <section style="margin-bottom: 90px;">
-    <div class="example-title">
-        <h2>Example-1 (Primary-Theme)</h2>
+    <div class="card example-title">
+        <h2>Example-1 (Primary Theme)</h2>
     </div>
     <mat-stepper linear="true" #stepper color="primary">
-        <mat-step [stepControl]="firstFormGroup" errorMessage="Name is required.">
+        <mat-step [editable]="formedit" [stepControl]="firstFormGroup" errorMessage="Name is required.">
             <form [formGroup]="firstFormGroup">
                 <ng-template matStepLabel>Fill out your name</ng-template>
-                <mat-form-field appearance="fill">
+                <mat-form-field appearance="outline">
                     <mat-label>Name</mat-label>
                     <input matInput formControlName="field1" placeholder="Last name, First name" required>
                 </mat-form-field>
@@ -22,12 +22,12 @@
                 </div>
             </form>
         </mat-step>
-        <mat-step [stepControl]="secondFormGroup">
+        <mat-step [editable]="formedit" [stepControl]="secondFormGroup">
             <form [formGroup]="secondFormGroup">
-                <ng-template matStepLabel>Fill out your name</ng-template>
+                <ng-template matStepLabel>Fill out your address</ng-template>
                 <mat-form-field appearance="fill">
                     <mat-label>Address</mat-label>
-                    <input matInput formControlName="field1" placeholder="Ex. 1 Main St, New York, NY" required>
+                    <input matInput formControlName="field2" placeholder="Ex. 1 Main St, New York, NY" required>
                 </mat-form-field>
                 <div>
                     <button mat-button matStepperPrevious>Back</button>
@@ -35,7 +35,7 @@
                 </div>
             </form>
         </mat-step>
-        <mat-step>
+        <mat-step [editable]="formedit">
             <ng-template matStepLabel>Done</ng-template>
             <p>You are now done.</p>
             <div>
@@ -44,6 +44,119 @@
             </div>
         </mat-step>
     </mat-stepper>
+
+    <div style="display: flex; justify-content: center; margin-top: 15px;">
+        <button mat-raised-button color="primary" (click)="eadittableForm()">Edit :- {{formedit}}</button>
+    </div>
 </section>
+
+
+
+
+
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------------
+                                                                    Example-2
+------------------------------------------------------------------------------------------------------------------------------------------->
+<section style="margin-bottom: 90px;">
+    <div class="card example-title">
+        <h2>Example-2 (Accent Theme)</h2>
+    </div>
+    <mat-stepper linear #stepper color="accent">
+        <mat-step [editable]="formedit2" [stepControl]="thirdFormGroup">
+            <form [formGroup]="thirdFormGroup">
+                <ng-template matStepLabel>Fill out your name</ng-template>
+                <mat-form-field appearance="fill">
+                    <mat-label>Name</mat-label>
+                    <input matInput formControlName="field3" placeholder="Last name, First name" required>
+                </mat-form-field>
+                <div>
+                    <button mat-button matStepperNext>Next</button>
+                </div>
+            </form>
+        </mat-step>
+        <mat-step [editable]="formedit2" [stepControl]="fourthFormGroup">
+            <form [formGroup]="fourthFormGroup">
+                <ng-template matStepLabel>Fill out your address</ng-template>
+                <mat-form-field appearance="fill">
+                    <mat-label>Address</mat-label>
+                    <input matInput formControlName="field4" placeholder="Ex. 1 Main St, New York, NY" required>
+                </mat-form-field>
+                <div>
+                    <button mat-button matStepperPrevious>Back</button>
+                    <button mat-button matStepperNext>Next</button>
+                </div>
+            </form>
+        </mat-step>
+        <mat-step [editable]="formedit2">
+            <ng-template matStepLabel>Done</ng-template>
+            <p>You are now done.</p>
+            <div>
+                <button mat-button matStepperPrevious>Back</button>
+                <button mat-button (click)="stepper.reset()">Reset</button>
+            </div>
+        </mat-step>
+    </mat-stepper>
+
+    <div style="display: flex; justify-content: center; margin-top: 15px;">
+        <button mat-raised-button color="accent" (click)="eadittableForm()">Edit :- {{formedit}}</button>
+    </div>
+</section>
+
+
+
+
+
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------------
+                                                                    Example-3
+------------------------------------------------------------------------------------------------------------------------------------------->
+<section style="margin-bottom: 90px;">
+    <div class="card example-title">
+        <h2>Example-3 (Warn Theme)</h2>
+    </div>
+    <mat-stepper linear #stepper color="warn">
+        <mat-step [editable]="formedit3" [stepControl]="fifthFormGroup">
+            <form [formGroup]="fifthFormGroup">
+                <ng-template matStepLabel>Fill out your name</ng-template>
+                <mat-form-field appearance="outline">
+                    <mat-label>Name</mat-label>
+                    <input matInput formControlName="field5" placeholder="Last name, First name" required>
+                </mat-form-field>
+                <div>
+                    <button mat-button matStepperNext>Next</button>
+                </div>
+            </form>
+        </mat-step>
+        <mat-step [editable]="formedit3" [stepControl]="sixthFormGroup">
+            <form [formGroup]="sixthFormGroup">
+                <ng-template matStepLabel>Fill out your address</ng-template>
+                <mat-form-field appearance="outline">
+                    <mat-label>Address</mat-label>
+                    <input matInput formControlName="field6" placeholder="Ex. 1 Main St, New York, NY" required>
+                </mat-form-field>
+                <div>
+                    <button mat-button matStepperPrevious>Back</button>
+                    <button mat-button matStepperNext>Next</button>
+                </div>
+            </form>
+        </mat-step>
+        <mat-step [editable]="formedit3">
+            <ng-template matStepLabel>Done</ng-template>
+            <p>You are now done.</p>
+            <div>
+                <button mat-button matStepperPrevious>Back</button>
+                <button mat-button (click)="stepper.reset()">Reset</button>
+            </div>
+        </mat-step>
+    </mat-stepper>
+    
+    <!-- <div style="display: flex; justify-content: center; margin-top: 15px;">
+        <button mat-raised-button color="warn" (click)="eadittableForm3()">Edit :- {{formedit3}}</button>
+    </div> -->
+</section>
+
 
 
