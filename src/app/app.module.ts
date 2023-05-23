@@ -51,6 +51,8 @@ import { MatDividerModule } from '@angular/material/divider';
 import { TableComponent } from './table/table.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { HorizontalStapperComponent } from './horizontal-stapper/horizontal-stapper.component';
+import { MatStepperModule } from '@angular/material/stepper';
 
 
 @NgModule({
@@ -79,7 +81,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     DialogComponentContent,
     ExpensionPanelComponent,
     DividerComponent,
-    TableComponent
+    TableComponent,
+    HorizontalStapperComponent
   ],
   imports: [
     BrowserModule,
@@ -109,7 +112,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatExpansionModule,
     MatDividerModule,
     MatTableModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatStepperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

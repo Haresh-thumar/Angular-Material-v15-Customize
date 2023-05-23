@@ -21,6 +21,7 @@ import { DialogComponent } from './dialog/dialog.component';
 import { ExpensionPanelComponent } from './expension-panel/expension-panel.component';
 import { DividerComponent } from './divider/divider.component';
 import { TableComponent } from './table/table.component';
+import { HorizontalStapperComponent } from './horizontal-stapper/horizontal-stapper.component';
 
 const routes: Routes = [
   { path: 'badge', component: BadgeComponent },
@@ -44,6 +45,7 @@ const routes: Routes = [
   { path: 'expension-panel', component: ExpensionPanelComponent },
   { path: 'divider', component: DividerComponent },
   { path: 'table', component: TableComponent },
+  { path: 'h-stapper', component: HorizontalStapperComponent },
 ];
 
 @NgModule({
