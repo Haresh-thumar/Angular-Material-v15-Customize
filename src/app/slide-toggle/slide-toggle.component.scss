@@ -1,0 +1,183 @@
+.grid-box {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    margin: 20px;
+}
+
+.grid-box>div {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 37px 0px rgbs(0, 0, 0, 0.15);
+}
+
+// change slide toggle label color
+::ng-deep .mat-mdc-slide-toggle .mdc-form-field {
+    color: var(--mdc-theme-text-primary-on-background, rgb(0, 214, 18)) !important;
+}
+
+// change Toggle label color in disable state
+::ng-deep .mat-mdc-slide-toggle .mdc-switch--disabled+label {
+    color: rgb(255, 99, 99);
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------
+                                                        ByDefault Theme Color Change
+-----------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*------------------ Accent Slide Toggle -------------------*/
+.mat-mdc-slide-toggle.mat-accent {
+    --mdc-switch-selected-track-color: #a4d1ff; // change Enable to change ByDefault Background color
+    --mdc-switch-selected-handle-color: rgb(0, 209, 0); // Switch Enable to change Bydefault toggle indicator color
+    --mdc-switch-selected-hover-track-color: #0ffff7bb; // hover to change background color when switch is enabled
+    --mdc-switch-selected-hover-handle-color: #fc7a00; // hover to change toggle indicator color when switch is enabled
+    --mdc-switch-selected-pressed-track-color: #3184ff; // change toggle background color on press when switch is enabled
+    --mdc-switch-selected-focus-track-color: #0ffff7; // change toggle background color when switch is enabled
+    --mdc-switch-selected-focus-handle-color: #00b919a1; // change toggle indicator color when switch is enabled
+    --mdc-switch-selected-focus-state-layer-color: #ff4589; // focus to change toggle background ripple color after switch is enabled
+    --mdc-switch-selected-hover-state-layer-color: #c20047; // hover to change toggle background ripple color after switch is enabled
+    --mdc-switch-selected-pressed-state-layer-color: #bd597d; // change toggle indicator color on press when switch is enabled
+    --mdc-switch-selected-pressed-handle-color: #cc00ff; // change toggle indicator color on press when switch is enabled
+    --mdc-switch-state-layer-size: 98px !important; // hover to change background ripple circle size
+}
+
+/*------------------ Primary Slide Toggle -------------------*/
+.mat-mdc-slide-toggle.mat-primary {
+    --mdc-switch-selected-track-color: #ff9a9c; // change Enable to change ByDefault Background color
+    --mdc-switch-selected-handle-color: #ff761e; // Switch Enable to change Bydefault toggle indicator color
+    --mdc-switch-selected-hover-track-color: #c8d0ff; // hover to change background color when switch is enabled
+    --mdc-switch-selected-hover-handle-color: #ffafbc; // hover to change toggle indicator color when switch is enabled
+    --mdc-switch-selected-pressed-track-color: #0e2067; // change toggle background color on press when switch is enabled
+    --mdc-switch-selected-focus-track-color: #20d8d8; // change toggle background color when switch is enabled
+    --mdc-switch-selected-focus-handle-color: #ff8892; // change toggle indicator color when switch is enabled
+    --mdc-switch-selected-focus-state-layer-color: #ff4b03; // focus to change toggle background ripple color after switch is enabled
+    --mdc-switch-selected-hover-state-layer-color: #3949ab; // hover to change toggle background ripple color after switch is enabled
+    --mdc-switch-selected-pressed-state-layer-color: #3949ab; // change toggle indicator color on press when switch is enabled
+    --mdc-switch-selected-pressed-handle-color: #fffb9d; // change toggle indicator color on press when switch is enabled
+    --mdc-switch-state-layer-size: 68px !important; // hover to change background ripple circle size
+}
+
+/*------------------ Warn Slide Toggle -------------------*/
+.mat-mdc-slide-toggle.mat-warn {
+    --mdc-switch-selected-track-color: #1abc94; // change Enable to change ByDefault Background color
+    --mdc-switch-selected-handle-color: #f80c82; // Switch Enable to change Bydefault toggle indicator color
+    --mdc-switch-selected-hover-track-color: #f6a8d4; // hover to change background color when switch is enabled
+    --mdc-switch-selected-hover-handle-color: #0ffff7; // hover to change toggle indicator color when switch is enabled
+    --mdc-switch-selected-pressed-track-color: #e100ff; // change toggle background color on press when switch is enabled
+    --mdc-switch-selected-focus-track-color: #ffd000; // change toggle background color when switch is enabled
+    --mdc-switch-selected-focus-handle-color: #a4d1ff; // change toggle indicator color when switch is enabled
+    --mdc-switch-selected-focus-state-layer-color: #e53935; // focus to change toggle background ripple color after switch is enabled
+    --mdc-switch-selected-hover-state-layer-color: #ff00f2; // hover to change toggle background ripple color after switch is enabled
+    --mdc-switch-selected-pressed-state-layer-color: #00d3c1; // change toggle indicator color on press when switch is enabled
+    --mdc-switch-selected-pressed-handle-color: #82fff9; // change toggle indicator color on press when switch is enabled
+    --mdc-switch-state-layer-size: 68px !important; // hover to change background ripple circle size
+}
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------
+                                                        Custom Theme Color
+-----------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*------------------ Warn Slide Toggle -------------------*/
+.mat-mdc-slide-toggle.mat-success {
+    --mdc-switch-selected-track-color: #00f60c; // change Enable to change ByDefault Background color
+    --mdc-switch-selected-handle-color: #00bc09; // Switch Enable to change Bydefault toggle indicator color
+    --mdc-switch-selected-hover-track-color: #5aff63; // hover to change background color when switch is enabled
+    --mdc-switch-selected-hover-handle-color: #02ff0e; // hover to change toggle indicator color when switch is enabled
+    --mdc-switch-selected-pressed-track-color: #007b06; // change toggle background color on press when switch is enabled
+    --mdc-switch-selected-focus-track-color: #ffd000; // change toggle background color when switch is enabled
+    --mdc-switch-selected-focus-handle-color: #0058b1; // change toggle indicator color when switch is enabled
+    --mdc-switch-selected-focus-state-layer-color: #00db0b; // focus to change toggle background ripple color after switch is enabled
+    --mdc-switch-selected-hover-state-layer-color: #00bc09; // hover to change toggle background ripple color after switch is enabled
+    --mdc-switch-selected-pressed-state-layer-color: #007b06; // change toggle indicator color on press when switch is enabled
+    --mdc-switch-selected-pressed-handle-color: #00bc09; // change toggle indicator color on press when switch is enabled
+    --mdc-switch-state-layer-size: 68px !important; // hover to change background ripple circle size
+}
+
+
+/*------------------ warning Slide Toggle -------------------*/
+.mat-mdc-slide-toggle.mat-warning {
+    --mdc-switch-selected-track-color: #ffd51a; // change Enable to change ByDefault Background color
+    --mdc-switch-selected-handle-color: #ebb000; // Switch Enable to change Bydefault toggle indicator color
+    --mdc-switch-selected-hover-track-color: #ebb000; // hover to change background color when switch is enabled
+    --mdc-switch-selected-hover-handle-color: #ffd51a; // hover to change toggle indicator color when switch is enabled
+    --mdc-switch-selected-pressed-track-color: #ffd51a; // change toggle background color on press when switch is enabled
+    --mdc-switch-selected-focus-track-color: #ff00cc; // change toggle background color when switch is enabled
+    --mdc-switch-selected-focus-handle-color: #0058b1; // change toggle indicator color when switch is enabled
+    --mdc-switch-selected-focus-state-layer-color: #ffd51a; // focus to change toggle background ripple color after switch is enabled
+    --mdc-switch-selected-hover-state-layer-color: #ebb000; // hover to change toggle background ripple color after switch is enabled
+    --mdc-switch-selected-pressed-state-layer-color: #ffd51a; // change toggle indicator color on press when switch is enabled
+    --mdc-switch-selected-pressed-handle-color: #ebb000; // change toggle indicator color on press when switch is enabled
+    --mdc-switch-state-layer-size: 68px !important; // hover to change background ripple circle size
+}
+
+
+/*------------------ danger Slide Toggle -------------------*/
+.mat-mdc-slide-toggle.mat-danger {
+    --mdc-switch-selected-track-color: #ff3c39; // change Enable to change ByDefault Background color
+    --mdc-switch-selected-handle-color: #e30400; // Switch Enable to change Bydefault toggle indicator color
+    --mdc-switch-selected-hover-track-color: #e30400; // hover to change background color when switch is enabled
+    --mdc-switch-selected-hover-handle-color: #ff3c39; // hover to change toggle indicator color when switch is enabled
+    --mdc-switch-selected-pressed-track-color: #e30400; // change toggle background color on press when switch is enabled
+    --mdc-switch-selected-focus-track-color: #ffcc00; // change toggle background color when switch is enabled
+    --mdc-switch-selected-focus-handle-color: #006edc; // change toggle indicator color when switch is enabled
+    --mdc-switch-selected-focus-state-layer-color: #ff3c39; // focus to change toggle background ripple color after switch is enabled
+    --mdc-switch-selected-hover-state-layer-color: #e30400; // hover to change toggle background ripple color after switch is enabled
+    --mdc-switch-selected-pressed-state-layer-color: #ff3c39; // change toggle indicator color on press when switch is enabled
+    --mdc-switch-selected-pressed-handle-color: #ff3c39; // change toggle indicator color on press when switch is enabled
+    --mdc-switch-state-layer-size: 68px !important; // hover to change background ripple circle size
+}
+
+
+// change toggle switch width
+::ng-deep .mat-mdc-slide-toggle.mat-success .mdc-switch {
+    width: var(--mdc-switch-track-width, 64px) !important;
+    // height: var(--mdc-switch-track-height, 20px)!important;
+}
+
+// change toggle switch Handle width & height
+::ng-deep .mat-mdc-slide-toggle.mat-success .mdc-switch .mdc-switch__handle {
+    width: var(--mdc-switch-handle-width, 31px);
+    height: var(--mdc-switch-handle-height, 31px);
+}
+
+// change slide toggle track height
+::ng-deep .mat-mdc-slide-toggle.mat-success .mdc-switch .mdc-switch__track {
+    height: var(--mdc-switch-track-height, 20px);
+    width: var(--mdc-switch-track-width, 50px) !important;
+}
+
+// change slide toggle switch dash icon color
+::ng-deep .mat-mdc-slide-toggle.mat-success .mdc-switch.mdc-switch--unselected:enabled .mdc-switch__icon {
+    fill: rgb(255, 53, 53) !important;
+    // display: none;
+}
+
+// change switch toggle icon height & width
+::ng-deep .mat-mdc-slide-toggle.mat-success .mdc-switch.mdc-switch--unselected .mdc-switch__icon {
+    width: var(--mdc-switch-unselected-icon-size, 25px)!important;
+    height: var(--mdc-switch-unselected-icon-size, 25px)!important;
+}
+
+// change switch toggle done icon color
+::ng-deep .mat-mdc-slide-toggle.mat-success .mdc-switch.mdc-switch--selected:enabled .mdc-switch__icon {
+    fill: rgb(0, 255, 17) !important;
+    // display: none;
+}
+
+// change switch toggle done icon height & width
+::ng-deep .mat-mdc-slide-toggle.mat-success .mdc-switch.mdc-switch--selected .mdc-switch__icon {
+    width: var(--mdc-switch-unselected-icon-size, 25px)!important;
+    height: var(--mdc-switch-unselected-icon-size, 25px)!important;
+}
+
+// Slide togglew InActive Area Background Color
+::ng-deep .mat-mdc-slide-toggle.mat-secondary .mdc-switch:enabled .mdc-switch__track::before {
+    background: #e65e5e88 !important;
+}

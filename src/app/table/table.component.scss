@@ -1,0 +1,191 @@
+.tables-group {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+}
+
+// Table Width
+table {
+    width: 100%;
+}
+
+
+
+/************************************* Table Global Configuration ************************************/
+/*---------- Table Header cell ----------*/
+.mdc-data-table__header-cell {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; // change font style
+    font-size: 18px; // change font size
+    color: #ff002f; // change header cell font color
+    background: #ffc8d2 !important; // change cell background color
+    text-align: center;
+    line-height: 50px !important; // change font-height
+    font-weight: 500; // change font weight
+    letter-spacing: 5px; // change letter spacing
+    text-transform: uppercase; // change text decoration
+    text-decoration: underline !important; // change text decoration
+}
+
+/*----------- Table Body Cell Style ------------*/
+// .mdc-data-table__cell {
+//     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; // change font style
+//     font-size: 15px; // change font size
+//     color: #fff; // change header cell font color
+//     background: #08c6ff !important; // change cell background color
+//     text-align: center;
+//     line-height: 50px !important; // change font-height
+//     font-weight: 500; // change font weight
+//     letter-spacing: 1px; // change letter spacing
+//     text-transform: none; // change text decoration
+//     text-decoration: none !important; // change text decoration
+// }
+
+
+/****************************** Table Header **********************************/
+// table header row
+.mat-mdc-table .mdc-data-table__header-row {
+    height: 50px !important;
+}
+
+
+/***************************** Table Header Cell ******************************/
+// table header cell
+.mdc-data-table__header-cell {
+    background-color: var(--mdc-theme-surface, #00c5a4) !important;
+    border-bottom-color: #ff8000;
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 20px;
+    height: 60px !important;
+    text-align: center;
+}
+
+// Change Header Row even Number Background
+.mdc-data-table__header-cell:nth-child(even) {
+    color: red !important;
+    font-size: 20px;
+    background-color: #ffaa9f !important;
+}
+
+// change Header Row odd Number Background 
+.mdc-data-table__header-cell:nth-child(odd) {
+    color: rgb(39, 44, 189) !important;
+    font-size: 20px;
+    background-color: #87ddff !important;
+}
+
+
+
+
+/************************************* Table Body Row ************************************/
+// Table Column Background Change (odd number)
+.mdc-data-table__row:nth-child(odd) {
+    background-color: #ffe2c6 !important;
+    height: 50px;
+}
+
+// Table Column Background Change (even number)
+.mdc-data-table__row:nth-child(even) {
+    background-color: #d3dbff !important;
+    height: 50px;
+}
+
+// Table Column Cell Style
+.mdc-data-table__cell {
+    border-bottom-color: rgb(255, 10, 63);
+    font-size: 14px;
+    color: rgb(245, 0, 20) !important;
+    text-align: center;
+}
+
+// Change Table Column Height
+.mat-column-name {
+    height: 100px;
+}
+
+// Hover to change Table Column Background Color
+.mdc-data-table__row:not(.mdc-data-table__row--selected):hover {
+    background-color: rgba(255, 0, 234, 0.397) !important;
+}
+
+// Hover to change Table Column Font Color
+.mdc-data-table__row:not(.mdc-data-table__row--selected):hover .mdc-data-table__cell {
+    color: #fff !important;
+}
+
+
+
+
+/************************************* Table Body Cell ************************************/
+// Table Column Style Change (odd number)
+.mdc-data-table__cell:nth-child(odd) {
+    color: #fff !important;
+    font-size: 20px !important;
+    background-color: #e38115;
+}
+
+// Table Column Style Change (even number)
+.mdc-data-table__cell:nth-child(even) {
+    color: #009285 !important;
+    font-size: 20px !important;
+    background-color: #ffcc70;
+}
+
+// Hover to change Table Column Cell Background
+.mdc-data-table__cell:hover {
+    background-color: #ff9487;
+    color: #a9e9eb;
+}
+
+
+
+/************************************* Table Body ************************************/
+// Table Full Body
+.mdc-data-table {
+    background-color: var(--mdc-theme-surface, #ff8a8a) !important;
+    border-color: rgba(0, 0, 0, 0.87);
+}
+
+
+
+
+/************************************* Table Paginator Style ************************************/
+
+// change Table Paginator Background Color
+::ng-deep .mat-mdc-paginator-container {
+    background-color: rgb(10, 194, 169);
+}
+
+// Change Table Paginator Label Style
+::ng-deep .mat-mdc-paginator-page-size-label {
+    color: rgb(243, 243, 243);
+    font-size: 15px;
+}
+
+// change Table Paginator Select Value & Font-size
+::ng-deep .mat-mdc-paginator .mat-mdc-select-value {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+// Change Table Paginator Select Icon Color
+::ng-deep .mat-mdc-select-arrow svg {
+    color: rgb(255, 28, 28);
+}
+
+// Table Paginator Font-Color & Font-Size
+::ng-deep .mat-mdc-paginator-range-label {
+    color: #fff;
+    font-size: 15px;
+}
+
+// Change Table Paginator Pre-Next Arrow Icon Color 
+::ng-deep .mat-mdc-paginator-icon {
+    fill: #ad0e5d;
+}
+
+
+
+// Change Sticky Table Height
+.example-container {
+    height: 300px;
+    overflow: auto;
+}

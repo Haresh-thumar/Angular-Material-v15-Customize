@@ -30,10 +30,31 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { IconComponent } from './icon/icon.component';
 import { ProgressSpinnerComponent } from './progress-spinner/progress-spinner.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { SnackbarComponent } from './snackbar/snackbar.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatTabsModule } from '@angular/material/tabs';
+import { TabsComponent } from './tabs/tabs.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { SliderComponent } from './slider/slider.component';
+import { MatSliderModule } from '@angular/material/slider';
+import { DialogComponent, DialogComponentContent } from './dialog/dialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { ExpensionPanelComponent } from './expension-panel/expension-panel.component';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { DividerComponent } from './divider/divider.component';
+import { MatDividerModule } from '@angular/material/divider';
+import { TableComponent } from './table/table.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { HorizontalStapperComponent } from './horizontal-stapper/horizontal-stapper.component';
+import {MatStepperModule} from '@angular/material/stepper';
+import { VerticalStepperComponent } from './vertical-stepper/vertical-stepper.component';
+
 
 
 @NgModule({
@@ -50,8 +71,21 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     ToolbarComponent,
     IconComponent,
     ProgressSpinnerComponent,
+    SlideToggleComponent,
     ProgressBarComponent,
     SnackbarComponent,
+    ProgressBarComponent,
+    SnackbarComponent,
+    TabsComponent,
+    SidenavComponent,
+    SliderComponent,
+    DialogComponent,
+    DialogComponentContent,
+    ExpensionPanelComponent,
+    DividerComponent,
+    TableComponent,
+    HorizontalStapperComponent,
+    VerticalStepperComponent
   ],
   imports: [
     BrowserModule,
@@ -71,8 +105,18 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatTooltipModule,
     MatToolbarModule,
     MatProgressSpinnerModule,
+    MatSlideToggleModule,
     MatProgressBarModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatTabsModule,
+    MatSidenavModule,
+    MatSliderModule,
+    MatDialogModule,
+    MatExpansionModule,
+    MatDividerModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatStepperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

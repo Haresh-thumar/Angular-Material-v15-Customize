@@ -1,0 +1,251 @@
+.heading {
+    margin: 40px 0 15px 25px!important;
+    font-size: 18px;
+}
+
+// Add Grid System
+.grid-box {
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    margin: 10px;
+}
+
+.grid-box > div {
+    border: 1px solid rgb(224,224,224);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 15px;
+}
+
+.column-2 {
+    grid-column: span 1;
+}
+
+
+// Global Configuration of Custom Thumb Label Formatting
+.mat-mdc-slider {
+    --mdc-slider-label-container-color: rgb(255, 144, 144);  // change slider tooltip background color
+    --mdc-slider-label-label-text-color: rgb(255, 0, 0);  // Change slider tooltip font color
+    --mat-mdc-slider-value-indicator-opacity: 0.61;  // Change Value Indicator tooltip opacity
+    // Disable State CSS
+    --mdc-slider-disabled-handle-color: #00e297;  // change slider indicator color in disable state
+    --mdc-slider-disabled-active-track-color: #0655ff;  // change slider track color in disable state
+    --mdc-slider-disabled-inactive-track-color: #f700ff;  // change in-complete track color in disable state
+    --mdc-slider-with-tick-marks-disabled-container-color: #ff0000;  // change tick-mark dot color in track in disable state
+}
+
+// Global Configuration of Custom Thumb Label Formatting
+.mat-mdc-slider {
+    --mdc-slider-label-label-text-font: 'Times New Roman', Times, serif;  // change thumb tooltip label font-family
+    --mdc-slider-label-label-text-size: 14px; // change thumb tooltip label font-size
+    --mdc-slider-label-label-text-line-height: 22px;  // change thumb tooltip label letter spacing
+    --mdc-slider-label-label-text-tracking: 1px; // change thumb tooltip label letter-spacing
+    --mdc-slider-label-label-text-weight: 400;  // change thumb tooltip label font-weight
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------------
+                                                ByDefault Theme Color
+---------------------------------------------------------------------------------------------------------------------*/
+/*----------------- Primary Color ------------------*/
+.mat-mdc-slider.mat-primary {
+    --mdc-slider-handle-color: #002488; // change toggle indicator handle color
+    --mdc-slider-focus-handle-color: #2e82ff;  // focus to change toggle indicator handle color
+    --mdc-slider-active-track-color: #0094b9;  // active track color
+    --mdc-slider-inactive-track-color: #9eb8ff;  // InActive track color
+    --mdc-slider-with-tick-marks-active-container-color: #ffffff;  // change tick-mark dot color when active track (...........)
+    --mdc-slider-with-tick-marks-inactive-container-color: #3f51b5; // change tick-mark dot color when inActive Track (...........)
+    --mat-mdc-slider-hover-ripple-color: rgba(22, 189, 36, 0.2);  // hover to change toggle indicator ripple background color
+    --mat-mdc-slider-focus-ripple-color: #0004e438;  // focus to change toggle indicator ripple background color
+    width: 100%; // change slider width
+}
+
+// Custom Thumb Label Formatting for Primary Color
+.mat-mdc-slider.mat-primary {
+    --mdc-slider-label-container-color: #1f45ad;  // change slider tooltip background color
+    --mdc-slider-label-label-text-color: #fff;  // change slider tooltip font color
+    --mat-mdc-slider-value-indicator-opacity: 0.61;  // change value indicator tooltip opacity
+}
+
+
+/*----------------- Accent Color ------------------*/
+.mat-mdc-slider.mat-accent {
+    --mdc-slider-handle-color: #ff0fcb; // change toggle indicator handle color
+    --mdc-slider-focus-handle-color: #e700b5;  // focus to change toggle indicator handle color
+    --mdc-slider-active-track-color: #ff1ece;  // active track color
+    --mdc-slider-inactive-track-color: #ff90e7;  // InActive track color
+    --mdc-slider-with-tick-marks-active-container-color: #ffffff;  // change tick-mark dot color when active track (...........)
+    --mdc-slider-with-tick-marks-inactive-container-color: #ff90e7; // change tick-mark dot color when inActive Track (...........)
+    --mat-mdc-slider-hover-ripple-color: rgba(22, 189, 36, 0.2);  // hover to change toggle indicator ripple background color
+    --mat-mdc-slider-focus-ripple-color: #ff90e767;  // focus to change toggle indicator ripple background color
+    width: 100%; // change slider width
+}
+
+// Custom Thumb Label Formatting for Accent Color
+.mat-mdc-slider.mat-accent {
+    --mdc-slider-label-container-color: #ff0fcb;  // change slider tooltip background color
+    --mdc-slider-label-label-text-color: #fff;  // change slider tooltip font color
+    --mat-mdc-slider-value-indicator-opacity: 0.61;  // change value indicator tooltip opacity
+}
+
+
+
+/*----------------- Warn Color ------------------*/
+.mat-mdc-slider.mat-warn {
+    --mdc-slider-handle-color: #ff661f; // change toggle indicator handle color
+    --mdc-slider-focus-handle-color: #ff661f;  // focus to change toggle indicator handle color
+    --mdc-slider-active-track-color: #ff793b;  // active track color
+    --mdc-slider-inactive-track-color: #ff9463;  // InActive track color
+    --mdc-slider-with-tick-marks-active-container-color: #ffffff;  // change tick-mark dot color when active track (...........)
+    --mdc-slider-with-tick-marks-inactive-container-color: #ff9463; // change tick-mark dot color when inActive Track (...........)
+    --mat-mdc-slider-hover-ripple-color: rgba(22, 189, 36, 0.2);  // hover to change toggle indicator ripple background color
+    --mat-mdc-slider-focus-ripple-color: #ff946352;  // focus to change toggle indicator ripple background color
+    width: 100%; // change slider width
+}
+
+// Custom Thumb Label Formatting for Warn Color
+.mat-mdc-slider.mat-warn {
+    --mdc-slider-label-container-color: #ff661f;  // change slider tooltip background color
+    --mdc-slider-label-label-text-color: #fff;  // change slider tooltip font color
+    --mat-mdc-slider-value-indicator-opacity: 0.61;  // change value indicator tooltip opacity
+}
+
+
+
+// Change Track Height & Border Radius
+::ng-deep .mat-mdc-slider.mat-warn .mdc-slider__track--inactive,
+::ng-deep .mat-mdc-slider.mat-warn .mdc-slider__track--active,
+::ng-deep .mat-mdc-slider.mat-warn .mdc-slider__track--active_fill {
+    height: var(--mdc-slider-inactive-track-height, 15px)!important; // InActive Track Height
+    height: var(--mdc-slider-active-track-height, 15px)!important; // Active Track Height
+    border-top-width: var(--mdc-slider-active-track-height, 15px)!important; // Active Track Border Height
+    border-top-color: #ff9463; // change Active track color
+    background-color: #ffd8c6; // change InActive track color
+}
+
+
+// Change Thumb Height, Width, Border-Radius, Border-Width & Background-Color 
+::ng-deep.mat-mdc-slider.mat-warn .mdc-slider__thumb-knob {
+    border-radius: var(--mdc-slider-handle-shape, 10%);  // change border radius
+    width: var(--mdc-slider-handle-width, 25px) !important; // change indicator width
+    height: var(--mdc-slider-handle-height, 25px) !important;  // change indicator height
+    background-color: #ff661f !important; // Handle Bg Color
+    border-width: calc(var(--mdc-slider-handle-height, 0) / 2) calc(var(--mdc-slider-handle-width, 0) / 2) !important;  // change border-width
+}
+
+// change active & hover ripple position
+::ng-deep .mat-mdc-slider-visual-thumb .mat-ripple {
+    width: 100%!important;
+    height: 100%!important;
+}
+
+// change inActive Track Height
+::ng-deep .mat-mdc-slider.mat-warn .mdc-slider__track {
+    height: var(--mdc-slider-inactive-track-height, 13px) !important;
+}
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------
+                                                Custom Theme Color
+---------------------------------------------------------------------------------------------------------------------*/
+
+/*----------------- warning Color ------------------*/
+.mat-mdc-slider.mat-warning {
+    --mdc-slider-handle-color: #ecad00; // change toggle indicator handle color
+    --mdc-slider-focus-handle-color: #ff006a;  // focus to change toggle indicator handle color
+    --mdc-slider-active-track-color: #ffc116;  // active track color
+    --mdc-slider-inactive-track-color: #ffc31f;  // InActive track color
+    --mdc-slider-with-tick-marks-active-container-color: #ffffff;  // change tick-mark dot color when active track (...........)
+    --mdc-slider-with-tick-marks-inactive-container-color: #3f51b5; // change tick-mark dot color when inActive Track (...........)
+    --mat-mdc-slider-hover-ripple-color: rgba(255, 217, 0, 0.2);  // hover to change toggle indicator ripple background color
+    --mat-mdc-slider-focus-ripple-color: #ffbb007c;  // focus to change toggle indicator ripple background color
+    width: 100%; // change slider width
+}
+
+// Custom Thumb Label Formatting for warning Color
+.mat-mdc-slider.mat-warning {
+    --mdc-slider-label-container-color: #ecad00;  // change slider tooltip background color
+    --mdc-slider-label-label-text-color: #fff;  // change slider tooltip font color
+    --mat-mdc-slider-value-indicator-opacity: 0.61;  // change value indicator tooltip opacity
+}
+
+
+/*----------------- danger Color ------------------*/
+.mat-mdc-slider.mat-danger {
+    --mdc-slider-handle-color: #e00025; // change toggle indicator handle color
+    --mdc-slider-focus-handle-color: #fc143a;  // focus to change toggle indicator handle color
+    --mdc-slider-active-track-color: #ff5470;  // active track color
+    --mdc-slider-inactive-track-color: #ff94a6;  // InActive track color
+    --mdc-slider-with-tick-marks-active-container-color: #ffffff;  // change tick-mark dot color when active track (...........)
+    --mdc-slider-with-tick-marks-inactive-container-color: #f3072f; // change tick-mark dot color when inActive Track (...........)
+    --mat-mdc-slider-hover-ripple-color: rgba(245, 0, 74, 0.123);  // hover to change toggle indicator ripple background color
+    --mat-mdc-slider-focus-ripple-color: #ff94a677;  // focus to change toggle indicator ripple background color
+    width: 100%; // change slider width
+}
+
+// Custom Thumb Label Formatting for danger Color
+.mat-mdc-slider.mat-danger {
+    --mdc-slider-label-container-color: #e00025;  // change slider tooltip background color
+    --mdc-slider-label-label-text-color: #fff;  // change slider tooltip font color
+    --mat-mdc-slider-value-indicator-opacity: 0.61;  // change value indicator tooltip opacity
+}
+
+
+
+/*----------------- success Color ------------------*/
+.mat-mdc-slider.mat-success {
+    --mdc-slider-handle-color: #00c510; // change toggle indicator handle color
+    --mdc-slider-focus-handle-color: #019b0e;  // focus to change toggle indicator handle color
+    --mdc-slider-active-track-color: #00e713;  // active track color
+    --mdc-slider-inactive-track-color: #00e713;  // InActive track color
+    --mdc-slider-with-tick-marks-active-container-color: #ffffff;  // change tick-mark dot color when active track (...........)
+    --mdc-slider-with-tick-marks-inactive-container-color: #00940c; // change tick-mark dot color when inActive Track (...........)
+    --mat-mdc-slider-hover-ripple-color: rgba(0, 216, 18, 0.2);  // hover to change toggle indicator ripple background color
+    --mat-mdc-slider-focus-ripple-color: #34df0052;  // focus to change toggle indicator ripple background color
+    width: 100%; // change slider width
+}
+
+// Custom Thumb Label Formatting for success Color
+.mat-mdc-slider.mat-success {
+    --mdc-slider-label-container-color: #00c510;  // change slider tooltip background color
+    --mdc-slider-label-label-text-color: #fff;  // change slider tooltip font color
+    --mat-mdc-slider-value-indicator-opacity: 0.61;  // change value indicator tooltip opacity
+}
+
+// Change Track Height & Border Radius
+::ng-deep .mat-mdc-slider.mat-success .mdc-slider__track--inactive,
+::ng-deep .mat-mdc-slider.mat-success .mdc-slider__track--active,
+::ng-deep .mat-mdc-slider.mat-success .mdc-slider__track--active_fill {
+    height: var(--mdc-slider-inactive-track-height, 15px)!important; // InActive Track Height
+    height: var(--mdc-slider-active-track-height, 15px)!important; // Active Track Height
+    border-top-width: var(--mdc-slider-active-track-height, 15px)!important; // Active Track Border Height
+    border-top-color: #00c510; // change Active track color
+    background-color: #bbffc0; // change InActive track color
+}
+
+// Change Thumb Height, Width, Border-Radius, Border-Width & Background-Color 
+::ng-deep.mat-mdc-slider.mat-success .mdc-slider__thumb-knob {
+    border-radius: var(--mdc-slider-handle-shape, 10%);  // change border radius
+    width: var(--mdc-slider-handle-width, 25px) !important; // change indicator width
+    height: var(--mdc-slider-handle-height, 25px) !important;  // change indicator height
+    background-color: #00c510 !important; // Handle Bg Color
+    border-width: calc(var(--mdc-slider-handle-height, 0) / 2) calc(var(--mdc-slider-handle-width, 0) / 2) !important;  // change border-width
+}
+
+// change active & hover ripple position
+::ng-deep .mat-mdc-slider-visual-thumb .mat-ripple {
+    width: 100%!important;
+    height: 100%!important;
+}
+
+
+// change inActive Track Height
+::ng-deep .mat-mdc-slider.mat-success .mdc-slider__track {
+    height: var(--mdc-slider-inactive-track-height, 13px) !important;
+}

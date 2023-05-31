@@ -1,0 +1,264 @@
+/*----------------------------------------------------------------------------------------------------
+                                            expension-panel-1
+----------------------------------------------------------------------------------------------------*/
+
+// Expansion Panel Body Style
+.expension-panel-1.mat-expansion-panel .mat-expansion-panel-header {
+    background-color: #c4f4fc !important;
+    height: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+// Expansion Panel Title on Hover
+.expension-panel-1.mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:hover:not([aria-disabled=true]) {
+    background-color: #91f0ff !important;
+}
+
+// Expansion Panel Title Text
+.expension-panel-1 .mat-expansion-panel-header-title {
+    color: #fd0202ef !important;
+}
+
+// Expansion Panel Description Style
+.expension-panel-1 .mat-expansion-panel-header-description {
+    color: #fd9002ef !important;
+}
+
+// Active to Change Expansion Panel Height, Background-Color
+.expension-panel-1 .mat-expansion-panel-header.mat-expanded {
+    height: 50px !important;
+    background-color: orangered !important;
+}
+
+// Active to Change Expansion Panel Title Color
+.expension-panel-1 .mat-expansion-panel-header.mat-expanded .mat-expansion-panel-header-title {
+    color: #fff !important;
+}
+
+// Active to Change Expansion Panel Description Color
+.expension-panel-1 .mat-expansion-panel-header.mat-expanded .mat-expansion-panel-header-description {
+    color: #e5ff00 !important;
+}
+
+// Change Expansion Panel Content Color When Active
+::ng-deep .expension-panel-1 .mat-expansion-panel-content {
+    background-color: #fcffd4 !important;
+}
+
+// Change Padding in Expansion Toggle Body
+::ng-deep .expension-panel-1 .mat-expansion-panel-body {
+    padding: 30px !important;
+}
+
+// Expansion Panel Toggle Body Content
+::ng-deep .expension-panel-1 .mat-expansion-panel-body>p {
+    padding: 10px !important;
+    color: #ff00dd !important;
+}
+
+
+
+// Expansion Panel Disable State CSS
+.expension-panel-1 .mat-expansion-panel-header[aria-disabled=true] {
+    background-color: rgb(172, 172, 172) !important;
+}
+
+// Disabled Expansion Panel Title & Description Text Color
+.expension-panel-1 .mat-expansion-panel-header[aria-disabled=true] .mat-expansion-panel-header-title,
+.expension-panel-1 .mat-expansion-panel-header[aria-disabled=true] .mat-expansion-panel-header-description {
+    color: #c4f4fc!important;
+    font-family: 500!important;
+}
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------
+                                            expension-panel-1
+----------------------------------------------------------------------------------------------------*/
+
+// Expansion Panel Body Style
+.expension-panel-2.mat-expansion-panel .mat-expansion-panel-header {
+    background-color: #8fff63 !important;
+    height: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+// Expansion Panel Title on Hover
+.expension-panel-2.mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:hover:not([aria-disabled=true]) {
+    background-color: #3bd100 !important;
+}
+
+// Expansion Panel Title Text
+.expension-panel-2 .mat-expansion-panel-header-title {
+    color: #35b900 !important;
+}
+
+// Expansion Panel Description Style
+.expension-panel-2 .mat-expansion-panel-header-description {
+    color: #fd9002ef !important;
+}
+
+// Active to Change Expansion Panel Height, Background-Color
+.expension-panel-2 .mat-expansion-panel-header.mat-expanded {
+    height: 50px !important;
+    background-color: orangered !important;
+}
+
+// Active to Change Expansion Panel Title Color
+.expension-panel-2 .mat-expansion-panel-header.mat-expanded .mat-expansion-panel-header-title {
+    color: #fff !important;
+}
+
+// Active to Change Expansion Panel Description Color
+.expension-panel-2 .mat-expansion-panel-header.mat-expanded .mat-expansion-panel-header-description {
+    color: #e5ff00 !important;
+}
+
+// Change Expansion Panel Content Color When Active
+::ng-deep .expension-panel-2 .mat-expansion-panel-content {
+    background-color: #fcffd4 !important;
+}
+
+// Change Padding in Expansion Toggle Body
+::ng-deep .expension-panel-2 .mat-expansion-panel-body {
+    padding: 30px !important;
+}
+
+// Expansion Panel Toggle Body Content
+::ng-deep .expension-panel-2 .mat-expansion-panel-body>p {
+    padding: 10px !important;
+    color: #ff00dd !important;
+}
+
+
+
+// Expansion Panel Disable State CSS
+.expension-panel-2 .mat-expansion-panel-header[aria-disabled=true] {
+    background-color: rgb(172, 172, 172) !important;
+}
+
+// Disabled Expansion Panel Title & Description Text Color
+.expension-panel-2 .mat-expansion-panel-header[aria-disabled=true] .mat-expansion-panel-header-title,
+.expension-panel-2 .mat-expansion-panel-header[aria-disabled=true] .mat-expansion-panel-header-description {
+    color: #c4f4fc!important;
+    font-family: 500!important;
+}
+
+// Expansion Panel Toggle Icon
+::ng-deep .expension-panel-2 .mat-expansion-indicator::after {
+    color: rgb(255,255,255);
+    width: 20px;
+    height: 20px;
+    margin: -15px 0 0 0;
+}
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------
+                                            expension-panel-3
+----------------------------------------------------------------------------------------------------*/
+
+// Expansion Panel Body Style
+.expension-panel-3.mat-expansion-panel .mat-expansion-panel-header {
+    background-color: #fffd8d !important;
+    height: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+// Expansion Panel Title on Hover
+.expension-panel-3.mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:hover:not([aria-disabled=true]) {
+    background-color: #fffc37 !important;
+}
+
+// Expansion Panel Title Text
+.expension-panel-3 .mat-expansion-panel-header-title {
+    color: #000000ef !important;
+}
+
+// Expansion Panel Description Style
+.expension-panel-3 .mat-expansion-panel-header-description {
+    color: #8b4f00 !important;
+}
+
+// Active to Change Expansion Panel Height, Background-Color
+.expension-panel-3 .mat-expansion-panel-header.mat-expanded {
+    height: 50px !important;
+    background-color: rgb(255, 140, 98) !important;
+}
+
+// Active to Change Expansion Panel Title Color
+.expension-panel-3 .mat-expansion-panel-header.mat-expanded .mat-expansion-panel-header-title {
+    color: #fff !important;
+}
+
+// Active to Change Expansion Panel Description Color
+.expension-panel-3 .mat-expansion-panel-header.mat-expanded .mat-expansion-panel-header-description {
+    color: #e5ff00 !important;
+}
+
+// Change Expansion Panel Content Color When Active
+::ng-deep .expension-panel-3 .mat-expansion-panel-content {
+    background-color: #fcffd4 !important;
+}
+
+// Change Padding in Expansion Toggle Body
+::ng-deep .expension-panel-3 .mat-expansion-panel-body {
+    padding: 30px !important;
+}
+
+// Expansion Panel Toggle Body Content
+::ng-deep .expension-panel-3 .mat-expansion-panel-body>p {
+    padding: 10px !important;
+    color: #ff00dd !important;
+}
+
+
+
+// Expansion Panel Disable State CSS
+.expension-panel-3 .mat-expansion-panel-header[aria-disabled=true] {
+    background-color: rgb(172, 172, 172) !important;
+}
+
+// Disabled Expansion Panel Title & Description Text Color
+.expension-panel-3 .mat-expansion-panel-header[aria-disabled=true] .mat-expansion-panel-header-title,
+.expension-panel-3 .mat-expansion-panel-header[aria-disabled=true] .mat-expansion-panel-header-description {
+    color: #c4f4fc!important;
+    font-family: 500!important;
+}
+
+// Expansion Panel Toggle Icon
+::ng-deep .expension-panel-3 .mat-expansion-indicator::after {
+    color: rgb(255, 0, 0);
+}
+
+// change Expansion Panel Description Position
+.expension-panel-3 .mat-expansion-panel-header-description {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.expension-panel-3 .mat-mdc-form-field + .mat-mdc-form-field {
+    margin-left: 8px;
+}
+
+
+// Change Icon-Color
+::ng-deep .mat-icon {
+    color: rgb(52, 52, 177)!important;
+}
