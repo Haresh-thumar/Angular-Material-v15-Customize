@@ -1,34 +1,33 @@
-<h1>Customize Vertical-stepper</h1>
-
+<h1>Mat-Vertical-Stapper Customize</h1>
 <br><br>
 
-<!------------------------------------------------------------------------------------------------------------------
-                                            Example-1 (Primary-Theme)
-------------------------------------------------------------------------------------------------------------------->
-<section>
-    <div class="stepper-title">
-        <h2>Example-1 (Primary-Theme)</h2>
-    </div>
 
-    <mat-stepper orientation="vertical" linear="true" #stepper color="primary">
-        <mat-step [stepControl]="firstFormGroup" errorMessage="Address is required.">
-            <form [formGroup]="firstFormGroup">
+<!------------------------------------------------------------------------------------------------------------------------------------------
+                                                                    Example-1
+------------------------------------------------------------------------------------------------------------------------------------------->
+<section style="margin-bottom: 90px;">
+    <div class="card example-title">
+        <h2>Example-1 (Primary Theme)</h2>
+    </div>
+    <mat-stepper linear #stepper color="primary" orientation="vertical">
+        <mat-step [editable]="formedit5" [stepControl]="seventhFormGroup" errorMessage="Address is required.">
+            <form [formGroup]="seventhFormGroup">
                 <ng-template matStepLabel>Fill out your name</ng-template>
-                <mat-form-field appearance="fill">
+                <mat-form-field appearance="outline">
                     <mat-label>Name</mat-label>
-                    <input matInput placeholder="Last name, First name" formControlName="field1" required>
+                    <input matInput formControlName="field1" placeholder="Last name, First name" required>
                 </mat-form-field>
                 <div>
                     <button mat-button matStepperNext>Next</button>
                 </div>
             </form>
         </mat-step>
-        <mat-step [stepControl]="secondFormGroup">
-            <form [formGroup]="secondFormGroup">
+        <mat-step [editable]="formedit5" [stepControl]="eaighthFormGroup">
+            <form [formGroup]="eaighthFormGroup">
                 <ng-template matStepLabel>Fill out your address</ng-template>
                 <mat-form-field appearance="fill">
                     <mat-label>Address</mat-label>
-                    <input matInput placeholder="Ex. 1 Main St, New York, NY" formControlName="field2" required>
+                    <input matInput formControlName="field1" placeholder="Ex. 1 Main St, New York, NY" required>
                 </mat-form-field>
                 <div>
                     <button mat-button matStepperPrevious>Back</button>
@@ -36,7 +35,7 @@
                 </div>
             </form>
         </mat-step>
-        <mat-step>
+        <mat-step [editable]="formedit5">
             <ng-template matStepLabel>Done</ng-template>
             <p>You are now done.</p>
             <div>
@@ -45,4 +44,106 @@
             </div>
         </mat-step>
     </mat-stepper>
+    <div style="display: flex; justify-content: center; margin-top: 15px;">
+        <button mat-raised-button color="primary" (click)="editableForm5()">Edit :- {{formedit5}}</button>
+    </div>
+</section>
+
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------------
+                                                                    Example-1
+------------------------------------------------------------------------------------------------------------------------------------------->
+<section style="margin-bottom: 90px;">
+    <div class="card example-title">
+        <h2>Example-2 (Accent Theme)</h2>
+    </div>
+    <mat-stepper       #stepper color="accent" orientation="vertical">
+        <mat-step [editable]="formedit5" [stepControl]="seventhFormGroup" errorMessage="Address is required.">
+            <form [formGroup]="seventhFormGroup">
+                <ng-template matStepLabel>Fill out your name</ng-template>
+                <mat-form-field appearance="outline">
+                    <mat-label>Name</mat-label>
+                    <input matInput formControlName="field1" placeholder="Last name, First name" required>
+                </mat-form-field>
+                <div>
+                    <button mat-button matStepperNext>Next</button>
+                </div>
+            </form>
+        </mat-step>
+        <mat-step [editable]="formedit5" [stepControl]="eaighthFormGroup">
+            <form [formGroup]="eaighthFormGroup">
+                <ng-template matStepLabel>Fill out your address</ng-template>
+                <mat-form-field appearance="fill">
+                    <mat-label>Address</mat-label>
+                    <input matInput formControlName="field1" placeholder="Ex. 1 Main St, New York, NY" required>
+                </mat-form-field>
+                <div>
+                    <button mat-button matStepperPrevious>Back</button>
+                    <button mat-button matStepperNext>Next</button>
+                </div>
+            </form>
+        </mat-step>
+        <mat-step [editable]="formedit5">
+            <ng-template matStepLabel>Done</ng-template>
+            <p>You are now done.</p>
+            <div>
+                <button mat-button matStepperPrevious>Back</button>
+                <button mat-button (click)="stepper.reset()">Reset</button>
+            </div>
+        </mat-step>
+    </mat-stepper>
+    <div style="display: flex; justify-content: center; margin-top: 15px;">
+        <button mat-raised-button color="accent" (click)="editableForm5()">Edit :- {{formedit5}}</button>
+    </div>
+</section>
+
+
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------------
+                                                                    Example-1
+------------------------------------------------------------------------------------------------------------------------------------------->
+<section style="margin-bottom: 90px;">
+    <div class="card example-title">
+        <h2>Example-3 (Warn Theme)</h2>
+    </div>
+    <mat-stepper linear #stepper color="warn" orientation="vertical">
+        <mat-step [editable]="formedit5" [stepControl]="seventhFormGroup" errorMessage="Address is required.">
+            <form [formGroup]="seventhFormGroup">
+                <ng-template matStepLabel>Fill out your name</ng-template>
+                <mat-form-field appearance="outline">
+                    <mat-label>Name</mat-label>
+                    <input matInput formControlName="field1" placeholder="Last name, First name" required>
+                </mat-form-field>
+                <div>
+                    <button mat-button matStepperNext>Next</button>
+                </div>
+            </form>
+        </mat-step>
+        <mat-step [editable]="formedit5" [stepControl]="eaighthFormGroup">
+            <form [formGroup]="eaighthFormGroup">
+                <ng-template matStepLabel>Fill out your address</ng-template>
+                <mat-form-field appearance="fill">
+                    <mat-label>Address</mat-label>
+                    <input matInput formControlName="field1" placeholder="Ex. 1 Main St, New York, NY" required>
+                </mat-form-field>
+                <div>
+                    <button mat-button matStepperPrevious>Back</button>
+                    <button mat-button matStepperNext>Next</button>
+                </div>
+            </form>
+        </mat-step>
+        <mat-step [editable]="formedit5">
+            <ng-template matStepLabel>Done</ng-template>
+            <p>You are now done.</p>
+            <div>
+                <button mat-button matStepperPrevious>Back</button>
+                <button mat-button (click)="stepper.reset()">Reset</button>
+            </div>
+        </mat-step>
+    </mat-stepper>
+    <div style="display: flex; justify-content: center; margin-top: 15px;">
+        <button mat-raised-button color="warn" (click)="editableForm5()">Edit :- {{formedit5}}</button>
+    </div>
 </section>

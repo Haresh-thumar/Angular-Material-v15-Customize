@@ -1,16 +1,451 @@
-.stepper-title {
+.example-title {
     width: 100%;
-    background-color: #198754;
-    padding: 10px;
+    background: #198754;
+    padding: 10px 10px;
     margin: 0 0 20px 0;
 }
 
-.stepper-title h2 {
+.example-title h2 {
     margin: 0 0 0 20px;
     color: #fff;
 }
 
 
-/*---------------------------------------------------------------------------------------------------------------------------------------
-                                                    Example-1 (Primary-Theme)
----------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------
+                                                            Example-1 (Primary Theme)
+-----------------------------------------------------------------------------------------------------------------------------------------------*/
+// Change Stepper Header Style
+::ng-deep .mat-primary.mat-vertical-stepper-header {
+    width: 250px;
+    background-color: rgb(255, 255, 255) !important;
+    border: 1px solid #bdbdbd;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+// Change Vertical Line Style 
+::ng-deep .mat-stepper-vertical-line::before {
+    border-left-style: dotted !important;
+    border-left-width: 4px !important;
+    top: -10px;
+}
+
+// Change Stepper Content Style
+::ng-deep .mat-vertical-content {
+    margin: 30px;
+    padding: 24px !important;
+    border: 1px solid rgb(255, 17, 0);
+    background-color: rgb(238, 238, 238) !important;
+    border-radius: 10px;
+}
+
+/*- for outer frame property change when active(seleted) --*/
+// Change Stepper Header Active Style
+::ng-deep .mat-primary.mat-step-header.mat-vertical-stepper-header {
+    &[ng-reflect-selected="true"].mat-step-header {
+        background-color: rgba(154, 191, 226, 0.336) !important;
+        border: 1px solid #039be5 !important;
+        backdrop-filter: blur(5px) !important;
+    }
+}
+
+/*- for outer frame property change when deactive(deseleted) --*/
+// Change Stepper Header DeActive Style
+::ng-deep .mat-primary.mat-step-header.mat-vertical-stepper-header {
+    &[ng-reflect-selected="false"].mat-step-header {
+        background-color: rgb(255, 255, 255);
+        backdrop-filter: blur(5px) !important;
+    }
+}
+
+
+// Change Stepper Header Edit Mode Style
+::ng-deep .mat-primary.mat-step-header.mat-vertical-stepper-header:has(.mat-step-icon-state-edit) {
+    background-color: rgba(0, 128, 0, 0.267) !important;
+    border: 1px solid green !important;
+    backdrop-filter: blur(5px);
+}
+
+
+// Change Stepper Header Done Mode Style
+::ng-deep .mat-primary.mat-step-header.mat-vertical-stepper-header:has(.mat-step-icon-state-done) {
+    background-color: rgba(0, 128, 0, 0.267) !important;
+    border: 1px solid green !important;
+    backdrop-filter: blur(5px);
+}
+
+// Change Stepper Header Selected Label Style
+::ng-deep .mat-primary.mat-step-header.mat-vertical-stepper-header .mat-step-label-selected {
+    color: #039be5 !important;
+}
+
+// Change Stepper Header Active Label Style
+::ng-deep .mat-primary.mat-step-header.mat-vertical-stepper-header .mat-step-label.mat-step-label-active {
+    color: #39a805;
+}
+
+// Change Bydefault Stepper Header Icon Style
+::ng-deep .mat-primary.mat-step-header.mat-vertical-stepper-header .mat-step-icon {
+    background-color: #bdbdbd;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+    margin: auto 10px auto 0;
+    outline: 2px solid #bdbdbd;
+    outline-offset: 1px;
+    border-radius: 5px;
+}
+
+// Change Selected Stepper Header Icon Style
+::ng-deep .mat-primary.mat-step-header.mat-vertical-stepper-header .mat-step-icon-selected {
+    background-color: #039be5;
+    color: #fff;
+    outline: 2px solid #039be5;
+    outline-offset: 2px;
+}
+
+// Change Stepper Header Done Icon Style
+::ng-deep .mat-primary.mat-step-header.mat-vertical-stepper-header .mat-step-icon-state-edit {
+    background-color: #39a805;
+    color: #fff;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/768px-White_check.svg.png");
+    background-size: 13px;
+    background-position-y: 5px;
+    background-position-x: 5px;
+    background-repeat: no-repeat;
+    outline: 2px solid #39a805;
+    outline-offset: 2px;
+}
+
+// Remove Edit Icon
+::ng-deep .mat-step-icon .mat-icon {
+    display: none;
+}
+
+// Change Stepper Header Edit Icon Style
+::ng-deep .mat-primary.mat-step-header.mat-vertical-stepper-header .mat-step-icon-state-done {
+    background-color: #0898c4;
+    color: #fff;
+    outline: 2px solid #0898c4;
+    outline-offset: 2px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/768px-White_check.svg.png");
+    background-size: 13px;
+    background-position-y: 5px;
+    background-position-x: 5px;
+    background-repeat: no-repeat;
+}
+
+// Selected Step horizontal line
+::ng-deep .mat-primary.mat-step-header.mat-vertical-stepper-header {
+    &[ng-reflect-active="true"]+.mat-stepper-vertical-line::before {
+        border-left-color: #78c4db !important;
+    }
+}
+
+// DeSelected Step horizontal line
+::ng-deep .mat-primary.mat-step-header.mat-vertical-stepper-header {
+    &[ng-reflect-active="false"]+.mat-stepper-vertical-line::before {
+        border-left-color: rgba(0, 0, 0, .12) !important;
+    }
+}
+
+// Remove Step Click Ripple Effect
+::ng-deep .mat-primary.mat-step-header.mat-vertical-stepper-header .mat-step-header-ripple {
+    display: none;
+}
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------
+                                                            Example-2 (Accent Theme)
+-----------------------------------------------------------------------------------------------------------------------------------------------*/
+// Change Stepper Header Style
+::ng-deep .mat-accent.mat-vertical-stepper-header {
+    width: 250px;
+    background-color: rgb(255, 255, 255) !important;
+    border: 1px solid #bdbdbd;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+// Change Vertical Line Style
+::ng-deep .mat-stepper-vertical-line::before {
+    border-left-style: dotted !important;
+    border-left-width: 4px !important;
+    top: -10px;
+}
+
+// Change Stepper Content Style
+::ng-deep .mat-vertical-content {
+    margin: 30px;
+    padding: 24px !important;
+    border: 1px solid #ff4786;
+    background-color: rgb(238, 238, 238) !important;
+    border-radius: 10px;
+}
+
+/*- for outer frame property change when active(seleted) --*/
+/* ========== Selected Step Box ============ */
+::ng-deep .mat-accent.mat-step-header.mat-vertical-stepper-header {
+    &[ng-reflect-selected="true"].mat-step-header {
+        background-color: rgba(255, 71, 134, 0.25) !important;
+        border: 1px solid #ff4786 !important;
+        backdrop-filter: blur(5px) !important;
+    }
+}
+
+/*- for outer frame property change when deactive(deseleted) --*/
+/* ========== DeSelected Step Box ============ */
+::ng-deep .mat-accent.mat-step-header.mat-vertical-stepper-header {
+    &[ng-reflect-selected="false"].mat-step-header {
+        background-color: rgb(255, 255, 255);
+        backdrop-filter: blur(5px) !important;
+    }
+}
+
+/* ========= Edit Step =========== */
+::ng-deep .mat-accent.mat-step-header.mat-vertical-stepper-header:has(.mat-step-icon-state-edit) {
+    background-color: rgba(0, 128, 0, 0.267) !important;
+    border: 1px solid green !important;
+    backdrop-filter: blur(5px);
+}
+
+
+/* ========= Done Step =========== */
+::ng-deep .mat-accent.mat-step-header.mat-vertical-stepper-header:has(.mat-step-icon-state-done) {
+    background-color: rgba(0, 128, 0, 0.267) !important;
+    border: 1px solid green !important;
+    backdrop-filter: blur(5px);
+}
+
+/* ================ Stapper Step Box Text ================= */
+::ng-deep .mat-accent.mat-step-header.mat-vertical-stepper-header .mat-step-label-selected {
+    color: #ff4786 !important;
+}
+
+/* ================ Stapper Step Box active text ================= */
+::ng-deep .mat-accent.mat-step-header.mat-vertical-stepper-header .mat-step-label.mat-step-label-active {
+    color: #39a805;
+}
+
+/* ================ Stapper Step icons circle ================= */
+::ng-deep .mat-accent.mat-step-header.mat-vertical-stepper-header .mat-step-icon {
+    background-color: #bdbdbd;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+    margin: auto 10px auto 0;
+    outline: 2px solid #bdbdbd;
+    outline-offset: 1px;
+    border-radius: 5px;
+}
+
+/* ================ Stapper Step selected icons circle ================= */
+::ng-deep .mat-accent.mat-step-header.mat-vertical-stepper-header .mat-step-icon-selected {
+    background-color: #ff4786;
+    color: #fff;
+    outline: 2px solid #ff4786;
+    outline-offset: 2px;
+}
+
+/* ================ Stapper Step Edit Icon circle ================= */
+::ng-deep .mat-accent.mat-step-header.mat-vertical-stepper-header .mat-step-icon-state-edit {
+    background-color: #39a805;
+    color: #fff;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/768px-White_check.svg.png");
+    background-size: 13px;
+    background-position-y: 5px;
+    background-position-x: 5px;
+    background-repeat: no-repeat;
+    outline: 2px solid #39a805;
+    outline-offset: 2px;
+}
+
+/* ================ Stapper Step Done Icon circle ================= */
+::ng-deep .mat-accent.mat-step-header.mat-vertical-stepper-header .mat-step-icon-state-done {
+    background-color: #39a805;
+    color: #fff;
+    outline: 2px solid #39a805;
+    outline-offset: 2px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/768px-White_check.svg.png");
+    background-size: 13px;
+    background-position-y: 5px;
+    background-position-x: 5px;
+    background-repeat: no-repeat;
+}
+
+/*========= Remove Edit Icon =========*/
+::ng-deep .mat-step-icon .mat-icon {
+    display: none;
+}
+
+/* ============ Selected Step horizontal line ============ */
+::ng-deep .mat-accent.mat-step-header.mat-vertical-stepper-header {
+    &[ng-reflect-active="true"]+.mat-stepper-vertical-line::before {
+        border-left-color: #e484d4 !important;
+    }
+}
+
+/* ============ DeSelected Step horizontal line ============ */
+::ng-deep .mat-accent.mat-step-header.mat-vertical-stepper-header {
+    &[ng-reflect-active="false"]+.mat-stepper-vertical-line::before {
+        border-left-color: rgba(0, 0, 0, .12) !important;
+    }
+}
+
+/* Remove Step Click Ripple Effect */
+::ng-deep .mat-accent.mat-step-header.mat-vertical-stepper-header .mat-step-header-ripple {
+    display: none;
+}
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------
+                                                            Example-3 (Warn Theme)
+-----------------------------------------------------------------------------------------------------------------------------------------------*/
+// Change Stepper Header Style
+::ng-deep .mat-warn.mat-vertical-stepper-header {
+    width: 250px;
+    background-color: rgb(255, 255, 255) !important;
+    border: 1px solid #bdbdbd;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+// Change Vertical Line Style
+::ng-deep .mat-stepper-vertical-line::before {
+    border-left-style: dotted !important;
+    border-left-width: 4px !important;
+    border-color: blue;
+    top: -10px;
+}
+
+// Change Stepper Content Style
+::ng-deep .mat-vertical-content {
+    margin: 30px;
+    padding: 24px !important;
+    border: 1px solid #f44336;
+    background-color: rgb(238, 238, 238) !important;
+    border-radius: 10px;
+}
+
+/*- for outer frame property change when active(seleted) --*/
+/* ========== Selected Step Box ============ */
+::ng-deep .mat-warn.mat-step-header.mat-vertical-stepper-header {
+    &[ng-reflect-selected="true"].mat-step-header {
+        background-color: rgba(244, 67, 54, 0.25) !important;
+        border: 1px solid #f44336 !important;
+        backdrop-filter: blur(5px) !important;
+    }
+}
+
+/*- for outer frame property change when deactive(deseleted) --*/
+/* ========== DeSelected Step Box ============ */
+::ng-deep .mat-warn.mat-step-header.mat-vertical-stepper-header {
+    &[ng-reflect-selected="false"].mat-step-header {
+        background-color: rgb(255, 255, 255);
+        backdrop-filter: blur(5px) !important;
+    }
+}
+
+/* ========= Edit Step =========== */
+::ng-deep .mat-warn.mat-step-header.mat-vertical-stepper-header:has(.mat-step-icon-state-edit) {
+    background-color: rgba(0, 128, 0, 0.267) !important;
+    border: 1px solid green !important;
+    backdrop-filter: blur(5px);
+}
+
+
+/* ========= Done Step =========== */
+::ng-deep .mat-warn.mat-step-header.mat-vertical-stepper-header:has(.mat-step-icon-state-done) {
+    background-color: rgba(0, 128, 0, 0.267) !important;
+    border: 1px solid green !important;
+    backdrop-filter: blur(5px);
+}
+
+/* ================ Stapper Step Box Text ================= */
+::ng-deep .mat-warn.mat-step-header.mat-vertical-stepper-header .mat-step-label-selected {
+    color: #f44336 !important;
+}
+
+/* ================ Stapper Step Box active text ================= */
+::ng-deep .mat-warn.mat-step-header.mat-vertical-stepper-header .mat-step-label.mat-step-label-active {
+    color: #39a805;
+}
+
+/* ================ Stapper Step icons circle ================= */
+::ng-deep .mat-warn.mat-step-header.mat-vertical-stepper-header .mat-step-icon {
+    background-color: #bdbdbd;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+    margin: auto 10px auto 0;
+    outline: 2px solid #bdbdbd;
+    outline-offset: 1px;
+    border-radius: 5px;
+}
+
+/* ================ Stapper Step selected icons circle ================= */
+::ng-deep .mat-warn.mat-step-header.mat-vertical-stepper-header .mat-step-icon-selected {
+    background-color: #f44336;
+    color: #fff;
+    outline: 2px solid #f44336;
+    outline-offset: 2px;
+}
+
+/* ================ Stapper Step Edit Icon circle ================= */
+::ng-deep .mat-warn.mat-step-header.mat-vertical-stepper-header .mat-step-icon-state-edit {
+    background-color: #39a805;
+    color: #fff;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/768px-White_check.svg.png");
+    background-size: 13px;
+    background-position-y: 5px;
+    background-position-x: 5px;
+    background-repeat: no-repeat;
+    outline: 2px solid #39a805;
+    outline-offset: 2px;
+}
+
+/* ================ Stapper Step Done Icon circle ================= */
+::ng-deep .mat-warn.mat-step-header.mat-vertical-stepper-header .mat-step-icon-state-done {
+    background-color: #39a805;
+    color: #fff;
+    outline: 2px solid #39a805;
+    outline-offset: 2px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/768px-White_check.svg.png");
+    background-size: 13px;
+    background-position-y: 5px;
+    background-position-x: 5px;
+    background-repeat: no-repeat;
+}
+
+/*========= Remove Edit Icon =========*/
+::ng-deep .mat-step-icon .mat-icon {
+    display: none;
+}
+
+/* ============ Selected Step horizontal line ============ */
+::ng-deep .mat-warn.mat-step-header.mat-vertical-stepper-header {
+    &[ng-reflect-active="true"]+.mat-stepper-vertical-line::before {
+        border-left-color: #f19d97 !important;
+    }
+}
+
+/* ============ DeSelected Step horizontal line ============ */
+::ng-deep .mat-warn.mat-step-header.mat-vertical-stepper-header {
+    &[ng-reflect-active="false"]+.mat-stepper-vertical-line::before {
+        border-left-color: rgba(0, 0, 0, .12) !important;
+    }
+}
+
+/* Remove Step Click Ripple Effect */
+::ng-deep .mat-warn.mat-step-header.mat-vertical-stepper-header .mat-step-header-ripple {
+    display: none;
+}

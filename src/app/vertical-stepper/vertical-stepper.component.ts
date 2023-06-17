@@ -8,19 +8,26 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class VerticalStepperComponent {
 
-  firstFormGroup!: FormGroup;
-  secondFormGroup!: FormGroup;
+  constructor(private _formBuilder: FormBuilder) { }
 
-  constructor(private _formbuilder: FormBuilder) { }
+  /*------- Example -------*/
+  seventhFormGroup!: FormGroup;
+  eaighthFormGroup!: FormGroup;
+
+  formedit5: boolean = true;
 
   ngOnInit(): void {
-    this.firstFormGroup = this._formbuilder.group({
+    this.seventhFormGroup = this._formBuilder.group({
       field1: ['', Validators.required]
     });
-
-    this.secondFormGroup = this._formbuilder.group({
-      field2: ['', Validators.required]
+    this.eaighthFormGroup = this._formBuilder.group({
+      field1: ['', Validators.required]
     });
+  }
+
+
+  editableForm5() {
+    this.formedit5 = !this.formedit5;
   }
 
 }
