@@ -207,6 +207,7 @@
   background-color: yellow; // lable background
   font-size: 14px !important; // lable font-size
   padding: 0 10px; // add padding in lable
+
 }
 
 // Change Mat-TextArea Floating-Lable Byefault Color
@@ -248,12 +249,33 @@
 }
 
 
+
+// change Left Side shape radius
+::ng-deep .mdc-text-field--outlined .mdc-notched-outline .mdc-notched-outline__leading {
+  width: max(16px, var(--mdc-shape-small, 34px)) !important;
+}
+
+// change Left Side border radius
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__leading {
+  border-top-left-radius: 220px !important;
+  border-bottom-left-radius: 220px !important;
+}
+
+// change Right Side border radius
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing {
+  border-top-right-radius: 40px !important;
+  border-bottom-right-radius: 40px !important;
+}
+
+
+
 // Change Mat-TextArea Border Color & Width
 ::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__leading,
 ::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__notch,
 ::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing {
   border-color: rgb(255, 81, 0);
   border-width: 2px;
+  // border-radius: 10px !important;
 }
 
 
