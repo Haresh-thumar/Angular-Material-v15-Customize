@@ -52,8 +52,11 @@ import { TableComponent } from './table/table.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { HorizontalStapperComponent } from './horizontal-stapper/horizontal-stapper.component';
-import {MatStepperModule} from '@angular/material/stepper';
+import { MatStepperModule } from '@angular/material/stepper';
 import { VerticalStepperComponent } from './vertical-stepper/vertical-stepper.component';
+import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
+import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
+import { MatListModule } from '@angular/material/list';
 
 
 
@@ -85,7 +88,8 @@ import { VerticalStepperComponent } from './vertical-stepper/vertical-stepper.co
     DividerComponent,
     TableComponent,
     HorizontalStapperComponent,
-    VerticalStepperComponent
+    VerticalStepperComponent,
+    BottomSheetComponent
   ],
   imports: [
     BrowserModule,
@@ -116,7 +120,9 @@ import { VerticalStepperComponent } from './vertical-stepper/vertical-stepper.co
     MatDividerModule,
     MatTableModule,
     MatPaginatorModule,
-    MatStepperModule
+    MatStepperModule,
+    MatBottomSheetModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

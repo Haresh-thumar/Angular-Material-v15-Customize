@@ -23,6 +23,7 @@ import { DividerComponent } from './divider/divider.component';
 import { TableComponent } from './table/table.component';
 import { HorizontalStapperComponent } from './horizontal-stapper/horizontal-stapper.component';
 import { VerticalStepperComponent } from './vertical-stepper/vertical-stepper.component';
+import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
 
 const routes: Routes = [
   { path: 'badge', component: BadgeComponent },
@@ -32,7 +33,7 @@ const routes: Routes = [
   { path: 'radio', component: RadioComponent },
   { path: 'input', component: InputComponent },
   { path: 'chips', component: ChipsComponent },
-  { path: 'tooltip', component: MatTooltipComponent },  
+  { path: 'tooltip', component: MatTooltipComponent },
   { path: 'toolbar', component: ToolbarComponent },
   { path: 'icon', component: IconComponent },
   { path: 'progress-spinner', component: ProgressSpinnerComponent },
@@ -48,6 +49,7 @@ const routes: Routes = [
   { path: 'table', component: TableComponent },
   { path: 'h-stapper', component: HorizontalStapperComponent },
   { path: 'v-stapper', component: VerticalStepperComponent },
+  { path: 'bottom-sheet', component: BottomSheetComponent },
 ];
 
 @NgModule({
