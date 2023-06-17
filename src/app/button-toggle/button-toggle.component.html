@@ -1,0 +1,59 @@
+<h1>Customize Button-Toggle</h1>
+<br>
+<br>
+<!---------------------------------------------------------------------------------------------
+                                    Button-Toggle Examples
+---------------------------------------------------------------------------------------------->
+<div class="box-group">
+    <!------------- Normal Button Toggle ----------->
+    <div>
+        <p>Normal Button-Toggle</p>
+        <mat-button-toggle-group name="fontStyle" aria-label="Font-Style" class="custom-button-toggle">
+            <mat-button-toggle value="bold">Bold</mat-button-toggle>
+            <mat-button-toggle value="italic">Italic</mat-button-toggle>
+            <mat-button-toggle value="underline">Underline</mat-button-toggle>
+        </mat-button-toggle-group>
+    </div>
+    <!------------- Vertical Button Toggle ----------->
+    <div>
+        <p>Vertical Button-Toggle</p>
+        <mat-button-toggle-group
+            name="fontStyle"
+            aria-label="Font-Style"
+            vertical="true"
+            class="custom-button-toggle"
+        >
+            <mat-button-toggle value="bold">Bold</mat-button-toggle>
+            <mat-button-toggle value="italic">Italic</mat-button-toggle>
+            <mat-button-toggle value="underline">Underline</mat-button-toggle>
+        </mat-button-toggle-group>
+    </div>
+    <!------------- Right to Left Button Toggle ----------->
+    <div>
+        <p>Right to Left Button Toggle</p>
+        <mat-button-toggle-group
+            name="fontStyle"
+            aria-label="Font-Style"
+            dir="rtl"
+            class="custom-button-toggle"
+        >
+            <mat-button-toggle value="bold">Bold</mat-button-toggle>
+            <mat-button-toggle value="italic">Italic</mat-button-toggle>
+            <mat-button-toggle value="underline">Underline</mat-button-toggle>
+        </mat-button-toggle-group>
+    </div>
+    <!------------- Multiple Select Button Toggle ----------->
+    <div>
+        <p>Multiple Select Button Toggle</p>
+        <mat-button-toggle-group
+            name="fontStyle"
+            aria-label="Font-Style"
+            multiple
+            class="custom-button-toggle"
+        >
+            <mat-button-toggle value="bold">Bold</mat-button-toggle>
+            <mat-button-toggle value="italic">Italic</mat-button-toggle>
+            <mat-button-toggle value="underline">Underline</mat-button-toggle>
+        </mat-button-toggle-group>
+    </div>
+</div>

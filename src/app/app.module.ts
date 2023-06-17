@@ -57,6 +57,8 @@ import { VerticalStepperComponent } from './vertical-stepper/vertical-stepper.co
 import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { MatListModule } from '@angular/material/list';
+import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 
 
 
@@ -89,7 +91,8 @@ import { MatListModule } from '@angular/material/list';
     TableComponent,
     HorizontalStapperComponent,
     VerticalStepperComponent,
-    BottomSheetComponent
+    BottomSheetComponent,
+    ButtonToggleComponent
   ],
   imports: [
     BrowserModule,
@@ -122,7 +125,8 @@ import { MatListModule } from '@angular/material/list';
     MatPaginatorModule,
     MatStepperModule,
     MatBottomSheetModule,
-    MatListModule
+    MatListModule,
+    MatButtonToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -24,6 +24,7 @@ import { TableComponent } from './table/table.component';
 import { HorizontalStapperComponent } from './horizontal-stapper/horizontal-stapper.component';
 import { VerticalStepperComponent } from './vertical-stepper/vertical-stepper.component';
 import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
+import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
 
 const routes: Routes = [
   { path: 'badge', component: BadgeComponent },
@@ -50,6 +51,7 @@ const routes: Routes = [
   { path: 'h-stapper', component: HorizontalStapperComponent },
   { path: 'v-stapper', component: VerticalStepperComponent },
   { path: 'bottom-sheet', component: BottomSheetComponent },
+  { path: 'button-toggle', component: ButtonToggleComponent },
 ];
 
 @NgModule({

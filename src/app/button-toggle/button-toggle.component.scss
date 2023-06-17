@@ -1,0 +1,69 @@
+.box-group {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+.box-group>div {
+    border: 1px solid silver;
+    margin: 10px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 0 0 10px 0;
+}
+
+.box-group>div>p:first-child {
+    color: white;
+    padding: 10px 0;
+    background-color: rgb(75, 164, 247);
+}
+
+/*************************************************************************************************************
+                                            Button Toggle CSS
+*************************************************************************************************************/
+/*------------ Full Toggle Box ------------*/
+.custom-button-toggle .mat-button-toggle-appearance-standard {
+    color: rgba(255, 255, 255, 0.87);
+    background: #2fdb00;
+}
+
+/*------------ After Focus Toggle Box items ------------*/
+.custom-button-toggle .mat-button-toggle-checked {
+    background-color: rgb(255, 103, 8);
+    // color: rgb(8, 8, 8);
+}
+
+/*------------ After Focus Toggle Box items Text ------------*/
+.custom-button-toggle .mat-button-toggle-checked.mat-button-toggle-appearance-standard {
+    color: rgba(0, 0, 0, 0.87)
+}
+
+/*------------ Toggle Box items left border ------------*/
+.custom-button-toggle.mat-button-toggle-group-appearance-standard .mat-button-toggle+.mat-button-toggle {
+    border-left: solid 3px #f9ff55;
+}
+
+/*------------ Toggle Box items line height ------------*/
+::ng-deep .custom-button-toggle .mat-button-toggle-appearance-standard .mat-button-toggle-label-content {
+    line-height: 40px;
+    padding: 0 20px !important;
+}
+
+/*------------ Toggle Box items font ------------*/
+.custom-button-toggle .mat-button-toggle {
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+}
+
+
+/*=========================================== Vertical Button toggle ===========================================*/
+.custom-button-toggle.mat-button-toggle-group-appearance-standard.mat-button-toggle-vertical .mat-button-toggle+.mat-button-toggle {
+    border-left: none;
+    border-right: none;
+    border-top: solid 3px #242424;
+}
+
+/*=========================================== rtl Button toggle ===========================================*/
+[dir=rtl].custom-button-toggle.mat-button-toggle-group-appearance-standard .mat-button-toggle+.mat-button-toggle {
+    border-left: none;
+    border-right: solid 3px #ff0000;
+}
