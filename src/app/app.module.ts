@@ -59,6 +59,7 @@ import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { MatListModule } from '@angular/material/list';
 import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { ListComponent } from './list/list.component';
 
 
 
@@ -92,7 +93,8 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
     HorizontalStapperComponent,
     VerticalStepperComponent,
     BottomSheetComponent,
-    ButtonToggleComponent
+    ButtonToggleComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,

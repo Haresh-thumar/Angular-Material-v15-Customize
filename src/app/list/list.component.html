@@ -1,0 +1,116 @@
+<h1>Customize Mat-List</h1>
+<br><br>
+<!--***************************************************************************************************************************
+                                                Mat List Examples
+****************************************************************************************************************************-->
+<div class="grid-box">
+    <!--------- Mat Basic List ---------->
+    <div>
+        <mat-list role="list" class="basic-list">
+            <mat-list-item role="listitem">Item 1</mat-list-item>
+            <mat-list-item role="listitem">Item 2</mat-list-item>
+            <mat-list-item role="listitem">Item 3</mat-list-item>
+        </mat-list>
+    </div>
+    <!--------- Mat List with sections ---------->
+    <div>
+        <mat-list class="list-section">
+            <div mat-subheader>Folders</div>
+            <mat-list-item *ngFor="let folder of folders">
+                <mat-icon matListItemIcon>folder</mat-icon>
+                <div matListItemTitle>{{folder.name}}</div>
+                <div matListItemLine>{{folder.updated | date}}</div>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <div mat-subheader>Notes</div>
+            <mat-list-item *ngFor="let note of notes">
+                <mat-icon matListItemIcon>note</mat-icon>
+                <div matListItemTitle>{{note.name}}</div>
+                <div matListItemLine>{{note.updated | date}}</div>
+            </mat-list-item>
+        </mat-list>
+    </div>
+    <!--------- List with selection (checkbox) ---------->
+    <div>
+        <mat-selection-list #shoes class="list-selection1">
+            <mat-list-option *ngFor="let shoe of typesOfShoes"> {{shoe}} </mat-list-option>
+        </mat-selection-list>
+        <p style="margin: 15px 0 30px 15px;">Options selected: {{shoes.selectedOptions.selected.length}} </p>
+    </div>
+    <!--------- List with single selection (radio) ---------->
+    <div>
+        <mat-selection-list #shoes2 [multiple]="false" class="list-selection2">
+            <mat-list-option *ngFor="let shoe of typesOfShoes" [value]="shoe"> {{shoe}} </mat-list-option>
+        </mat-selection-list>
+        <p style="margin: 15px 0 30px 15px;">Option selected:
+            {{shoes2.selectedOptions.hasValue() ? shoes2.selectedOptions.selected[0].value : 'None'}} </p>
+    </div>
+    <!--------- Single line lists ---------->
+    <div>
+        <h3>Single line lists</h3>
+        <mat-list class="single-line-list">
+            <mat-list-item>
+                <span matListItemTitle>This is the title</span>
+            </mat-list-item>
+            <mat-list-item>Also the title</mat-list-item>
+        </mat-list>
+    </div>
+    <!--------- Two line lists ---------->
+    <div>
+        <h3>Two line lists</h3>
+        <mat-list class="two-line-list">
+            <mat-list-item>
+                <span matListItemTitle>Title</span>
+                <span matListItemLine>Second line</span>
+            </mat-list-item>
+            <mat-list-item>
+                <span matListItemTitle>Title</span>
+                <span matListItemLine>Second line</span>
+            </mat-list-item>
+            <mat-list-item>
+                <span matListItemTitle>Title</span>
+                <span matListItemLine>Second line</span>
+            </mat-list-item>
+        </mat-list>
+    </div>
+    <!--------- Three line lists ---------->
+    <div>
+        <h3>Three line lists</h3>
+        <mat-list class="two-line-list">
+            <mat-list-item>
+                <span matListItemTitle>Title</span>
+                <span matListItemLine>Second line</span>
+                <span matListItemLine>Third line</span>
+            </mat-list-item>
+            <mat-list-item>
+                <span matListItemTitle>Title</span>
+                <span matListItemLine>Second line</span>
+                <span matListItemLine>Third line</span>
+            </mat-list-item>
+            <mat-list-item>
+                <span matListItemTitle>Title</span>
+                <span matListItemLine>Second line</span>
+                <span matListItemLine>Third line</span>
+            </mat-list-item>
+        </mat-list>
+    </div>
+    <!--------- Three line list with secondary text wrapping ---------->
+    <div>
+        <h3>Three line list with secondary text wrapping</h3>
+        <mat-list class="example-list-wrapping three-line-list">
+            <mat-list-item lines="3">
+                <span matListItemTitle>Title</span>
+                <span matListItemLine>Secondary line that will wrap because the list lines is explicitly set to 3 lines.
+                    Text inside of a `matListItemTitle` or `matListItemLine` will never wrap. </span>
+            </mat-list-item>
+            <mat-list-item lines="3">
+                <span matListItemTitle>Title</span>
+                <span matListItemLine>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est </span>
+            </mat-list-item>
+        </mat-list>
+    </div>
+</div>

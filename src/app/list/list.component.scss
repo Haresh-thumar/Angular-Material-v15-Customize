@@ -1,0 +1,311 @@
+.grid-box {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 25%);
+}
+
+.grid-box>div {
+    border: 1px solid rgb(168, 153, 255);
+    padding: 10px;
+    border-radius: 10px;
+    height: max-content;
+    height: auto;
+    margin: 10px 0;
+}
+
+.grid-box>div:first-child {
+    margin: 0 5px 0 0;
+}
+
+.grid-box>div:last-child {
+    margin: 0 0 0 5px;
+}
+
+/*---------------------------------------------------------------------------------------------
+                                        Mat Basic List
+---------------------------------------------------------------------------------------------*/
+/*------ Change basic list base css --------*/
+.basic-list.mat-mdc-list-base {
+    display: block; // change display CSS
+    --mdc-list-list-item-label-text-color: rgba(255, 255, 255, 0.87) !important; // change Label Font Color
+    --mdc-list-list-item-label-text-font: Verdana, Geneva, Tahoma, sans-serif; // change label font family
+    --mdc-list-list-item-label-text-line-height: 30px !important; // change label line height
+    --mdc-list-list-item-label-text-size: 20px; // change label font size
+    --mdc-list-list-item-label-text-tracking: 0.1em; // change label letter spacing
+    --mdc-list-list-item-label-text-weight: 600; // change label font weight
+    --mdc-list-list-item-one-line-container-height: 48px; // change one line container height
+    --mdc-list-list-item-hover-label-text-color: rgb(255, 89, 0) !important; // hover to change label font color
+}
+
+/*----- change mat-list item css -----*/
+.basic-list .mdc-list-item {
+    cursor: pointer;
+    margin: 10px 0; // change margin between two list-item
+    background-color: #b2b2ff; // list item bg color
+    border-bottom: 2px dashed #1c1cff; // list item bottom border
+}
+
+/*----- change list item las-child css -----*/
+.basic-list .mdc-list-item:last-child {
+    border-bottom: 0; // remove last element border
+}
+
+/*---------------------------------------------------------------------------------------------
+                                    Mat List with sections
+---------------------------------------------------------------------------------------------*/
+/*------ Change List Group Subheader css --------*/
+.list-section .mdc-list-group__subheader {
+    color: rgb(249, 34, 249); // change subheader font color
+    font-size: 24px; // change subheader font-size
+    font-weight: 600; // change subheader font-weight
+    line-height: 20px; // change subheader line-height
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; // change subheader font-family
+    letter-spacing: 0.05em; // change subheader letter-spacing
+}
+
+/*------ change section list base css --------*/
+.list-section.mat-mdc-list-base {
+    // change label css 
+    --mdc-list-list-item-label-text-color: rgb(255, 136, 0) !important; // change Label Font Color
+    --mdc-list-list-item-label-text-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; // change label font family
+    --mdc-list-list-item-label-text-size: 20px; // change label font size
+    --mdc-list-list-item-label-text-tracking: 0.1em; // change label letter spacing
+    --mdc-list-list-item-label-text-weight: 600; // change label font weight
+    // change icon css
+    --mdc-list-list-item-leading-icon-color: rgb(255, 136, 0) !important; // Change List Icon Color
+    // change supporting label css
+    --mdc-list-list-item-supporting-text-color: rgb(114, 118, 255) !important; // change List Supporting Font Color
+    --mdc-list-list-item-supporting-text-font: Verdana, Geneva, Tahoma, sans-serif; // change supporting label font-family
+    --mdc-list-list-item-supporting-text-size: 12px; // change supporting label font size
+    --mdc-list-list-item-supporting-text-tracking: 0.1em; // change supporting label letter-spacing
+    --mdc-list-list-item-supporting-text-weight: 600; // change supporting label font-weight
+    // hover to change state css
+    --mdc-list-list-item-hover-label-text-color: rgb(0, 178, 0); // hover to change label color
+    --mdc-list-list-item-hover-leading-icon-color: rgb(0, 178, 0) !important; // hover to change icon color
+}
+
+/*----- change mat-list item css -----*/
+.list-section .mdc-list-item {
+    cursor: pointer;
+    background-color: #f6c5ff; // list item bg color
+    margin: 15px 0; // change margin between two list-item
+    border-bottom: 2px dashed rgb(255, 0, 128); // list item bottom border
+}
+
+/*----- change list item las-child css -----*/
+.list-section .mdc-list-item:last-child {
+    border-bottom: 0; // remove last element border
+}
+
+/*----- hover to change supporting text color -----*/
+.list-section .mdc-list-item:hover .mdc-list-item__secondary-text {
+    color: rgb(255, 0, 0); // hover to change secondary label color
+}
+
+
+
+/*---------------------------------------------------------------------------------------------
+                                List with selection (checkbox)
+---------------------------------------------------------------------------------------------*/
+/*------ List-Item Checkbox CSS -------*/
+.list-selection1.mat-mdc-list-base {
+    cursor: pointer; // change cursor type
+    background-color: rgb(203, 255, 198);
+    --mdc-list-list-item-one-line-container-height: 60px;
+    // change label css 
+    --mdc-list-list-item-label-text-color: rgb(0, 178, 0); // change Label Font Color
+    --mdc-list-list-item-label-text-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; // change label font family
+    --mdc-list-list-item-label-text-size: 20px; // change label font size
+    --mdc-list-list-item-label-text-tracking: 0.1em; // change label letter spacing
+    --mdc-list-list-item-label-text-weight: 600; // change label font weight
+    // change supporting label css
+    --mdc-list-list-item-supporting-text-color: rgb(114, 118, 255); // change list-item supporting font-color
+    --mdc-list-list-item-supporting-text-font: Verdana, Geneva, Tahoma, sans-serif; // change list-item supporting font-family
+    --mdc-list-list-item-supporting-text-size: 12px; // change list-item supporting font-size
+    --mdc-list-list-item-supporting-text-tracking: 0.1em; // change list-item supporting font letter-spacing
+    --mdc-list-list-item-supporting-text-weight: 600; // change list-item supporting font-weight
+    // hover to change state css
+    --mdc-list-list-item-hover-label-text-color: rgb(70, 2, 165); // hover to change label font color
+    --mdc-list-list-item-hover-state-layer-color: rgb(226, 203, 0); // hover to change list-item background color
+    --mdc-list-list-item-hover-state-layer-opacity: 0.5; // hover to change list-item background opacity
+    --mdc-list-list-item-focus-label-text-color: rgb(255, 0, 0); // focus to change label font color
+    --mdc-list-list-item-focus-state-layer-color: rgb(229, 0, 0); // focus to change list-item background color
+    --mdc-list-list-item-focus-state-layer-opacity: 0.2; // focus to change list-item background opacity
+}
+
+/*------ List-Item Checkbox CSS -------*/
+::ng-deep.list-selection1 .mat-mdc-list-option .mdc-list-item__start,
+::ng-deep.list-selection1 .mat-mdc-list-option .mdc-list-item__end {
+    --mdc-checkbox-selected-checkmark-color: #f6ff00; // change checkmark icon color
+    --mdc-checkbox-unselected-icon-color: rgb(0, 211, 18); // change checkbox border color
+    --mdc-checkbox-selected-icon-color: rgb(0, 211, 18); // change checkbox background color
+}
+
+
+/*---------------------------------------------------------------------------------------------
+                                List with selection (checkbox)
+---------------------------------------------------------------------------------------------*/
+/*------ List-Item Checkbox CSS -------*/
+.list-selection2.mat-mdc-list-base {
+    cursor: pointer; // change cursor type
+    background-color: rgb(255, 245, 198); // change list background color
+    --mdc-list-list-item-one-line-container-height: 70px;
+    // change label css 
+    --mdc-list-list-item-label-text-color: rgb(255, 208, 0); // change Label Font Color
+    --mdc-list-list-item-label-text-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; // change label font family
+    --mdc-list-list-item-label-text-size: 20px; // change label font size
+    --mdc-list-list-item-label-text-tracking: 0.1em; // change label letter spacing
+    --mdc-list-list-item-label-text-weight: 600; // change label font weight
+    // change supporting label css
+    --mdc-list-list-item-supporting-text-color: rgb(114, 118, 255); // change List Supporting Font Color
+    --mdc-list-list-item-supporting-text-font: Verdana, Geneva, Tahoma, sans-serif; // change list-item supporting font-family
+    --mdc-list-list-item-supporting-text-size: 12px; // change list-item supporting font-size
+    --mdc-list-list-item-supporting-text-tracking: 0.1em; // change list-item supporting font letter-spacing
+    --mdc-list-list-item-supporting-text-weight: 600; // change list-item supporting font-weight
+    // hover to change state css
+    --mdc-list-list-item-hover-label-text-color: rgb(255, 0, 93); // hover to change label font color
+    --mdc-list-list-item-hover-state-layer-color: rgb(255, 0, 93); // hover to change list-item background color
+    --mdc-list-list-item-hover-state-layer-opacity: 0.5; // hover to change list-item background opacity
+    --mdc-list-list-item-focus-label-text-color: #7300ff; // focus to change label font color
+    --mdc-list-list-item-focus-state-layer-color: #7300ff; // focus to change list-item background color
+    --mdc-list-list-item-focus-state-layer-opacity: 0.2; // focus to change list-item background opacity
+}
+
+/*------ List-Item Radio CSS -------*/
+::ng-deep.list-selection2 .mat-mdc-list-option .mdc-list-item__start,
+::ng-deep.list-selection2 .mat-mdc-list-option .mdc-list-item__end {
+    --mdc-radio-unselected-icon-color: #ad6aff; // change checkmark icon color
+    --mdc-radio-selected-icon-color: #7300ff; // change checkbox border color
+    --mdc-radio-selected-checkmark-color: #cfa9ff; // change checkbox background color
+}
+
+
+/*---------------------------------------------------------------------------------------------
+                                    Single line lists
+---------------------------------------------------------------------------------------------*/
+/*------ Change Single Line List base css --------*/
+.single-line-list.mat-mdc-list-base {
+    display: block; // change display CSS
+    --mdc-list-list-item-label-text-color: rgba(255, 255, 255, 0.87) !important; // change Label Font Color
+    --mdc-list-list-item-label-text-font: Verdana, Geneva, Tahoma, sans-serif; // change label font family
+    --mdc-list-list-item-label-text-line-height: 30px !important; // change label line height
+    --mdc-list-list-item-label-text-size: 20px; // change label font size
+    --mdc-list-list-item-label-text-tracking: 0.1em; // change label letter spacing
+    --mdc-list-list-item-label-text-weight: 600; // change label font weight
+    --mdc-list-list-item-one-line-container-height: 48px; // change one line container height
+    --mdc-list-list-item-hover-label-text-color: #ff1336 !important; // hover to change label font color
+}
+
+/*----- change mat-list item css -----*/
+.single-line-list .mdc-list-item {
+    cursor: pointer;
+    margin: 10px 0; // change margin between two list-item
+    background-color: #ffb2be; // list item bg color
+    border-bottom: 2px dashed #ff1336; // list item bottom border
+}
+
+/*----- change list item last-child css -----*/
+.single-line-list .mdc-list-item:last-child {
+    border-bottom: 0; // remove last element border
+}
+
+
+/*---------------------------------------------------------------------------------------------
+                                        Two line lists
+---------------------------------------------------------------------------------------------*/
+/*------ Change Two Line List base css --------*/
+.two-line-list.mat-mdc-list-base {
+    display: block; // change display CSS
+    --mdc-list-list-item-label-text-color: rgba(0, 0, 0, 0.87) !important; // change Label Font Color
+    --mdc-list-list-item-label-text-font: Verdana, Geneva, Tahoma, sans-serif; // change label font family
+    --mdc-list-list-item-label-text-line-height: 30px !important; // change label line height
+    --mdc-list-list-item-label-text-size: 20px; // change label font size
+    --mdc-list-list-item-label-text-tracking: 0.1em; // change label letter spacing
+    --mdc-list-list-item-label-text-weight: 600; // change label font weight
+    --mdc-list-list-item-two-line-container-height: 80px; // change inner container height
+    --mdc-list-list-item-hover-label-text-color: #00cd7e !important; // hover to change label font color
+}
+
+/*------ change secondary label css ------*/
+.two-line-list .mdc-list-item__secondary-text {
+    color: rgb(255, 0, 81); // change secondary label color
+    font-family: Verdana, Geneva, Tahoma, sans-serif; // change secondary label font-family
+    line-height: var(--mdc-list-list-item-supporting-text-line-height); // change secondary label line-height
+    font-size: var(--mdc-list-list-item-supporting-text-size); // change secondary label font-size
+    font-weight: var(--mdc-list-list-item-supporting-text-weight); // change secondary label font-weight
+    letter-spacing: var(--mdc-list-list-item-supporting-text-tracking); // change secondary label letter-spacing
+}
+
+/*----- hover to change supporting text color -----*/
+.two-line-list .mdc-list-item:hover .mdc-list-item__secondary-text {
+    color: #00cd7e; // hover to change secondary label color
+}
+
+/*----- change mat-list item css -----*/
+.two-line-list .mdc-list-item {
+    cursor: pointer;
+    margin: 15px 0; // change margin between two list-item
+    background-color: #b2ffe1; // list item bg color
+    border-bottom: 2px dashed #13ffa4; // list item bottom border
+}
+
+/*----- change list item last-child css -----*/
+.two-line-list .mdc-list-item:last-child {
+    border-bottom: 0; // remove last element border
+}
+
+/*----- change list item first-child css -----*/
+.two-line-list .mdc-list-item:first-child {
+    border-bottom: 0; // remove last element border
+}
+
+
+/*---------------------------------------------------------------------------------------------
+                            Three line list with secondary text wrapping
+---------------------------------------------------------------------------------------------*/
+.example-list-wrapping.three-line-list {
+    max-width: 500px;
+}
+
+/*------ Change Two Line List base css --------*/
+.three-line-list.mat-mdc-list-base {
+    display: block; // change display CSS
+    --mdc-list-list-item-label-text-color: rgba(0, 0, 0, 0.87) !important; // change Label Font Color
+    --mdc-list-list-item-label-text-font: Verdana, Geneva, Tahoma, sans-serif; // change label font family
+    --mdc-list-list-item-label-text-line-height: 30px !important; // change label line height
+    --mdc-list-list-item-label-text-size: 20px; // change label font size
+    --mdc-list-list-item-label-text-tracking: 0.1em; // change label letter spacing
+    --mdc-list-list-item-label-text-weight: 600; // change label font weight
+    --mdc-list-list-item-three-line-container-height: 110px; // change inner container height
+    --mdc-list-list-item-hover-label-text-color: #00cd7e !important; // hover to change label font color
+}
+
+/*------ change secondary label css ------*/
+.three-line-list .mdc-list-item__secondary-text {
+    color: rgb(255, 0, 81); // change secondary label color
+    margin-top: 5px; // add secondary label margin
+    white-space: normal !important; // change secondary label white-space
+    font-family: Verdana, Geneva, Tahoma, sans-serif; // change secondary label font-family
+    line-height: var(--mdc-list-list-item-supporting-text-line-height); // change secondary label line-height
+    font-size: var(--mdc-list-list-item-supporting-text-size); // change secondary label font-size
+    font-weight: var(--mdc-list-list-item-supporting-text-weight); // change secondary label font-weight
+    letter-spacing: var(--mdc-list-list-item-supporting-text-tracking); // change secondary label letter-spacing
+}
+
+/*----- hover to change supporting text color -----*/
+.three-line-list .mdc-list-item:hover .mdc-list-item__secondary-text {
+    color: #00cd7e; // hover to change secondary label color
+}
+
+/*----- change mat-list item css -----*/
+.three-line-list .mdc-list-item {
+    cursor: pointer;
+    margin: 20px 0; // change margin between three list-item
+    background-color: #b2ffe1; // list item bg color
+    border-bottom: 2px dashed #13ffa4; // list item bottom border
+}
+
+/*----- change list item las-child css -----*/
+.three-line-list .mdc-list-item:last-child {
+    border-bottom: 0; // remove last element border
+}
