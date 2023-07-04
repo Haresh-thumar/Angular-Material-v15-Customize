@@ -57,7 +57,6 @@ import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
-import { ListComponent } from './list/list.component';
 import { PaginatorComponent } from './paginator/paginator.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
 
@@ -93,7 +92,6 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     VerticalStepperComponent,
     BottomSheetComponent,
     ButtonToggleComponent,
-    ListComponent,
     PaginatorComponent
   ],
   imports: [

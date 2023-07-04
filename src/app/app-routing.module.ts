@@ -25,7 +25,6 @@ import { HorizontalStapperComponent } from './horizontal-stapper/horizontal-stap
 import { VerticalStepperComponent } from './vertical-stepper/vertical-stepper.component';
 import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
 import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
-import { ListComponent } from './list/list.component';
 import { PaginatorComponent } from './paginator/paginator.component';
 
 const routes: Routes = [
