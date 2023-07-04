@@ -59,6 +59,8 @@ import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { PaginatorComponent } from './paginator/paginator.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { ListComponent } from './list/list.component';
+import { MatListModule } from '@angular/material/list';
 
 
 @NgModule({
@@ -92,7 +94,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     VerticalStepperComponent,
     BottomSheetComponent,
     ButtonToggleComponent,
-    PaginatorComponent
+    PaginatorComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
@@ -125,7 +128,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatStepperModule,
     MatBottomSheetModule,
     MatButtonToggleModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
