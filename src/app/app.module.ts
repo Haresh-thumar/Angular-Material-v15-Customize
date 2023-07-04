@@ -50,17 +50,16 @@ import { DividerComponent } from './divider/divider.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { TableComponent } from './table/table.component';
 import { MatTableModule } from '@angular/material/table';
-import { MatPaginatorModule } from '@angular/material/paginator';
 import { HorizontalStapperComponent } from './horizontal-stapper/horizontal-stapper.component';
 import { MatStepperModule } from '@angular/material/stepper';
 import { VerticalStepperComponent } from './vertical-stepper/vertical-stepper.component';
 import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
-import { MatListModule } from '@angular/material/list';
 import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { ListComponent } from './list/list.component';
-
+import { PaginatorComponent } from './paginator/paginator.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 
 @NgModule({
@@ -94,7 +93,8 @@ import { ListComponent } from './list/list.component';
     VerticalStepperComponent,
     BottomSheetComponent,
     ButtonToggleComponent,
-    ListComponent
+    ListComponent,
+    PaginatorComponent
   ],
   imports: [
     BrowserModule,
@@ -124,11 +124,10 @@ import { ListComponent } from './list/list.component';
     MatExpansionModule,
     MatDividerModule,
     MatTableModule,
-    MatPaginatorModule,
     MatStepperModule,
     MatBottomSheetModule,
-    MatListModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

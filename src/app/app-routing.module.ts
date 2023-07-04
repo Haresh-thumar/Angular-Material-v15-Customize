@@ -26,6 +26,7 @@ import { VerticalStepperComponent } from './vertical-stepper/vertical-stepper.co
 import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
 import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
 import { ListComponent } from './list/list.component';
+import { PaginatorComponent } from './paginator/paginator.component';
 
 const routes: Routes = [
   { path: 'badge', component: BadgeComponent },
@@ -53,7 +54,7 @@ const routes: Routes = [
   { path: 'v-stapper', component: VerticalStepperComponent },
   { path: 'bottom-sheet', component: BottomSheetComponent },
   { path: 'button-toggle', component: ButtonToggleComponent },
-  { path: 'list', component: ListComponent },
+  { path: 'paginator', component: PaginatorComponent },
 ];
 
 @NgModule({

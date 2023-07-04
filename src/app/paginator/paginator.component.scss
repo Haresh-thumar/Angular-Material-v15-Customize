@@ -1,0 +1,341 @@
+.grid-box {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+}
+
+.grid-box>div {
+    margin: 10px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 0 10px 10px 10px;
+}
+
+.grid-box>div>p {
+    color: rgb(87, 87, 87);
+    padding: 15px 0;
+    font-size: 18px;
+    background-color: rgb(224, 224, 224);
+}
+
+
+
+
+/***********************************************************************************
+                                    Primary Theme
+***********************************************************************************/
+/*----------------- Change Paginator Container -----------------*/
+::ng-deep .mat-mdc-paginator-container {
+    min-height: 70px; // change paginator height
+    background-color: #b6c1ff; // change paginator container background
+    margin: 10px; // add margin in container
+}
+
+/*----------------- Change Paginator CSS -----------------*/
+::ng-deep .mat-mdc-paginator {
+    background: #7688ee; // paginator bg Color
+    color: rgba(255, 255, 255, 0.87); // paginator font Color
+    margin: 10px 0; // add margin in paginator
+}
+
+/*----------------- Paginator Label -----------------*/
+::ng-deep .mat-mdc-paginator-page-size-label {
+    color: #4943ff // change paginator font color
+}
+
+/*----------------- Change Paginator Icon -----------------*/
+::ng-deep .mat-mdc-paginator-icon {
+    fill: rgb(228, 0, 0); // change next previous icon color
+}
+
+/*----------------- Paginator disabled Icons -----------------*/
+::ng-deep .mat-mdc-icon-button[disabled] .mat-mdc-paginator-icon {
+    fill: rgb(53, 39, 255) // change Disable icon color
+}
+
+/*----------------- Paginator range label -----------------*/
+::ng-deep .mat-mdc-paginator-range-label {
+    color: rgb(247, 0, 255); // change paginator rajnge label color
+    font-size: 15px; // change paginator rajnge label font size
+}
+
+/*----------------- Paginator Container -----------------*/
+::ng-deep .mat-mdc-paginator {
+    font-family: Arial, Helvetica, sans-serif; // paginator container font family
+    font-size: var(--mdc-typography-caption-font-size, 20px); // paginator container font size
+    line-height: var(--mdc-typography-caption-line-height, 20px); // paginator container line height
+    font-weight: var(--mdc-typography-caption-font-weight, 400); // paginator container font weight
+    letter-spacing: var(--mdc-typography-caption-letter-spacing, 0.0333333333em); // paginator container letter spacing
+    text-decoration: var(--mdc-typography-caption-text-decoration, inherit); // paginator container test decoration
+    text-transform: var(--mdc-typography-caption-text-transform, none) // paginator container text transform
+}
+
+/*----------------- Paginator Select Box Height -----------------*/
+::ng-deep .mat-mdc-paginator .mat-mdc-form-field-infix {
+    min-height: 40px; // change paginator input height
+}
+
+/*----------------- Select Box Value -----------------*/
+::ng-deep .mat-mdc-paginator .mat-mdc-select-value {
+    font-size: 20px; // change paginator input font-size
+    color: rgb(255, 81, 0); // change paginator input font color
+}
+
+/*----------------- Paginator Select Box Padding -----------------*/
+::ng-deep .mat-mdc-paginator .mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+    padding: 10px 0; // change paginator input padding top & bottom side
+}
+
+/*-----  change select arrow color ------*/
+::ng-deep .mat-mdc-select-arrow {
+    color: rgb(255 0 0 / 54%); // change paginator input arrow icon color
+}
+
+/*----- change select input width -----*/
+::ng-deep .mat-mdc-paginator-page-size-select {
+    margin: 0 4px !important; // change paginator input margin
+    width: 150px !important; // change paginator input width
+}
+
+// Change Input Border Color
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__leading,
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__notch,
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing {
+    border-color: rgb(255, 81, 0);
+    border-width: 1px;
+}
+
+// Hover to change outline color same as border color in mat-input
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover .mdc-notched-outline .mdc-notched-outline__leading,
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover .mdc-notched-outline .mdc-notched-outline__notch,
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover .mdc-notched-outline .mdc-notched-outline__trailing {
+    border-color: rgb(0, 255, 85);
+}
+
+// Focus to change border color on mat-input
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__leading,
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__notch,
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__trailing {
+    border-color: rgb(255, 196, 0);
+    border-width: 1px;
+}
+
+
+/***********************************************************************************
+                                Accent Custom Theme
+***********************************************************************************/
+/*----------------- Paginator Outer Container -----------------*/
+::ng-deep .accent-paginator .mat-mdc-paginator-outer-container {
+    min-height: 150px; // change paginator height
+    background-color: #f5afc6; // change paginator container background
+}
+
+/*----------------- Paginator Inner Container -----------------*/
+::ng-deep .accent-paginator .mat-mdc-paginator-container {
+    justify-content: center; // add paginator item in center
+    background-color: #ff4081; // change paginator background color
+}
+
+/*----------------- Paginator Label -----------------*/
+::ng-deep .accent-paginator .mat-mdc-paginator-page-size-label {
+    color: #ffd500; // change paginator font color
+}
+
+/*----------------- Paginator Select Box Height -----------------*/
+::ng-deep.accent-paginator.mat-mdc-paginator.mat-mdc-form-field-infix {
+    min-height: 22px !important; // change paginator input height
+}
+
+/*----------------- Paginator Selected Value -----------------*/
+::ng-deep .accent-paginator.mat-mdc-paginator .mat-mdc-select-value {
+    font-size: 22px; // change paginator input font-size
+    color: #f8c6d7; // change paginator input font color
+}
+
+/*----------------- Paginator range label -----------------*/
+::ng-deep .accent-paginator .mat-mdc-paginator-range-label {
+    color: rgb(13, 255, 0); // change paginator rajnge label color
+    font-size: 15px; // change paginator rajnge label font size
+}
+
+/*----------------- Paginator Icons -----------------*/
+::ng-deep .accent-paginator .mat-mdc-paginator-icon {
+    fill: rgb(255, 183, 0); // change next previous icon color
+}
+
+/*----------------- Paginator disabled Icons -----------------*/
+::ng-deep .accent-paginator .mat-mdc-icon-button[disabled] .mat-mdc-paginator-icon {
+    fill: rgb(3, 175, 255); // change Disable icon color
+}
+
+/*----------------- Paginator Container -----------------*/
+::ng-deep .accent-paginator.mat-mdc-paginator {
+    font-family: 'Times New Roman', Times, serif; // paginator container font family
+    font-size: var(--mdc-typography-caption-font-size, 25px); // paginator container font size
+    line-height: var(--mdc-typography-caption-line-height, 20px); // paginator container line height
+    font-weight: var(--mdc-typography-caption-font-weight, 400); // paginator container font weight
+    letter-spacing: var(--mdc-typography-caption-letter-spacing, 0.0333333333em); // paginator container letter spacing
+    text-decoration: var(--mdc-typography-caption-text-decoration, inherit); // paginator container test decoration
+    text-transform: var(--mdc-typography-caption-text-transform, none) // paginator container text transform
+}
+
+/*----------------- Paginator Select Box Height -----------------*/
+::ng-deep .accent-paginator.mat-mdc-paginator .mat-mdc-form-field-infix {
+    min-height: 60px; // change paginator input height
+}
+
+/*----------------- Select Box Value -----------------*/
+::ng-deep .accent-paginator.mat-mdc-paginator .mat-mdc-select-value {
+    font-size: 20px; // change paginator input font-size
+    color: rgb(0, 238, 255); // change paginator input font color
+}
+
+/*----------------- Paginator Select Box Padding -----------------*/
+::ng-deep .accent-paginator.mat-mdc-paginator .mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+    padding: 15px 0; // change paginator input padding top & bottom side
+}
+
+/*----- change select arrow color ------*/
+::ng-deep .accent-paginator .mat-mdc-select-arrow {
+    color: rgb(0, 238, 255); // change paginator input arrow icon color
+}
+
+/*----- change select input width -----*/
+::ng-deep .accent-paginator .mat-mdc-paginator-page-size-select {
+    margin: 0 20px !important; // change paginator input margin
+    width: 200px !important; // change paginator input width
+}
+
+// Change Input Border Color
+::ng-deep .accent-paginator .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__leading,
+::ng-deep .accent-paginator .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__notch,
+::ng-deep .accent-paginator .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing {
+    border-color: rgb(0, 242, 255);
+    border-width: 3px;
+}
+
+// Hover to change outline color same as border color in mat-input
+::ng-deep .accent-paginator .mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover .mdc-notched-outline .mdc-notched-outline__leading,
+::ng-deep .accent-paginator .mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover .mdc-notched-outline .mdc-notched-outline__notch,
+::ng-deep .accent-paginator .mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover .mdc-notched-outline .mdc-notched-outline__trailing {
+    border-color: rgb(98, 0, 255);
+}
+
+// Focus to change border color on mat-input
+::ng-deep .accent-paginator .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__leading,
+::ng-deep .accent-paginator .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__notch,
+::ng-deep .accent-paginator .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__trailing {
+    border-color: rgb(255, 196, 0);
+    border-width: 3px;
+}
+
+
+
+
+
+/***********************************************************************************
+                                Warn Custom Theme
+***********************************************************************************/
+/*----------------- Paginator Outer Container -----------------*/
+::ng-deep .warn-paginator .mat-mdc-paginator-outer-container {
+    min-height: 180px; // change paginator height
+    background-color: #fd9891; // change paginator container background
+}
+
+/*----------------- Paginator Inner Container -----------------*/
+::ng-deep .warn-paginator .mat-mdc-paginator-container {
+    justify-content: flex-start; // add paginator item in center
+    background-color: #f44336; // change paginator background color
+}
+
+/*----------------- Paginator Label -----------------*/
+::ng-deep .warn-paginator .mat-mdc-paginator-page-size-label {
+    color: #ffd500; // change paginator font color
+}
+
+/*----------------- Paginator Select Box Height -----------------*/
+::ng-deep .warn-paginator.mat-mdc-paginator.mat-mdc-form-field-infix {
+    min-height: 36px !important; // change paginator input height
+}
+
+/*----------------- Paginator Selected Value -----------------*/
+::ng-deep .warn-paginator.mat-mdc-paginator .mat-mdc-select-value {
+    font-size: 22px; // change paginator input font-size
+    color: #f8ccc9; // change paginator input font color
+}
+
+/*----------------- Paginator range label -----------------*/
+::ng-deep .warn-paginator .mat-mdc-paginator-range-label {
+    color: #a4e2fa; // change paginator rajnge label color
+    font-size: 18px; // change paginator rajnge label font size
+}
+
+/*----------------- Paginator Icons -----------------*/
+::ng-deep .warn-paginator .mat-mdc-paginator-icon {
+    fill: rgb(255, 242, 0); // change next previous icon color
+}
+
+/*----------------- Paginator disabled Icons -----------------*/
+::ng-deep .warn-paginator .mat-mdc-icon-button[disabled] .mat-mdc-paginator-icon {
+    fill: rgb(3, 175, 255) // change Disable icon color
+}
+
+/*----------------- Paginator Container -----------------*/
+::ng-deep .warn-paginator.mat-mdc-paginator {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; // paginator container font family
+    font-size: var(--mdc-typography-caption-font-size, 25px); // paginator container font size
+    line-height: var(--mdc-typography-caption-line-height, 20px); // paginator container line height
+    font-weight: var(--mdc-typography-caption-font-weight, 400); // paginator container font weight
+    letter-spacing: var(--mdc-typography-caption-letter-spacing, 0.0333333333em); // paginator container letter spacing
+    text-decoration: var(--mdc-typography-caption-text-decoration, inherit); // paginator container test decoration
+    text-transform: var(--mdc-typography-caption-text-transform, none) // paginator container text transform
+}
+
+/*----------------- Paginator Select Box Height -----------------*/
+::ng-deep .warn-paginator.mat-mdc-paginator .mat-mdc-form-field-infix {
+    min-height: 50px; // change paginator input height
+}
+
+/*----------------- Select Box Value -----------------*/
+::ng-deep .warn-paginator.mat-mdc-paginator .mat-mdc-select-value {
+    font-size: 20px; // change paginator input font-size
+    color: rgb(0, 255, 208); // change paginator input font color
+}
+
+/*----------------- Paginator Select Box Padding -----------------*/
+::ng-deep .warn-paginator.mat-mdc-paginator .mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+    padding: 15px 0; // change paginator input padding top & bottom side
+}
+
+/*----- change select arrow color ------*/
+::ng-deep .warn-paginator .mat-mdc-select-arrow {
+    color: rgb(0, 255, 208); // change paginator input arrow icon color
+}
+
+/*----- change select input width -----*/
+::ng-deep .warn-paginator .mat-mdc-paginator-page-size-select {
+    margin: 0 20px !important; // change paginator input margin
+    width: 230px !important; // change paginator input width
+}
+
+// Change Input Border Color
+::ng-deep .warn-paginator .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__leading,
+::ng-deep .warn-paginator .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__notch,
+::ng-deep .warn-paginator .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing {
+    border-color: rgb(246, 255, 0);
+    border-width: 2px;
+}
+
+// Hover to change outline color same as border color in mat-input
+::ng-deep .warn-paginator .mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover .mdc-notched-outline .mdc-notched-outline__leading,
+::ng-deep .warn-paginator .mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover .mdc-notched-outline .mdc-notched-outline__notch,
+::ng-deep .warn-paginator .mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover .mdc-notched-outline .mdc-notched-outline__trailing {
+    border-color: rgb(0, 255, 30);
+}
+
+// Focus to change border color on mat-input
+::ng-deep .warn-paginator .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__leading,
+::ng-deep .warn-paginator .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__notch,
+::ng-deep .warn-paginator .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__trailing {
+    border-color: rgb(0, 255, 208);
+    border-width: 2px;
+}
