@@ -1,0 +1,57 @@
+<h1>Mat-Ripple Customize</h1>
+<br><br>
+<!---------------------------------------------------------------------------------------------------------
+                                        Ripples Based on Theme Color
+---------------------------------------------------------------------------------------------------------->
+<div class="box-group">
+    <!------------- Primary Ripple ----------->
+    <div>
+        <p>Priamry Ripple</p>
+        <div class="example-ripple-container mat-elevation-z4" matRipple [matRippleCentered]="false"
+            matRippleColor="#3f51b567"> Click me </div>
+    </div>
+    <!------------- Accent Ripple ----------->
+    <div>
+        <p>Accent Ripple</p>
+        <div class="example-ripple-container mat-elevation-z4" matRipple [matRippleCentered]="false"
+            matRippleColor="#ff408056"> Click me </div>
+    </div>
+    <!------------- Warn Ripple ----------->
+    <div>
+        <p>Warn Ripple</p>
+        <div class="example-ripple-container mat-elevation-z4" matRipple [matRippleCentered]="false"
+            matRippleColor="#f4433680"> Click me </div>
+    </div>
+    <!------------ Danger Ripple ------------>
+    <div>
+        <p>Danger Ripple</p>
+        <div class="example-ripple-container mat-elevation-z4" matRipple [matRippleCentered]="false"
+            matRippleColor="#ff000091"> Click me </div>
+    </div>
+    <!------------ Secondary Ripple ------------>
+    <div>
+        <p>Secondary Centered Ripple</p>
+        <div class="example-ripple-container mat-elevation-z4" matRipple [matRippleCentered]="true"
+            matRippleColor="#7a7a7c6c"> Click me </div>
+    </div>
+    <!------------------- Danger Centered Ripple with matRippleTrigger ------------------->
+    <div>
+        <p>Danger Centered Ripple with matRippleTrigger</p>
+        <div #trigger1 class="example-ripple-container mat-elevation-z4" [matRippleTrigger]="trigger2" matRipple
+            [matRippleCentered]="true" matRippleColor="#ff000091"> Click me </div>
+        <div #trigger2 class="example-ripple-container mat-elevation-z4" [matRippleTrigger]="trigger1" matRipple
+            [matRippleCentered]="true" matRippleColor="#ff000091">Click me to trigger ripple box 1</div>
+    </div>
+    <!------------------- Primary Ripple With Ripple-Radius ------------------->
+    <div>
+        <p>Primary Ripple With RippleRadius</p>
+        <div class="example-ripple-container mat-elevation-z4" [matRippleRadius]="100" matRipple
+            [matRippleCentered]="true" matRippleColor="#3f51b567"> Click me </div>
+    </div>
+    <!------------------- Primary Ripple With Ripple-Unbounded ------------------->
+    <div>
+        <p>Primary Ripple With RippleUnbounded</p>
+        <div class="example-ripple-container mat-elevation-z4" [matRippleUnbounded]="true" [matRippleRadius]="300"
+            matRipple [matRippleCentered]="false" matRippleColor="#3f51b567"> Click me </div>
+    </div>
+</div>

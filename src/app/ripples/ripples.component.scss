@@ -1,0 +1,38 @@
+.box-group {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+.box-group>div {
+    border: 1px solid silver;
+    margin: 10px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 0 0 10px 0;
+}
+
+.box-group>div>p:first-child {
+    color: white;
+    padding: 5px 0;
+    background-color: rgb(75, 164, 247);
+}
+
+
+
+/*------ mat-ripple container css -------*/
+.example-ripple-container {
+    cursor: pointer; // for cursor
+    text-align: center; // for text center
+
+    width: 300px; // for set container width 
+    height: 300px; // for set container height
+    line-height: 300px; // for text line-height
+
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: transparent;
+    margin: 0 auto; // for center content
+}

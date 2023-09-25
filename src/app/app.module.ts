@@ -68,6 +68,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { DatePickerComponent } from './date-picker/date-picker.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import { RipplesComponent } from './ripples/ripples.component';
+import { MatRippleModule } from '@angular/material/core';
 
 
 @NgModule({
@@ -105,7 +107,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     ListComponent,
     MenuComponent,
     SelectComponent,
-    DatePickerComponent
+    DatePickerComponent,
+    RipplesComponent
   ],
   imports: [
     BrowserModule,
@@ -143,7 +146,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatMenuModule,
     MatSelectModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatRippleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
