@@ -27,6 +27,7 @@ import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
 import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
 import { PaginatorComponent } from './paginator/paginator.component';
 import { ListComponent } from './list/list.component';
+import { MenuComponent } from './menu/menu.component';
 
 const routes: Routes = [
   { path: 'badge', component: BadgeComponent },
@@ -56,6 +57,7 @@ const routes: Routes = [
   { path: 'button-toggle', component: ButtonToggleComponent },
   { path: 'paginator', component: PaginatorComponent },
   { path: 'list', component: ListComponent },
+  { path: 'menu', component: MenuComponent },
 ];
 
 @NgModule({

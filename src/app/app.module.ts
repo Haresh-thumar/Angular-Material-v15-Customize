@@ -61,6 +61,8 @@ import { PaginatorComponent } from './paginator/paginator.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { ListComponent } from './list/list.component';
 import { MatListModule } from '@angular/material/list';
+import { MenuComponent } from './menu/menu.component';
+import { MatMenuModule } from '@angular/material/menu';
 
 
 @NgModule({
@@ -95,7 +97,8 @@ import { MatListModule } from '@angular/material/list';
     BottomSheetComponent,
     ButtonToggleComponent,
     PaginatorComponent,
-    ListComponent
+    ListComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
@@ -129,7 +132,8 @@ import { MatListModule } from '@angular/material/list';
     MatBottomSheetModule,
     MatButtonToggleModule,
     MatPaginatorModule,
-    MatListModule
+    MatListModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

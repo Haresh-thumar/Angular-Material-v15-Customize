@@ -1,0 +1,383 @@
+<h1>Mat-Menu Customize</h1>
+<br>
+<!---------------------------------------------------------------------------------------------------
+                                        Custom Menu
+---------------------------------------------------------------------------------------------------->
+<p>Custom Menu</p>
+<div class="grid-box">
+    <!------------- Primary Menu --------------->
+    <div>
+        <button mat-flat-button color="primary" [matMenuTriggerFor]="menu1">Menu</button>
+        <mat-menu #menu1="matMenu" class="menu-primary">
+            <button mat-menu-item>Item 1</button>
+            <button mat-menu-item>Item 2</button>
+            <button mat-menu-item>Item 3</button>
+            <button mat-menu-item>Item 4</button>
+            <button mat-menu-item>Item 5</button>
+        </mat-menu>
+    </div>
+    <!------------- Accent Menu --------------->
+    <div>
+        <button mat-flat-button color="accent" [matMenuTriggerFor]="menu2">Menu</button>
+        <mat-menu #menu2="matMenu" class="menu-accent">
+            <button mat-menu-item>Item 1</button>
+            <button mat-menu-item>Item 2</button>
+            <button mat-menu-item>Item 3</button>
+            <button mat-menu-item>Item 4</button>
+            <button mat-menu-item>Item 5</button>
+        </mat-menu>
+    </div>
+    <!------------- Warn Menu --------------->
+    <div>
+        <button mat-flat-button color="warn" [matMenuTriggerFor]="menu3">Menu</button>
+        <mat-menu #menu3="matMenu" class="menu-warn">
+            <button mat-menu-item>Item 1</button>
+            <button mat-menu-item>Item 2</button>
+            <button mat-menu-item>Item 3</button>
+            <button mat-menu-item>Item 4</button>
+            <button mat-menu-item>Item 5</button>
+        </mat-menu>
+    </div>
+    <!------------- Danger Menu --------------->
+    <div>
+        <button mat-flat-button class="Danger-button" [matMenuTriggerFor]="menu4">Menu</button>
+        <mat-menu #menu4="matMenu" class="menu-danger">
+            <button mat-menu-item>Item 1</button>
+            <button mat-menu-item>Item 2</button>
+            <button mat-menu-item>Item 3</button>
+            <button mat-menu-item>Item 4</button>
+            <button mat-menu-item>Item 5</button>
+        </mat-menu>
+    </div>
+    <!------------- Secondary Menu --------------->
+    <div>
+        <button mat-flat-button class="Secondary-button" [matMenuTriggerFor]="menu5">Menu</button>
+        <mat-menu #menu5="matMenu" class="menu-secondary">
+            <button mat-menu-item>Item 1</button>
+            <button mat-menu-item>Item 2</button>
+            <button mat-menu-item>Item 3</button>
+            <button mat-menu-item>Item 4</button>
+            <button mat-menu-item>Item 5</button>
+        </mat-menu>
+    </div>
+</div>
+<!---------------------------------------------------------------------------------------------------
+                                            Menu With Icon
+---------------------------------------------------------------------------------------------------->
+<p>Menu With Icon</p>
+<div class="grid-box">
+    <!------------- Primary Menu --------------->
+    <div>
+        <button mat-flat-button color="primary" [matMenuTriggerFor]="menu6">Primary</button>
+        <mat-menu #menu6="matMenu" class="menu-primary">
+            <button mat-menu-item>
+                <mat-icon>dialpad</mat-icon>
+                <span>Redial</span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>voicemail</mat-icon>
+                <span>Check voice mail</span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>notifications_off</mat-icon>
+                <span>Disable alerts</span>
+            </button>
+        </mat-menu>
+    </div>
+    <!------------- Accent Menu --------------->
+    <div>
+        <button mat-flat-button color="accent" [matMenuTriggerFor]="menu7">Primary</button>
+        <mat-menu #menu7="matMenu" class="menu-accent">
+            <button mat-menu-item>
+                <mat-icon>dialpad</mat-icon>
+                <span>Redial</span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>voicemail</mat-icon>
+                <span>Check voice mail</span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>notifications_off</mat-icon>
+                <span>Disable alerts</span>
+            </button>
+        </mat-menu>
+    </div>
+    <!------------- Warn Menu --------------->
+    <div>
+        <button mat-flat-button color="warn" [matMenuTriggerFor]="menu8">Primary</button>
+        <mat-menu #menu8="matMenu" class="menu-warn">
+            <button mat-menu-item>
+                <mat-icon>dialpad</mat-icon>
+                <span>Redial</span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>voicemail</mat-icon>
+                <span>Check voice mail</span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>notifications_off</mat-icon>
+                <span>Disable alerts</span>
+            </button>
+        </mat-menu>
+    </div>
+    <!------------- Danger Menu --------------->
+    <div>
+        <button mat-flat-button class="Danger-button" [matMenuTriggerFor]="menu9">Primary</button>
+        <mat-menu #menu9="matMenu" class="menu-danger">
+            <button mat-menu-item>
+                <mat-icon>dialpad</mat-icon>
+                <span>Redial</span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>voicemail</mat-icon>
+                <span>Check voice mail</span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>notifications_off</mat-icon>
+                <span>Disable alerts</span>
+            </button>
+        </mat-menu>
+    </div>
+    <!------------- Secondary Menu --------------->
+    <div>
+        <button mat-flat-button class="Secondary-button" [matMenuTriggerFor]="menu10">Primary</button>
+        <mat-menu #menu10="matMenu" class="menu-secondary">
+            <button mat-menu-item>
+                <mat-icon>dialpad</mat-icon>
+                <span>Redial</span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>voicemail</mat-icon>
+                <span>Check voice mail</span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>notifications_off</mat-icon>
+                <span>Disable alerts</span>
+            </button>
+        </mat-menu>
+    </div>
+</div>
+<!---------------------------------------------------------------------------------------------------
+                                            Nested Menu
+---------------------------------------------------------------------------------------------------->
+<p>Nested Menu</p>
+<div class="grid-box">
+    <!------------- Primary Menu --------------->
+    <div>
+        <button mat-flat-button color="primary" [matMenuTriggerFor]="animals1">Primary</button>
+        <mat-menu #animals1="matMenu" class="menu-primary">
+            <button mat-menu-item [matMenuTriggerFor]="vertebrates">Vertebrates</button>
+            <button mat-menu-item [matMenuTriggerFor]="invertebrates">Invertebrates</button>
+        </mat-menu>
+        <mat-menu #vertebrates="matMenu" class="menu-accent">
+            <button mat-menu-item [matMenuTriggerFor]="fish">Danger Theme</button>
+            <button mat-menu-item [matMenuTriggerFor]="amphibians">Secondary Theme</button>
+            <button mat-menu-item>Birds</button>
+            <button mat-menu-item>Mammals</button>
+        </mat-menu>
+        <mat-menu #invertebrates="matMenu" class="menu-warn">
+            <button mat-menu-item>Insects</button>
+            <button mat-menu-item>Molluscs</button>
+            <button mat-menu-item>Crustaceans</button>
+            <button mat-menu-item>Corals</button>
+            <button mat-menu-item>Arachnids</button>
+            <button mat-menu-item>Velvet worms</button>
+            <button mat-menu-item>Horseshoe crabs</button>
+        </mat-menu>
+        <mat-menu #fish="matMenu" class="menu-danger">
+            <button mat-menu-item>Baikal oilfish</button>
+            <button mat-menu-item>Bala shark</button>
+            <button mat-menu-item>Ballan wrasse</button>
+            <button mat-menu-item>Bamboo shark</button>
+            <button mat-menu-item>Banded killifish</button>
+        </mat-menu>
+        <mat-menu #amphibians="matMenu" class="menu-secondary">
+            <button mat-menu-item>Sonoran desert toad</button>
+            <button mat-menu-item>Western toad</button>
+            <button mat-menu-item>Arroyo toad</button>
+            <button mat-menu-item>Yosemite toad</button>
+        </mat-menu>
+    </div>
+    <!------------- Accent Menu --------------->
+    <div>
+        <button mat-flat-button color="accent" [matMenuTriggerFor]="animals2">Accent</button>
+        <mat-menu #animals2="matMenu" class="menu-accent">
+            <button mat-menu-item [matMenuTriggerFor]="vertebrates">Vertebrates</button>
+            <button mat-menu-item [matMenuTriggerFor]="invertebrates">Invertebrates</button>
+        </mat-menu>
+        <mat-menu #vertebrates="matMenu" class="menu-accent">
+            <button mat-menu-item [matMenuTriggerFor]="fish">Danger Theme</button>
+            <button mat-menu-item [matMenuTriggerFor]="amphibians">Secondary Theme</button>
+            <button mat-menu-item>Birds</button>
+            <button mat-menu-item>Mammals</button>
+        </mat-menu>
+        <mat-menu #invertebrates="matMenu" class="menu-warn">
+            <button mat-menu-item>Insects</button>
+            <button mat-menu-item>Molluscs</button>
+            <button mat-menu-item>Crustaceans</button>
+            <button mat-menu-item>Corals</button>
+            <button mat-menu-item>Arachnids</button>
+            <button mat-menu-item>Velvet worms</button>
+            <button mat-menu-item>Horseshoe crabs</button>
+        </mat-menu>
+        <mat-menu #fish="matMenu" class="menu-danger">
+            <button mat-menu-item>Baikal oilfish</button>
+            <button mat-menu-item>Bala shark</button>
+            <button mat-menu-item>Ballan wrasse</button>
+            <button mat-menu-item>Bamboo shark</button>
+            <button mat-menu-item>Banded killifish</button>
+        </mat-menu>
+        <mat-menu #amphibians="matMenu" class="menu-secondary">
+            <button mat-menu-item>Sonoran desert toad</button>
+            <button mat-menu-item>Western toad</button>
+            <button mat-menu-item>Arroyo toad</button>
+            <button mat-menu-item>Yosemite toad</button>
+        </mat-menu>
+    </div>
+    <!------------- Warn Menu --------------->
+    <div>
+        <button mat-flat-button color="warn" [matMenuTriggerFor]="animals3">Warn</button>
+        <mat-menu #animals3="matMenu" class="menu-warn">
+            <button mat-menu-item [matMenuTriggerFor]="vertebrates">Vertebrates</button>
+            <button mat-menu-item [matMenuTriggerFor]="invertebrates">Invertebrates</button>
+        </mat-menu>
+        <mat-menu #vertebrates="matMenu" class="menu-accent">
+            <button mat-menu-item [matMenuTriggerFor]="fish">Danger Theme</button>
+            <button mat-menu-item [matMenuTriggerFor]="amphibians">Secondary Theme</button>
+            <button mat-menu-item>Birds</button>
+            <button mat-menu-item>Mammals</button>
+        </mat-menu>
+        <mat-menu #invertebrates="matMenu" class="menu-warn">
+            <button mat-menu-item>Insects</button>
+            <button mat-menu-item>Molluscs</button>
+            <button mat-menu-item>Crustaceans</button>
+            <button mat-menu-item>Corals</button>
+            <button mat-menu-item>Arachnids</button>
+            <button mat-menu-item>Velvet worms</button>
+            <button mat-menu-item>Horseshoe crabs</button>
+        </mat-menu>
+        <mat-menu #fish="matMenu" class="menu-danger">
+            <button mat-menu-item>Baikal oilfish</button>
+            <button mat-menu-item>Bala shark</button>
+            <button mat-menu-item>Ballan wrasse</button>
+            <button mat-menu-item>Bamboo shark</button>
+            <button mat-menu-item>Banded killifish</button>
+        </mat-menu>
+        <mat-menu #amphibians="matMenu" class="menu-secondary">
+            <button mat-menu-item>Sonoran desert toad</button>
+            <button mat-menu-item>Western toad</button>
+            <button mat-menu-item>Arroyo toad</button>
+            <button mat-menu-item>Yosemite toad</button>
+        </mat-menu>
+    </div>
+    <!------------- Danger Menu --------------->
+    <div>
+        <button mat-flat-button class="Danger-button" [matMenuTriggerFor]="animals4">Danger</button>
+        <mat-menu #animals4="matMenu" class="menu-danger">
+            <button mat-menu-item [matMenuTriggerFor]="vertebrates">Vertebrates</button>
+            <button mat-menu-item [matMenuTriggerFor]="invertebrates">Invertebrates</button>
+        </mat-menu>
+        <mat-menu #vertebrates="matMenu" class="menu-accent">
+            <button mat-menu-item [matMenuTriggerFor]="fish">Danger Theme</button>
+            <button mat-menu-item [matMenuTriggerFor]="amphibians">Secondary Theme</button>
+            <button mat-menu-item>Birds</button>
+            <button mat-menu-item>Mammals</button>
+        </mat-menu>
+        <mat-menu #invertebrates="matMenu" class="menu-warn">
+            <button mat-menu-item>Insects</button>
+            <button mat-menu-item>Molluscs</button>
+            <button mat-menu-item>Crustaceans</button>
+            <button mat-menu-item>Corals</button>
+            <button mat-menu-item>Arachnids</button>
+            <button mat-menu-item>Velvet worms</button>
+            <button mat-menu-item>Horseshoe crabs</button>
+        </mat-menu>
+        <mat-menu #fish="matMenu" class="menu-danger">
+            <button mat-menu-item>Baikal oilfish</button>
+            <button mat-menu-item>Bala shark</button>
+            <button mat-menu-item>Ballan wrasse</button>
+            <button mat-menu-item>Bamboo shark</button>
+            <button mat-menu-item>Banded killifish</button>
+        </mat-menu>
+        <mat-menu #amphibians="matMenu" class="menu-secondary">
+            <button mat-menu-item>Sonoran desert toad</button>
+            <button mat-menu-item>Western toad</button>
+            <button mat-menu-item>Arroyo toad</button>
+            <button mat-menu-item>Yosemite toad</button>
+        </mat-menu>
+    </div>
+    <!------------- Secondary Menu --------------->
+    <div>
+        <button mat-flat-button class="Secondary-button" [matMenuTriggerFor]="animals5">Secondary</button>
+        <mat-menu #animals5="matMenu" class="menu-secondary">
+            <button mat-menu-item [matMenuTriggerFor]="vertebrates">Vertebrates</button>
+            <button mat-menu-item [matMenuTriggerFor]="invertebrates">Invertebrates</button>
+        </mat-menu>
+        <mat-menu #vertebrates="matMenu" class="menu-accent">
+            <button mat-menu-item [matMenuTriggerFor]="fish">Danger Theme</button>
+            <button mat-menu-item [matMenuTriggerFor]="amphibians">Secondary Theme</button>
+            <button mat-menu-item>Birds</button>
+            <button mat-menu-item>Mammals</button>
+        </mat-menu>
+        <mat-menu #invertebrates="matMenu" class="menu-warn">
+            <button mat-menu-item>Insects</button>
+            <button mat-menu-item>Molluscs</button>
+            <button mat-menu-item>Crustaceans</button>
+            <button mat-menu-item>Corals</button>
+            <button mat-menu-item>Arachnids</button>
+            <button mat-menu-item>Velvet worms</button>
+            <button mat-menu-item>Horseshoe crabs</button>
+        </mat-menu>
+        <mat-menu #fish="matMenu" class="menu-danger">
+            <button mat-menu-item>Baikal oilfish</button>
+            <button mat-menu-item>Bala shark</button>
+            <button mat-menu-item>Ballan wrasse</button>
+            <button mat-menu-item>Bamboo shark</button>
+            <button mat-menu-item>Banded killifish</button>
+        </mat-menu>
+        <mat-menu #amphibians="matMenu" class="menu-secondary">
+            <button mat-menu-item>Sonoran desert toad</button>
+            <button mat-menu-item>Western toad</button>
+            <button mat-menu-item>Arroyo toad</button>
+            <button mat-menu-item>Yosemite toad</button>
+        </mat-menu>
+    </div>
+</div>
+<!---------------------------------------------------------------------------------------------------
+                                            Menu positioning
+---------------------------------------------------------------------------------------------------->
+<p>Menu positioning</p>
+<div class="grid-box">
+    <!------------- Open Top Side Menu --------------->
+    <div>
+        <button mat-flat-button color="primary" [matMenuTriggerFor]="aboveMenu">Above</button>
+        <mat-menu #aboveMenu="matMenu" yPosition="above" class="menu-primary">
+            <button mat-menu-item>Item 1</button>
+            <button mat-menu-item>Item 2</button>
+        </mat-menu>
+    </div>
+    <!------------- Open Bottom Side Menu --------------->
+    <div>
+        <button mat-flat-button color="accent" [matMenuTriggerFor]="belowMenu">Below</button>
+        <mat-menu #belowMenu="matMenu" yPosition="below" class="menu-accent">
+            <button mat-menu-item>Item 1</button>
+            <button mat-menu-item>Item 2</button>
+        </mat-menu>
+    </div>
+    <!------------- Open Left Side Menu --------------->
+    <div>
+        <button mat-flat-button color="warn" [matMenuTriggerFor]="beforeMenu">Before</button>
+        <mat-menu #beforeMenu="matMenu" xPosition="before" class="menu-warn">
+            <button mat-menu-item>Item 1</button>
+            <button mat-menu-item>Item 2</button>
+        </mat-menu>
+    </div>
+    <!------------- Open Right Side Menu --------------->
+    <div>
+        <button mat-flat-button class="Danger-button" [matMenuTriggerFor]="afterMenu">After</button>
+        <mat-menu #afterMenu="matMenu" xPosition="after" class="menu-danger">
+            <button mat-menu-item>Item 1</button>
+            <button mat-menu-item>Item 2</button>
+        </mat-menu>
+    </div>
+</div>

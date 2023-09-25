@@ -1,0 +1,288 @@
+.grid-box {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+}
+
+.grid-box>div {
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+}
+
+p {
+    background-color: #7688ee;
+    padding: 15px;
+    color: #fff;
+    font-size: 17px;
+    margin: 20px 0px 10px 0px;
+    border-radius: 10px 10px 0 0;
+}
+
+.grid-box>div:first-child {
+    margin: 0 5px 0 0;
+}
+
+.grid-box>div:last-child {
+    margin: 0 0 0 5px;
+}
+
+
+
+/************************************************************************************************************************
+                                                    Primary Theme
+************************************************************************************************************************/
+::ng-deep .menu-primary .mat-mdc-menu-content,
+::ng-deep .menu-primary .mat-mdc-menu-content .mat-mdc-menu-item .mdc-list-item__primary-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; // change font-family
+    font-size: var(--mdc-typography-body1-font-size, 20px); // change font-size
+    line-height: var(--mdc-typography-body1-line-height, 24px); // change line height
+    font-weight: var(--mdc-typography-body1-font-weight, 400); // change font weight
+    letter-spacing: var(--mdc-typography-body1-letter-spacing, 0.03125em); // change letter spacing
+    text-decoration: var(--mdc-typography-body1-text-decoration, inherit); // change text decoration
+    text-transform: var(--mdc-typography-body1-text-transform, none); // change text transform
+}
+
+::ng-deep .menu-primary.mdc-menu-surface {
+    box-shadow: 0px 5px 5px -3px #9aa8f834, 0px 8px 10px 1px #9aa8f856, 0px 3px 14px 2px #9aa8f842; // change menu-surface box-shadow
+    background-color: var(--mdc-theme-surface, #9aa8f8fd); // change menu-surface background color
+    color: var(--mdc-theme-on-surface, #000); // change menu-surface font color
+    // margin: 20px;
+    // padding: 20px;
+    // width: 300px;
+    // height: 200px;
+}
+
+/*---------- Full Manu Box Text Color ----------*/
+::ng-deep .menu-primary .mdc-list-item__primary-text {
+    color: var(--mdc-theme-text-primary-on-background, #3f51b5);
+}
+
+/*---------- Manu Box Itmes Hover Bg Color ----------*/
+::ng-deep .menu-primary .mat-mdc-menu-item:hover:not([disabled]),
+::ng-deep .menu-primary .mat-mdc-menu-item.cdk-program-focused:not([disabled]),
+::ng-deep .menu-primary .mat-mdc-menu-item.cdk-keyboard-focused:not([disabled]),
+::ng-deep .menu-primary .mat-mdc-menu-item-highlighted:not([disabled]),
+::ng-deep .menu-primary .mat-mdc-menu-item:hover .mdc-list-item__primary-text {
+    background: #5f75f0;
+    color: #52c2ff;
+}
+
+/*---------- Menu Box Itmes Icon Color ----------*/
+::ng-deep .menu-primary .mat-mdc-menu-item .mat-icon-no-color,
+::ng-deep .menu-primary .mat-mdc-menu-submenu-icon {
+    color: var(--mdc-theme-text-primary-on-background, #3f51b5);
+}
+
+
+/************************************************************************************************************************
+                                                    Accent Theme
+************************************************************************************************************************/
+/*---------- Full Manu Box text Css ----------*/
+::ng-deep .menu-accent .mat-mdc-menu-content,
+::ng-deep .menu-accent .mat-mdc-menu-content .mat-mdc-menu-item .mdc-list-item__primary-text {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--mdc-typography-body1-font-family, var(--mdc-typography-font-family, Amaranth, sans-serif)); // Font Style
+    font-size: var(--mdc-typography-body1-font-size, 22px); // font size
+    line-height: var(--mdc-typography-body1-line-height, 24px); // line height
+    font-weight: var(--mdc-typography-body1-font-weight, 500); // fotn weight
+    letter-spacing: var(--mdc-typography-body1-letter-spacing, 0.03125em); // letter spacing
+    text-decoration: var(--mdc-typography-body1-text-decoration, inherit); // text decoration
+    text-transform: var(--mdc-typography-body1-text-transform, none); // text transform
+}
+
+/*---------- Full Menu Box bg Color, box shadow ----------*/
+::ng-deep .menu-accent.mdc-menu-surface {
+    box-shadow: 0px 5px 5px -3px #ff408021, 0px 8px 10px 1px #f3a0bc3d, 0px 3px 14px 2px #f1a8c24b;
+    background-color: var(--mdc-theme-surface, #f09db8);
+    color: var(--mdc-theme-on-surface, #000);
+    // margin: 20px;
+    // padding: 20px;
+    // width: 300px;
+    // height: 200px;
+}
+
+/*---------- Full Menu Box Text Color ----------*/
+::ng-deep .menu-accent .mdc-list-item__primary-text {
+    color: var(--mdc-theme-text-primary-on-background, #ff4081);
+}
+
+/*---------- Menu Box Itmes Hover Bg Color, Text Color ----------*/
+::ng-deep .menu-accent .mat-mdc-menu-item:hover:not([disabled]),
+::ng-deep .menu-accent .mat-mdc-menu-item.cdk-program-focused:not([disabled]),
+::ng-deep .menu-accent .mat-mdc-menu-item.cdk-keyboard-focused:not([disabled]),
+::ng-deep .menu-accent .mat-mdc-menu-item-highlighted:not([disabled]),
+::ng-deep .menu-accent .mat-mdc-menu-item:hover .mdc-list-item__primary-text {
+    background: #f16c99;
+    color: #ffb6ca;
+}
+
+/*---------- Menu Box Itmes Icon Color ----------*/
+::ng-deep .menu-accent .mat-mdc-menu-item .mat-icon-no-color,
+::ng-deep .menu-accent .mat-mdc-menu-submenu-icon {
+    color: var(--mdc-theme-text-primary-on-background, #ff4081);
+}
+
+
+
+/************************************************************************************************************************
+                                                    Warn Theme
+************************************************************************************************************************/
+/*---------- Full Menu Box text Css ----------*/
+::ng-deep .menu-warn .mat-mdc-menu-content,
+::ng-deep .menu-warn .mat-mdc-menu-content .mat-mdc-menu-item .mdc-list-item__primary-text {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--mdc-typography-body1-font-family, var(--mdc-typography-font-family, Amaranth, sans-serif)); // Font Style
+    font-size: var(--mdc-typography-body1-font-size, 24px); // font size
+    line-height: var(--mdc-typography-body1-line-height, 24px); // line height
+    font-weight: var(--mdc-typography-body1-font-weight, 700); // fotn weight
+    letter-spacing: var(--mdc-typography-body1-letter-spacing, 0.03125em); // letter spacing
+    text-decoration: var(--mdc-typography-body1-text-decoration, inherit); // text decoration
+    text-transform: var(--mdc-typography-body1-text-transform, none); // text transform
+}
+
+/*---------- Full Menu Box bg Color, box shadow ----------*/
+::ng-deep .menu-warn.mdc-menu-surface {
+    box-shadow: 0px 5px 5px -3px #f443362c, 0px 8px 10px 1px #f443362f, 0px 3px 14px 2px #f4433644;
+    background-color: var(--mdc-theme-surface, #f09992);
+    color: var(--mdc-theme-on-surface, #000);
+    // margin: 20px;
+    // padding: 20px;
+    // width: 300px;
+    // height: 200px;
+}
+
+/*---------- Full Menu Box Text Color ----------*/
+::ng-deep .menu-warn .mdc-list-item__primary-text {
+    color: var(--mdc-theme-text-primary-on-background, #f44336);
+}
+
+/*---------- Menu Box Itmes Hover Bg Color, Text Color ----------*/
+::ng-deep .menu-warn .mat-mdc-menu-item:hover:not([disabled]),
+::ng-deep .menu-warn .mat-mdc-menu-item.cdk-program-focused:not([disabled]),
+::ng-deep .menu-warn .mat-mdc-menu-item.cdk-keyboard-focused:not([disabled]),
+::ng-deep .menu-warn .mat-mdc-menu-item-highlighted:not([disabled]),
+::ng-deep .menu-warn .mat-mdc-menu-item:hover .mdc-list-item__primary-text {
+    background: #fc7f76;
+    color: #eac74c;
+}
+
+/*---------- Menu Box Itmes Icon Color ----------*/
+::ng-deep .menu-warn .mat-mdc-menu-item .mat-icon-no-color,
+::ng-deep .menu-warn .mat-mdc-menu-submenu-icon {
+    color: var(--mdc-theme-text-primary-on-background, #f44336);
+}
+
+
+/************************************************************************************************************************
+                                                    Danger Theme
+************************************************************************************************************************/
+.Danger-button {
+    background-color: #dc3545 !important;
+    color: #ffff !important;
+}
+
+/*---------- Full Menu Box text Css ----------*/
+::ng-deep .menu-danger .mat-mdc-menu-content,
+::ng-deep .menu-danger .mat-mdc-menu-content .mat-mdc-menu-item .mdc-list-item__primary-text {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--mdc-typography-body1-font-family, var(--mdc-typography-font-family, Amaranth, sans-serif)); // Font Style
+    font-size: var(--mdc-typography-body1-font-size, 26px); // font size
+    line-height: var(--mdc-typography-body1-line-height, 24px); // line height
+    font-weight: var(--mdc-typography-body1-font-weight, 700); // font weight
+    letter-spacing: var(--mdc-typography-body1-letter-spacing, 0.03125em); // letter spacing
+    text-decoration: var(--mdc-typography-body1-text-decoration, inherit); // text decoration
+    text-transform: var(--mdc-typography-body1-text-transform, none); // text transform
+}
+
+/*---------- Full Menu Box bg Color, box shadow ----------*/
+::ng-deep .menu-danger.mdc-menu-surface {
+    box-shadow: 0px 5px 5px -3px #dc35461f, 0px 8px 10px 1px #dc354644, 0px 3px 14px 2px #dc354633;
+    background-color: var(--mdc-theme-surface, #f598a1);
+    color: var(--mdc-theme-on-surface, #000);
+    // margin: 20px;
+    // padding: 20px;
+    // width: 300px;
+    // height: 200px;
+}
+
+/*---------- Full Menu Box Text Color ----------*/
+::ng-deep .menu-danger .mdc-list-item__primary-text {
+    color: var(--mdc-theme-text-primary-on-background, #dc3545);
+}
+
+/*---------- Menu Box Itmes Hover Bg Color, Text Color ----------*/
+::ng-deep .menu-danger .mat-mdc-menu-item:hover:not([disabled]),
+::ng-deep .menu-danger .mat-mdc-menu-item.cdk-program-focused:not([disabled]),
+::ng-deep .menu-danger .mat-mdc-menu-item.cdk-keyboard-focused:not([disabled]),
+::ng-deep .menu-danger .mat-mdc-menu-item-highlighted:not([disabled]),
+::ng-deep .menu-danger .mat-mdc-menu-item:hover .mdc-list-item__primary-text {
+    background: #e76c79;
+    color: #ae0416;
+}
+
+/*---------- Menu Box Itmes Icon Color ----------*/
+::ng-deep .menu-danger .mat-mdc-menu-item .mat-icon-no-color,
+::ng-deep .menu-danger .mat-mdc-menu-submenu-icon {
+    color: var(--mdc-theme-text-primary-on-background, #dc3545);
+}
+
+
+/************************************************************************************************************************
+                                                    Secondary Theme
+************************************************************************************************************************/
+/*---------- Button Color ----------*/
+.Secondary-button {
+    background-color: #6c757d !important;
+    color: #ffff !important;
+}
+
+/*---------- Full Menu Box text Css ----------*/
+::ng-deep .menu-secondary .mat-mdc-menu-content,
+::ng-deep .menu-secondary .mat-mdc-menu-content .mat-mdc-menu-item .mdc-list-item__primary-text {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--mdc-typography-body1-font-family, var(--mdc-typography-font-family, Amaranth, sans-serif)); // Font Style
+    font-size: var(--mdc-typography-body1-font-size, 26px); // font size
+    line-height: var(--mdc-typography-body1-line-height, 24px); // line height
+    font-weight: var(--mdc-typography-body1-font-weight, 700); // fotn weight
+    letter-spacing: var(--mdc-typography-body1-letter-spacing, 0.03125em); // letter spacing
+    text-decoration: var(--mdc-typography-body1-text-decoration, inherit); // text decoration
+    text-transform: var(--mdc-typography-body1-text-transform, none); // text transform
+}
+
+/*---------- Full Menu Box bg Color, box shadow ----------*/
+::ng-deep .menu-secondary.mdc-menu-surface {
+    box-shadow: 0px 5px 5px -3px #6c757d27, 0px 8px 10px 1px #6c757d54, 0px 3px 14px 2px #6c757d3a;
+    background-color: var(--mdc-theme-surface, #b1b9c0);
+    color: var(--mdc-theme-on-surface, #000);
+    // margin: 20px;
+    // padding: 20px;
+    // width: 300px;
+    // height: 200px;
+}
+
+/*---------- Full Menu Box Text Color ----------*/
+::ng-deep .menu-secondary .mdc-list-item__primary-text {
+    color: var(--mdc-theme-text-primary-on-background, #6c757d);
+}
+
+/*---------- Menu Box Itmes Hover Bg Color, Text Color ----------*/
+::ng-deep .menu-secondary .mat-mdc-menu-item:hover:not([disabled]),
+::ng-deep .menu-secondary .mat-mdc-menu-item.cdk-program-focused:not([disabled]),
+::ng-deep .menu-secondary .mat-mdc-menu-item.cdk-keyboard-focused:not([disabled]),
+::ng-deep .menu-secondary .mat-mdc-menu-item-highlighted:not([disabled]),
+::ng-deep .menu-secondary .mat-mdc-menu-item:hover .mdc-list-item__primary-text {
+    background: #889097;
+    color: rgb(0, 0, 0);
+}
+
+/*---------- Menu Box Itmes Icon Color ----------*/
+::ng-deep .menu-secondary .mat-mdc-menu-item .mat-icon-no-color,
+::ng-deep .menu-secondary .mat-mdc-menu-submenu-icon {
+    color: var(--mdc-theme-text-primary-on-background, #6c757d);
+}
