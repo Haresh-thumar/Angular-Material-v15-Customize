@@ -1,0 +1,340 @@
+p {
+    background-color: #7688ee;
+    padding: 15px;
+    color: #fff;
+    font-size: 17px;
+    margin: 20px 5px 10px 5px;
+    border-radius: 10px 10px 0 0;
+}
+
+.grid-box {
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+}
+
+.grid-box>div {
+    border: 1px solid rgb(228, 228, 228);
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.select-boxes {
+    width: 100%;
+}
+
+
+/****************************************************************************************************************
+                                                    Primary Select Box
+****************************************************************************************************************/
+/*---------- Select Box Arrow Before Focus ----------*/
+::ng-deep .mat-primary .mat-mdc-select-arrow {
+    color: #07ccff;
+}
+
+/*---------- Select Box Arrow After Focus ----------*/
+::ng-deep .mat-mdc-form-field.mat-focused.mat-primary .mat-mdc-select-arrow {
+    color: #005ea3;
+}
+
+/*---------- Full Select Box ----------*/
+::ng-deep .mat-primary.mdc-menu-surface {
+    box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12); // Select Box Shadow 
+    background-color: var(--mdc-theme-surface, #a7bdf8); // Select Box Bg Color 
+    color: var(--mdc-theme-on-surface, #fafafa);
+}
+
+/*---------- Select Box Items Colors ----------*/
+::ng-deep .mat-primary .mdc-list-item__primary-text {
+    color: var(--mdc-theme-text-primary-on-background, #0914b5);
+}
+
+/*---------- Select Box Items Hover And Focus ----------*/
+::ng-deep .mat-primary .mat-mdc-option:hover:not(.mdc-list-item--disabled),
+::ng-deep .mat-primary .mat-mdc-option:focus:not(.mdc-list-item--disabled) {
+    background-color: #08ecff;
+}
+
+/*---------- Select Box Items Active ----------*/
+::ng-deep .mat-primary .mat-mdc-option.mat-mdc-option-active {
+    background-color: #005ea3;
+}
+
+/*---------- Select Box Items Seleted ----------*/
+::ng-deep .mat-primary .mat-mdc-option.mdc-list-item--selected:not(.mat-mdc-option-multiple):not(.mdc-list-item--disabled) {
+    background: #7d9ffc;
+}
+
+/*---------- Select Box Items Seleted Text ----------*/
+::ng-deep .mat-primary .mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled) .mdc-list-item__primary-text {
+    color: var(--mdc-theme-primary, #ffffff);
+}
+
+/*---------- Select Box Check Icon ----------*/
+::ng-deep .mat-primary .mat-pseudo-checkbox-checked.mat-pseudo-checkbox-minimal::after,
+::ng-deep .mat-primary .mat-pseudo-checkbox-indeterminate.mat-pseudo-checkbox-minimal::after {
+    color: #0d396d !important;
+}
+
+/*---------- Select Box Option Group Box ----------*/
+::ng-deep .mat-primary.mat-mdc-select-panel {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--mdc-typography-subtitle1-font-family, var(--mdc-typography-font-family, Amaranth, sans-serif)); // change font-family
+    font-size: var(--mdc-typography-subtitle1-font-size, 30px); // change font-size
+    line-height: var(--mdc-typography-subtitle1-line-height, 28px); // change line-height
+    font-weight: var(--mdc-typography-subtitle1-font-weight, 400); // change font-weight
+    letter-spacing: var(--mdc-typography-subtitle1-letter-spacing, 0.009375em); // change letter-spacing
+    text-decoration: var(--mdc-typography-subtitle1-text-decoration, inherit); // Text Decoration
+    text-transform: var(--mdc-typography-subtitle1-text-transform, none); // Text Transform
+    line-height: 24px; // change manually line-height without variable 
+    height: 200px !important; // Select Box Height
+    color: red; // change text-color
+}
+
+/*---------- Select Box Option Group Items ----------*/
+::ng-deep .mat-primary .mat-mdc-option {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--mdc-typography-body1-font-family, var(--mdc-typography-font-family, Amaranth, sans-serif)); // Select Box Item font family
+    font-size: var(--mdc-typography-body1-font-size, 20px); // Select Box Item font size
+    line-height: var(--mdc-typography-body1-line-height, 24px); // Select Box Item line height
+    font-weight: var(--mdc-typography-body1-font-weight, 400); // Select Box Item font weight
+    letter-spacing: var(--mdc-typography-body1-letter-spacing, 0.03125em); // Select Box Item letter spacing
+    height: 30% !important; // Select Box Item Height
+}
+
+/*---------- Select Box Option Group Label Color ----------*/
+::ng-deep .mat-primary .mat-mdc-optgroup-label .mdc-list-item__primary-text {
+    color: #002666 !important;
+}
+
+/*---------- Select Box Check Box Color ----------*/
+::ng-deep .mat-primary .mat-pseudo-checkbox-checked.mat-pseudo-checkbox-full,
+::ng-deep .mat-primary .mat-pseudo-checkbox-indeterminate.mat-pseudo-checkbox-full {
+    background: #81fff8;
+}
+
+/*---------- Select Box Check Icon Color ----------*/
+::ng-deep .mat-primary .mat-pseudo-checkbox-checked.mat-pseudo-checkbox-full::after,
+::ng-deep .mat-primary .mat-pseudo-checkbox-indeterminate.mat-pseudo-checkbox-full::after {
+    color: #0289f8;
+}
+
+/*---------- Select Box Check Box Border Color ----------*/
+::ng-deep .mat-primary .mat-pseudo-checkbox-full {
+    color: #00ffd5;
+}
+
+
+/****************************************************************************************************************
+                                                Accent Select Box
+****************************************************************************************************************/
+/*---------- Select Box Arrow Before Focus ----------*/
+::ng-deep .mat-accent .mat-mdc-select-arrow {
+    color: #f176a7;
+}
+
+/*---------- Select Box Arrow After Focus ----------*/
+::ng-deep .mat-mdc-form-field.mat-focused.mat-accent .mat-mdc-select-arrow {
+    color: #8a1f9b;
+}
+
+/*---------- Full Select Box ----------*/
+::ng-deep .mat-accent.mdc-menu-surface {
+    box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12); // Select Box Shadow 
+    background-color: var(--mdc-theme-surface, #f1acc3); // Select Box Bg Color 
+    // color: var(--mdc-theme-on-surface, #fafafa);
+}
+
+/*---------- Select Box Items Colors ----------*/
+::ng-deep .mat-accent .mdc-list-item__primary-text {
+    color: var(--mdc-theme-text-primary-on-background, #e100ff);
+}
+
+/*---------- Select Box Items Hover And Focus ----------*/
+::ng-deep .mat-accent .mat-mdc-option:hover:not(.mdc-list-item--disabled),
+::ng-deep .mat-accent .mat-mdc-option:focus:not(.mdc-list-item--disabled) {
+    background-color: #f176a7;
+}
+
+/*---------- Select Box Items Active ----------*/
+::ng-deep .mat-accent .mat-mdc-option.mat-mdc-option-active {
+    background-color: #8a1f9b;
+}
+
+/*---------- Select Box Items Seleted ----------*/
+::ng-deep .mat-accent .mat-mdc-option.mdc-list-item--selected:not(.mat-mdc-option-multiple):not(.mdc-list-item--disabled) {
+    background: #ff9bf5;
+}
+
+/*---------- Select Box Items Seleted Text ----------*/
+::ng-deep .mat-accent .mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled) .mdc-list-item__primary-text {
+    color: var(--mdc-theme-primary, #ffffff);
+}
+
+/*---------- Select Box Check Icon ----------*/
+::ng-deep .mat-primary .mat-pseudo-checkbox-checked.mat-pseudo-checkbox-minimal::after,
+::ng-deep .mat-primary .mat-pseudo-checkbox-indeterminate.mat-pseudo-checkbox-minimal::after {
+    color: #ff40c3 !important;
+}
+
+/*---------- Select Box Option Group Box ----------*/
+::ng-deep .mat-accent.mat-mdc-select-panel {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--mdc-typography-subtitle1-font-family, var(--mdc-typography-font-family, Amaranth, sans-serif));
+    font-size: var(--mdc-typography-subtitle1-font-size, 30px);
+    line-height: var(--mdc-typography-subtitle1-line-height, 28px);
+    font-weight: var(--mdc-typography-subtitle1-font-weight, 400);
+    letter-spacing: var(--mdc-typography-subtitle1-letter-spacing, 0.009375em);
+    text-decoration: var(--mdc-typography-subtitle1-text-decoration, inherit); // Text Decoration
+    text-transform: var(--mdc-typography-subtitle1-text-transform, none); // Text Transform
+    line-height: 24px;
+    height: 300px; // Select Box Height
+}
+
+
+/*---------- Select Box Option Group Items ----------*/
+::ng-deep .mat-accent .mat-mdc-option {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--mdc-typography-body1-font-family, var(--mdc-typography-font-family, Amaranth, sans-serif)); // Select Box Item font family
+    font-size: var(--mdc-typography-body1-font-size, 20px); // Select Box Item font size
+    line-height: var(--mdc-typography-body1-line-height, 24px); // Select Box Item line height
+    font-weight: var(--mdc-typography-body1-font-weight, 400); // Select Box Item font weight
+    letter-spacing: var(--mdc-typography-body1-letter-spacing, 0.03125em); // Select Box Item letter spacing
+    height: 30% !important; // Select Box Item Height
+}
+
+/*---------- Select Box Option Group Label Color ----------*/
+::ng-deep .mat-accent .mat-mdc-optgroup-label .mdc-list-item__primary-text {
+    color: #b004a1 !important;
+}
+
+/*---------- Select Box Check Box Color ----------*/
+::ng-deep .mat-accent .mat-pseudo-checkbox-checked.mat-pseudo-checkbox-full,
+::ng-deep .mat-accent .mat-pseudo-checkbox-indeterminate.mat-pseudo-checkbox-full {
+    background: #ffb5f4;
+}
+
+/*---------- Select Box Check Icon Color ----------*/
+::ng-deep .mat-accent .mat-pseudo-checkbox-checked.mat-pseudo-checkbox-full::after,
+::ng-deep .mat-accent .mat-pseudo-checkbox-indeterminate.mat-pseudo-checkbox-full::after {
+    color: #e31790;
+}
+
+/*---------- Select Box Check Box Border Color ----------*/
+::ng-deep .mat-accent .mat-pseudo-checkbox-full {
+    color: #b700ff;
+}
+
+
+
+
+/****************************************************************************************************************
+                                                Warn Select Box
+****************************************************************************************************************/
+/*---------- Select Box Arrow Before Focus ----------*/
+::ng-deep .mat-warn .mat-mdc-select-arrow {
+    color: #ffb55e;
+}
+
+/*---------- Select Box Arrow After Focus ----------*/
+::ng-deep .mat-mdc-form-field.mat-focused.mat-warn .mat-mdc-select-arrow {
+    color: #c24500;
+}
+
+/*---------- Full Select Box ----------*/
+::ng-deep .mat-warn.mdc-menu-surface {
+    box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12); // Select Box Shadow 
+    background-color: var(--mdc-theme-surface, #f5b5b0); // Select Box Bg Color 
+    // color: var(--mdc-theme-on-surface, #fafafa);
+}
+
+/*---------- Select Box Items Colors ----------*/
+::ng-deep .mat-warn .mdc-list-item__primary-text {
+    color: var(--mdc-theme-text-primary-on-background, #a32220);
+}
+
+/*---------- Select Box Items Hover And Focus ----------*/
+::ng-deep .mat-warn .mat-mdc-option:hover:not(.mdc-list-item--disabled),
+::ng-deep .mat-warn .mat-mdc-option:focus:not(.mdc-list-item--disabled) {
+    background-color: #ffb55e;
+}
+
+/*---------- Select Box Items Active ----------*/
+::ng-deep .mat-warn .mat-mdc-option.mat-mdc-option-active {
+    background-color: #c24500;
+}
+
+/*---------- Select Box Items Seleted ----------*/
+::ng-deep .mat-warn .mat-mdc-option.mdc-list-item--selected:not(.mat-mdc-option-multiple):not(.mdc-list-item--disabled) {
+    background: #e7c13d;
+}
+
+/*---------- Select Box Items Seleted Text ----------*/
+::ng-deep .mat-warn .mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled) .mdc-list-item__primary-text {
+    color: var(--mdc-theme-primary, #ffffff);
+}
+
+/*---------- Select Box Check Icon ----------*/
+::ng-deep .mat-primary .mat-pseudo-checkbox-checked.mat-pseudo-checkbox-minimal::after,
+::ng-deep .mat-primary .mat-pseudo-checkbox-indeterminate.mat-pseudo-checkbox-minimal::after {
+    color: #a32220 !important;
+}
+
+/*---------- Select Box Option Group Box ----------*/
+::ng-deep .mat-warn.mat-mdc-select-panel {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--mdc-typography-subtitle1-font-family, var(--mdc-typography-font-family, Amaranth, sans-serif));
+    font-size: var(--mdc-typography-subtitle1-font-size, 30px);
+    line-height: var(--mdc-typography-subtitle1-line-height, 28px);
+    font-weight: var(--mdc-typography-subtitle1-font-weight, 400);
+    letter-spacing: var(--mdc-typography-subtitle1-letter-spacing, 0.009375em);
+    text-decoration: var(--mdc-typography-subtitle1-text-decoration, inherit); // Text Decoration
+    text-transform: var(--mdc-typography-subtitle1-text-transform, none); // Text Transform
+    line-height: 24px;
+    height: 400px; // Select Box Height
+}
+
+/*---------- Select Box Option Group Items ----------*/
+::ng-deep .mat-warn .mat-mdc-option {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--mdc-typography-body1-font-family, var(--mdc-typography-font-family, Amaranth, sans-serif)); // Select Box Item font family
+    font-size: var(--mdc-typography-body1-font-size, 20px); // Select Box Item font size
+    line-height: var(--mdc-typography-body1-line-height, 24px); // Select Box Item line height
+    font-weight: var(--mdc-typography-body1-font-weight, 400); // Select Box Item font weight
+    letter-spacing: var(--mdc-typography-body1-letter-spacing, 0.03125em); // Select Box Item letter spacing
+    height: 30% !important; // Select Box Item Height
+}
+
+/*---------- Select Box Option Group Label Color ----------*/
+::ng-deep .mat-warn .mat-mdc-optgroup-label .mdc-list-item__primary-text {
+    color: #c24500 !important;
+}
+
+/*---------- Select Box Check Box Color ----------*/
+::ng-deep .mat-warn .mat-pseudo-checkbox-checked.mat-pseudo-checkbox-full,
+::ng-deep .mat-warn .mat-pseudo-checkbox-indeterminate.mat-pseudo-checkbox-full {
+    background: #ff7c57;
+}
+
+/*---------- Select Box Check Icon Color ----------*/
+::ng-deep .mat-warn .mat-pseudo-checkbox-checked.mat-pseudo-checkbox-full::after,
+::ng-deep .mat-warn .mat-pseudo-checkbox-indeterminate.mat-pseudo-checkbox-full::after {
+    color: #fffc88;
+}
+
+/*---------- Select Box Check Box Border Color ----------*/
+::ng-deep .mat-warn .mat-pseudo-checkbox-full {
+    color: #ff0000;
+}
+
+
+
+// Remove Space From Select Bottom Side
+::ng-deep .mat-mdc-form-field-subscript-wrapper {
+    display: none;
+}

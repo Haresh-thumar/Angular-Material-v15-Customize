@@ -1,0 +1,131 @@
+<h1>Mat-Select Customize</h1>
+<br><br><br>
+<!----------------------------------------------------------------------------------------------------
+                                        ByDefault Select Box
+----------------------------------------------------------------------------------------------------->
+<p>ByDefault Select Box</p>
+<div class="grid-box">
+    <!---------------- Primary Select Box ---------------->
+    <div>
+        <mat-form-field class="select-boxes" color="primary" appearance="outline">
+            <mat-label>Choose an option</mat-label>
+            <mat-select>
+                <mat-option value="option1">Option 1</mat-option>
+                <mat-option value="option2">Option 2</mat-option>
+                <mat-option value="option3">Option 3</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <!---------------- Accent Select Box ---------------->
+    <div>
+        <mat-form-field class="select-boxes" color="accent" appearance="outline">
+            <mat-label>Choose an option</mat-label>
+            <mat-select>
+                <mat-option value="option1">Option 1</mat-option>
+                <mat-option value="option2">Option 2</mat-option>
+                <mat-option value="option3">Option 3</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <!---------------- Warn Select Box ---------------->
+    <div>
+        <mat-form-field class="select-boxes" color="warn" appearance="outline">
+            <mat-label>Choose an option</mat-label>
+            <mat-select>
+                <mat-option value="option1">Option 1</mat-option>
+                <mat-option value="option2">Option 2</mat-option>
+                <mat-option value="option3">Option 3</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+</div>
+<!----------------------------------------------------------------------------------------------------
+                                        Select Box With Check Box
+----------------------------------------------------------------------------------------------------->
+<p>Select Box With Check Box</p>
+<div class="grid-box">
+    <!--------------- Primary Select Box With Check Box ---------------->
+    <div>
+        <mat-form-field class="select-boxes" color="primary" appearance="outline">
+            <mat-label>Toppings</mat-label>
+            <mat-select [formControl]="toppings" multiple>
+                <mat-select-trigger> {{toppings.value?.[0] || ''}} <span *ngIf="(toppings.value?.length || 0) > 1"
+                        class="example-additional-selection"> (+{{(toppings.value?.length || 0) - 1}}
+                        {{toppings.value?.length === 2 ? 'other' : 'others'}}) </span>
+                </mat-select-trigger>
+                <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <!--------------- Accent Select Box With Check Box ---------------->
+    <div>
+        <mat-form-field class="select-boxes" color="accent" appearance="outline">
+            <mat-label>Toppings</mat-label>
+            <mat-select [formControl]="toppings" multiple>
+                <mat-select-trigger> {{toppings.value?.[0] || ''}} <span *ngIf="(toppings.value?.length || 0) > 1"
+                        class="example-additional-selection"> (+{{(toppings.value?.length || 0) - 1}}
+                        {{toppings.value?.length === 2 ? 'other' : 'others'}}) </span>
+                </mat-select-trigger>
+                <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <!--------------- Warn Select Box With Check Box ---------------->
+    <div>
+        <mat-form-field class="select-boxes" color="warn" appearance="outline">
+            <mat-label>Toppings</mat-label>
+            <mat-select [formControl]="toppings" multiple>
+                <mat-select-trigger> {{toppings.value?.[0] || ''}} <span *ngIf="(toppings.value?.length || 0) > 1"
+                        class="example-additional-selection"> (+{{(toppings.value?.length || 0) - 1}}
+                        {{toppings.value?.length === 2 ? 'other' : 'others'}}) </span>
+                </mat-select-trigger>
+                <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+</div>
+<!---------------------------------------------------------------------------------------------------
+                                        Select Box With Option Group
+---------------------------------------------------------------------------------------------------->
+<p>Select Box With Option Group</p>
+<div class="grid-box">
+    <!--------------- Primary Box With Option Group ---------------->
+    <div>
+        <mat-form-field class="select-boxes" color="primary" appearance="outline">
+            <mat-label>Pokemon</mat-label>
+            <mat-select>
+                <mat-option>-- None --</mat-option>
+                <mat-optgroup *ngFor="let group of pokemonGroups" [label]="group.name">
+                    <mat-option *ngFor="let pokemon of group.pokemon" [value]="pokemon.value"> {{pokemon.viewValue}}
+                    </mat-option>
+                </mat-optgroup>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <!--------------- Accent Box With Option Group ---------------->
+    <div>
+        <mat-form-field class="select-boxes" color="accent" appearance="outline">
+            <mat-label>Pokemon</mat-label>
+            <mat-select>
+                <mat-option>-- None --</mat-option>
+                <mat-optgroup *ngFor="let group of pokemonGroups" [label]="group.name">
+                    <mat-option *ngFor="let pokemon of group.pokemon" [value]="pokemon.value"> {{pokemon.viewValue}}
+                    </mat-option>
+                </mat-optgroup>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <!--------------- Warn Box With Option Group ---------------->
+    <div>
+        <mat-form-field class="select-boxes" color="warn" appearance="outline">
+            <mat-label>Pokemon</mat-label>
+            <mat-select>
+                <mat-option>-- None --</mat-option>
+                <mat-optgroup *ngFor="let group of pokemonGroups" [label]="group.name">
+                    <mat-option *ngFor="let pokemon of group.pokemon" [value]="pokemon.value"> {{pokemon.viewValue}}
+                    </mat-option>
+                </mat-optgroup>
+            </mat-select>
+        </mat-form-field>
+    </div>
+</div>

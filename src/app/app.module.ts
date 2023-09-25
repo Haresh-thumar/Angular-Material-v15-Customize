@@ -63,6 +63,8 @@ import { ListComponent } from './list/list.component';
 import { MatListModule } from '@angular/material/list';
 import { MenuComponent } from './menu/menu.component';
 import { MatMenuModule } from '@angular/material/menu';
+import { SelectComponent } from './select/select.component';
+import { MatSelectModule } from '@angular/material/select';
 
 
 @NgModule({
@@ -98,7 +100,8 @@ import { MatMenuModule } from '@angular/material/menu';
     ButtonToggleComponent,
     PaginatorComponent,
     ListComponent,
-    MenuComponent
+    MenuComponent,
+    SelectComponent
   ],
   imports: [
     BrowserModule,
@@ -133,7 +136,8 @@ import { MatMenuModule } from '@angular/material/menu';
     MatButtonToggleModule,
     MatPaginatorModule,
     MatListModule,
-    MatMenuModule
+    MatMenuModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

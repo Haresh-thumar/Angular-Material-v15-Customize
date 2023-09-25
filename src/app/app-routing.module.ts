@@ -28,6 +28,7 @@ import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
 import { PaginatorComponent } from './paginator/paginator.component';
 import { ListComponent } from './list/list.component';
 import { MenuComponent } from './menu/menu.component';
+import { SelectComponent } from './select/select.component';
 
 const routes: Routes = [
   { path: 'badge', component: BadgeComponent },
@@ -58,6 +59,7 @@ const routes: Routes = [
   { path: 'paginator', component: PaginatorComponent },
   { path: 'list', component: ListComponent },
   { path: 'menu', component: MenuComponent },
+  { path: 'select', component: SelectComponent },
 ];
 
 @NgModule({
