@@ -29,6 +29,7 @@ import { PaginatorComponent } from './paginator/paginator.component';
 import { ListComponent } from './list/list.component';
 import { MenuComponent } from './menu/menu.component';
 import { SelectComponent } from './select/select.component';
+import { DatePickerComponent } from './date-picker/date-picker.component';
 
 const routes: Routes = [
   { path: 'badge', component: BadgeComponent },
@@ -60,6 +61,7 @@ const routes: Routes = [
   { path: 'list', component: ListComponent },
   { path: 'menu', component: MenuComponent },
   { path: 'select', component: SelectComponent },
+  { path: 'datePicker', component: DatePickerComponent },
 ];
 
 @NgModule({
