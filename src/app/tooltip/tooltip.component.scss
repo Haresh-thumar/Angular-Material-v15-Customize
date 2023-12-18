@@ -1,0 +1,146 @@
+button {
+    margin: 0 35px;
+}
+
+::ng-deep .mat-mdc-tooltip {
+    transform: scale(1.4) !important;
+    position: relative !important;
+}
+
+/*-------------------------------------------------------------------------------
+                                  Danger Tooltip 
+--------------------------------------------------------------------------------*/
+// danger Tooltip
+::ng-deep .danger-tooltip {
+    --mdc-plain-tooltip-container-color: #ff0000 !important;
+    --mdc-plain-tooltip-supporting-text-color: white;
+    --mdc-plain-tooltip-supporting-text-font: Roboto, sans-serif;
+    --mdc-plain-tooltip-supporting-text-size: 13px;
+    --mdc-plain-tooltip-supporting-text-weight: 500 !important;
+    --mdc-plain-tooltip-supporting-text-tracking: 0.0333333333em;
+}
+
+// Add Tooltip Arrow in danger
+::ng-deep .danger-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -4px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #ff0000 transparent transparent transparent;
+}
+
+
+
+/*-------------------------------------------------------------------------------
+                                  Primary Tooltip 
+--------------------------------------------------------------------------------*/
+// primary Tooltip
+::ng-deep .primary-tooltip {
+    --mdc-plain-tooltip-container-color: #0d6efd !important;
+    --mdc-plain-tooltip-supporting-text-color: white;
+    --mdc-plain-tooltip-supporting-text-font: Roboto, sans-serif;
+    --mdc-plain-tooltip-supporting-text-size: 13px;
+    --mdc-plain-tooltip-supporting-text-weight: 500 !important;
+    --mdc-plain-tooltip-supporting-text-tracking: 0.0333333333em;
+    margin-left: 5px;
+}
+
+// Add Tooltip Arrow in primary
+::ng-deep .primary-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 0;
+    margin-left: -10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #0d6efd transparent transparent;
+}
+
+
+
+/*-------------------------------------------------------------------------------
+                                  Warning Tooltip 
+--------------------------------------------------------------------------------*/
+// warning Tooltip
+::ng-deep .warning-tooltip {
+    --mdc-plain-tooltip-container-color: #ffd900 !important;
+    --mdc-plain-tooltip-supporting-text-color: white;
+    --mdc-plain-tooltip-supporting-text-font: Roboto, sans-serif;
+    --mdc-plain-tooltip-supporting-text-size: 13px;
+    --mdc-plain-tooltip-supporting-text-weight: 500 !important;
+    --mdc-plain-tooltip-supporting-text-tracking: 0.0333333333em;
+    margin-top: 5px;
+}
+
+// Add Tooltip Arrow in warning
+::ng-deep .warning-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-top: -10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #ffd900 transparent;
+}
+
+
+
+
+/*-------------------------------------------------------------------------------
+                                  Success Tooltip 
+--------------------------------------------------------------------------------*/
+// success Tooltip
+::ng-deep .success-tooltip {
+    --mdc-plain-tooltip-container-color: #00d41c !important;
+    --mdc-plain-tooltip-supporting-text-color: white;
+    --mdc-plain-tooltip-supporting-text-font: Roboto, sans-serif;
+    --mdc-plain-tooltip-supporting-text-size: 13px;
+    --mdc-plain-tooltip-supporting-text-weight: 500 !important;
+    --mdc-plain-tooltip-supporting-text-tracking: 0.0333333333em;
+    margin-right: 5px;
+}
+
+// Add Tooltip Arrow in success
+::ng-deep .success-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 33%;
+    left: 100%;
+    margin-right: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #00d41c;
+}
+
+
+
+/*-------------------------------------------------------------------------------
+                                  Dark Tooltip 
+--------------------------------------------------------------------------------*/
+// dark Tooltip
+::ng-deep .dark-tooltip {
+    --mdc-plain-tooltip-container-color: #000000 !important;
+    --mdc-plain-tooltip-supporting-text-color: white;
+    --mdc-plain-tooltip-supporting-text-font: Roboto, sans-serif;
+    --mdc-plain-tooltip-supporting-text-size: 13px;
+    --mdc-plain-tooltip-supporting-text-weight: 500 !important;
+    --mdc-plain-tooltip-supporting-text-tracking: 0.0333333333em;
+    margin-left: 5px;
+}
+
+// Add Tooltip Arrow in dark
+::ng-deep .dark-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 0;
+    margin-left: -10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #000000 transparent transparent;
+}
